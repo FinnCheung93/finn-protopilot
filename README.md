@@ -23,6 +23,19 @@ PM 原型助手用于把 PRD / Spec 转成可走查的产品原型。
 它会在同一个演示目录里组织页面、导航、说明和预览，让评审更接近真实使用场景。
 ```
 
+## 🧭 PM 工作流系列
+
+这一组 Skills 用来把产品想法逐步推进到 AI Coding 可执行状态。推荐顺序是：地基 → PRD → Spec → 原型。
+
+| 顺序 | Skill | 作用 |
+|---|---|---|
+| 1 | [AI Coding 地基](https://github.com/FinnCheung93/aicoding-foundation) | 项目开工前，初始化原则、状态、日志和协作治理 |
+| 2 | [PM PRD 助手](https://github.com/FinnCheung93/pm-prd-copilot) | 澄清、撰写、修订和审查开发可落地的 PRD |
+| 3 | [AI Coding 规范文档](https://github.com/FinnCheung93/aicoding-specpilot) | 基于 PRD 生成更适合 AI Coding 读取的规格文档 |
+| 4 | [PM 原型助手](https://github.com/FinnCheung93/finn-protopilot) | 基于 PRD / Spec 生成产品走查原型和演示材料 |
+
+<sub>也可以单独调用其中任意一个 Skill，不一定必须按完整链路使用。</sub>
+
 ## ✨ 它能帮你做什么
 
 - 基于 PRD / Spec 生成产品走查原型
@@ -54,17 +67,6 @@ PM 原型助手用于把 PRD / Spec 转成可走查的产品原型。
 - 不在 PRD / Spec 不清楚时编造完整产品逻辑
 - 不把原型做成无法维护的一次性页面堆叠
 - 不跳过预览检查和走查体验
-
-## 🧭 PM 工作流系列
-
-这一组 Skills 用来把产品想法逐步推进到 AI Coding 可执行状态：
-
-- [AI Coding 地基](https://github.com/FinnCheung93/aicoding-foundation)：项目开工前，初始化原则、状态、日志和协作治理。
-- [PM PRD 助手](https://github.com/FinnCheung93/pm-prd-copilot)：澄清、撰写、修订和审查开发可落地的 PRD。
-- [AI Coding 规范文档](https://github.com/FinnCheung93/aicoding-specpilot)：基于 PRD 生成更适合 AI Coding 读取的规格文档。
-- [PM 原型助手](https://github.com/FinnCheung93/finn-protopilot)：基于 PRD / Spec 生成产品走查原型和演示材料。
-
-推荐顺序：地基 → PRD → Spec → 原型。实际使用时也可以单独调用其中任意一个 Skill。
 
 ## 📦 使用方式
 
