@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="./prototype-base.css">
+  <link rel="stylesheet" href="https://esm.sh/@excalidraw/excalidraw@0.18.0/dist/dev/index.css">
+  <link rel="stylesheet" href="./prototype-excalidraw.css">
+  <script>
+    window.EXCALIDRAW_ASSET_PATH = "https://esm.sh/@excalidraw/excalidraw@0.18.0/dist/prod/";
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@18.2.0",
+        "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime",
+        "react-dom": "https://esm.sh/react-dom@18.2.0",
+        "react-dom/client": "https://esm.sh/react-dom@18.2.0/client"
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js"></script>
+</head>
+<body data-prototype-kind="excalidraw">
+  <!--
+  Finn ProtoPilot Excalidraw generated prototype
+  Source PRD: {{prd_viewer_src}}
+  Design context: {{design_context}}
+  Purpose: PRD walkthrough with editable Excalidraw scenes, not production UI
+  -->
+
+  <div class="proto-chrome-corner-tl-hit" aria-hidden="true">
+    <div class="proto-float-corner-tl" role="toolbar" aria-label="作者工具">
+      <button type="button" class="proto-float-btn" id="proto-excalidraw-edit-btn" onclick="toggleExcalidrawEditMode()" aria-pressed="false" title="进入原型编辑模式"><i data-lucide="pen-tool" class="button-icon"></i><span>编辑</span></button>
+    </div>
+  </div>
+
+  <div class="proto-float-corner-tr" id="proto-main-toolbar" role="toolbar" aria-label="文档对照">
+    <button type="button" class="proto-float-btn" id="float-prd-btn" onclick="togglePrdViewer()" aria-pressed="false" title="进入 PRD 演讲模式">
+      <i data-lucide="file-text" class="button-icon"></i><span>PRD</span>
+    </button>
+    <button type="button" class="proto-float-btn proto-float-btn--symbol" id="presentation-laser-toggle" onclick="togglePresentationLaser()" aria-pressed="false" aria-label="启用或关闭演讲光标" title="演讲光标：已关闭（点按开启高光与拖尾）">
+      <i data-lucide="sparkles" class="button-icon"></i>
+    </button>
+  </div>
+
+  <div class="proto-float-corner-tr proto-excalidraw-mode-toolbar hidden" id="proto-excalidraw-mode-toolbar" role="toolbar" aria-label="原型编辑">
+    <button type="button" class="proto-float-btn" onclick="toggleExcalidrawEditMode(false)" title="退出编辑" aria-label="退出编辑"><i data-lucide="log-out" class="button-icon"></i><span>退出编辑</span></button>
+  </div>
+
+  <nav class="proto-nav-dock" id="proto-nav-dock" aria-label="场景目录">
+    <div class="proto-nav-shell">
+      <button type="button" class="proto-nav-trigger" id="proto-nav-trigger" aria-expanded="false" aria-label="展开场景目录"><i data-lucide="list"></i></button>
+      <div class="proto-nav-sheet">
+        <div class="proto-nav-scroll" id="proto-nav-scroll" role="navigation"></div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="proto-prd-proto-rail-wrap" id="proto-prd-proto-rail-wrap" aria-hidden="true">
+    <div class="proto-presenter-bottom-rail" role="toolbar" aria-label="预览区操作">
+      <button type="button" class="proto-float-btn proto-float-btn--symbol" id="presentation-laser-toggle-prd" onclick="togglePresentationLaser()" aria-pressed="false" aria-label="启用或关闭演讲光标" title="演讲光标：已关闭（点按开启高光与拖尾）">
+        <i data-lucide="sparkles" class="button-icon"></i>
+      </button>
+      <button type="button" class="proto-float-btn proto-float-btn--symbol" id="proto-preview-expand-btn" onclick="toggleProtoStepSpotlight(true)" title="全屏放大当前界面" aria-label="全屏放大当前界面">
+        <i data-lucide="maximize-2" class="button-icon"></i>
+      </button>
+    </div>
+  </div>
+
+  <main class="proto-page">
+    <header class="proto-header proto-header--minimal">
+      <h1>{{title}}</h1>
+    </header>
+
+    <aside class="proto-prd-drawer" id="prd-drawer" aria-label="PRD 演讲模式">
+      <div class="proto-prd-backdrop" onclick="togglePrdViewer(false)"></div>
+      <section class="proto-prd-panel">
+        <div class="proto-prd-panel-header">
+          <div class="proto-prd-panel-title"><i data-lucide="file-text" class="button-icon"></i><span>PRD</span></div>
+          <div class="proto-prd-panel-header-actions">
+            <div class="proto-prd-font-stepper" role="group" aria-label="正文显示字号">
+              <button type="button" class="proto-prd-panel-icon-btn" id="prd-font-down" onclick="adjustPrdViewerFont(-1)" title="减小字号" aria-label="减小 PRD 字号"><i data-lucide="minus"></i></button>
+              <span class="proto-prd-font-stepper-readout" aria-live="polite"><span id="prd-font-step-label">100%</span></span>
+              <button type="button" class="proto-prd-panel-icon-btn" id="prd-font-up" onclick="adjustPrdViewerFont(1)" title="增大字号" aria-label="增大 PRD 字号"><i data-lucide="plus"></i></button>
+            </div>
+            <button type="button" class="proto-prd-panel-icon-btn" onclick="togglePrdViewer(false)" aria-label="退出 PRD 演讲模式" title="退出"><i data-lucide="log-out"></i></button>
+          </div>
+        </div>
+        <div class="proto-prd-viewer" data-prd-src="{{prd_viewer_src}}">
+          <div class="proto-prd-status" id="prd-viewer-status" role="status">正在加载 PRD...</div>
+          <p class="proto-prd-source-note hidden" id="prd-viewer-source-note"></p>
+          <div class="proto-prd-markdown typora-preview hidden" id="prd-markdown-output" aria-live="polite"></div>
+          <section class="proto-prd-fallback hidden" id="prd-viewer-fallback" aria-live="polite">
+            <h3>PRD 暂时没有加载出来</h3>
+            <p id="prd-viewer-fallback-message">当前绑定的 PRD 路径是：<code>{{prd_viewer_src}}</code></p>
+            <ul>
+              <li>请确认正在通过本地 HTTP 打开，而不是直接打开 file:// 文件。</li>
+              <li>请确认 PRD 文件与 index.html 的相对路径正确。</li>
+              <li>如果 Marked CDN 或浏览器本地读取被拦截，可以临时手动选择同目录 Markdown 文件。</li>
+            </ul>
+            <div class="proto-prd-fallback-actions">
+              <button type="button" class="secondary-btn" onclick="choosePrdMarkdownFile()"><i data-lucide="folder-open" class="button-icon"></i>选择同目录 PRD 文件</button>
+            </div>
+          </section>
+          <input class="proto-prd-file-input" id="prd-file-input" type="file" accept=".md,.markdown,text/markdown,text/plain">
+        </div>
+      </section>
+    </aside>
+
+    <!--
+      Shell layout: journey business canvas lives inside main.proto-page.
+      #proto-spotlight-mount is outside main and also carries proto-generated-area.
+      PRD mode CSS must stay scoped to main.proto-page .proto-generated-area.
+    -->
+    <div class="proto-generated-area" id="proto-generated-area">
+<!-- PROTO_GENERATED_AREA_START -->
+{{generated_area}}
+<!-- PROTO_GENERATED_AREA_END -->
+    </div>
+
+    <div class="toast toast-fixed hidden" id="toast" role="status"></div>
+  </main>
+
+  <div id="proto-step-spotlight" class="proto-step-spotlight hidden" role="dialog" aria-modal="true" aria-label="单界面放大预览">
+    <div class="proto-step-spotlight-scrim" onclick="toggleProtoStepSpotlight(false)"></div>
+    <div class="proto-step-spotlight-foreground">
+      <div class="proto-step-spotlight-stage" id="proto-spotlight-stage">
+        <div class="proto-step-spotlight-mount proto-generated-area" id="proto-spotlight-mount"></div>
+      </div>
+      <div class="proto-spotlight-rail-wrap">
+        <div class="proto-presenter-bottom-rail" role="toolbar" aria-label="放大预览操作">
+          <button type="button" class="proto-float-btn proto-float-btn--symbol" id="presentation-laser-toggle-spotlight" onclick="togglePresentationLaser()" aria-pressed="false" aria-label="启用或关闭演讲光标" title="演讲光标：已关闭（点按开启高光与拖尾）">
+            <i data-lucide="sparkles" class="button-icon"></i>
+          </button>
+          <button type="button" class="proto-float-btn proto-float-btn--symbol" id="proto-spotlight-shrink-btn" onclick="toggleProtoStepSpotlight(false)" title="缩小" aria-label="缩小回到演讲预览">
+            <i data-lucide="minimize-2" class="button-icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="excalidraw-editor-modal" class="excalidraw-editor-modal hidden" role="dialog" aria-modal="true" aria-label="Excalidraw 编辑器">
+    <div class="excalidraw-editor-shell">
+      <div class="excalidraw-editor-header">
+        <div class="excalidraw-editor-title-wrap">
+          <strong id="excalidraw-editor-title">编辑画布</strong>
+          <span id="excalidraw-save-status" class="excalidraw-save-status">就绪</span>
+        </div>
+        <div class="proto-presenter-bottom-rail excalidraw-editor-actions" role="toolbar" aria-label="画布编辑操作">
+          <button type="button" class="proto-float-btn" onclick="resetExcalidrawEditor()" title="还原本次编辑"><i data-lucide="rotate-ccw" class="button-icon"></i><span>还原本次</span></button>
+          <button type="button" class="proto-float-btn is-active" onclick="saveExcalidrawScene()" title="保存"><i data-lucide="save" class="button-icon"></i><span>保存</span></button>
+          <button type="button" class="proto-float-btn" onclick="closeExcalidrawEditor()" title="关闭"><i data-lucide="x" class="button-icon"></i><span>关闭</span></button>
+        </div>
+      </div>
+      <div id="excalidraw-editor-root" class="excalidraw-editor-root">
+        <div class="excalidraw-editor-loading">正在准备画布...</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./prototype-shell.js"></script>
+  <script src="./prototype-excalidraw.js"></script>
+</body>
+</html>

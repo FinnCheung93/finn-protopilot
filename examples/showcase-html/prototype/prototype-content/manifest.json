@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-05-22T06:05:29Z",
+  "updated_at": "2026-05-22T09:12:12Z",
+  "namespace": "protopilot-html-showcase--prototype",
+  "source": {
+    "plan_path": "prototype-plan.json",
+    "prd_path": "../ProtoPilot HTML Showcase 内容规格.md"
+  },
+  "screens": [
+    {
+      "step_id": "step-hero-a001",
+      "file": "screens/step-hero-a001.html",
+      "title": "Hero 首屏",
+      "group_id": "group-opening",
+      "platform": "Web",
+      "prd_sections": [
+        "1.1 Hero 首屏"
+      ],
+      "status": "rendered",
+      "hash": "fa169be64f9dc5dd29592d3d9d3c62050fb2fbf1cb49d07666c66857bb320f77",
+      "notes": ""
+    },
+    {
+      "step_id": "step-music-a002",
+      "file": "screens/step-music-a002.html",
+      "title": "音乐播放 App",
+      "group_id": "group-gen-cap",
+      "platform": "Mobile App",
+      "prd_sections": [
+        "2.1 音乐播放 App（参考网易云音乐）"
+      ],
+      "status": "rendered",
+      "hash": "4ea263d6ef3f0ae65689c3b1a2b654077ac0fdee81d4464d48a8fc837b934136",
+      "notes": ""
+    },
+    {
+      "step_id": "step-xhs-a003",
+      "file": "screens/step-xhs-a003.html",
+      "title": "小红书风格内容 App",
+      "group_id": "group-gen-cap",
+      "platform": "Mobile App",
+      "prd_sections": [
+        "2.2 小红书风格内容 App（参考小红书首页）"
+      ],
+      "status": "rendered",
+      "hash": "7d4295b975f63c8b449072dfbbe233d25926cf2f42b01a11024be806f4ed79ff",
+      "notes": ""
+    },
+    {
+      "step_id": "step-douyin-a004",
+      "file": "screens/step-douyin-a004.html",
+      "title": "短视频 App",
+      "group_id": "group-gen-cap",
+      "platform": "Mobile App",
+      "prd_sections": [
+        "2.3 短视频 App（参考抖音）"
+      ],
+      "status": "rendered",
+      "hash": "8e1a55a8b28a4b2c0b230a21aaa5adab65c3a3bd8db1abd99aed0e8e442c71b2",
+      "notes": ""
+    },
+    {
+      "step_id": "step-wechat-a005",
+      "file": "screens/step-wechat-a005.html",
+      "title": "微信风格聊天 App",
+      "group_id": "group-gen-cap",
+      "platform": "Mobile App",
+      "prd_sections": [
+        "2.4 微信风格聊天 App（参考微信聊天列表）"
+      ],
+      "status": "rendered",
+      "hash": "32315b53cd87bc975f70772136f391e74b6b74e8b6e915d6e5a457c1e9dbd1bf",
+      "notes": ""
+    },
+    {
+      "step_id": "step-saas-a006",
+      "file": "screens/step-saas-a006.html",
+      "title": "SaaS 工作台",
+      "group_id": "group-gen-cap",
+      "platform": "Web",
+      "prd_sections": [
+        "2.5 SaaS 工作台"
+      ],
+      "status": "rendered",
+      "hash": "58fe42d3bb09f9b8f46618e8041614955b33bf111f4eebb886b8443aa23fbee7",
+      "notes": ""
+    },
+    {
+      "step_id": "step-website-a007",
+      "file": "screens/step-website-a007.html",
+      "title": "科技官网首页",
+      "group_id": "group-gen-cap",
+      "platform": "Web",
+      "prd_sections": [
+        "2.6 科技官网首页"
+      ],
+      "status": "rendered",
+      "hash": "04cdc2bda58914240107f7ce7a44245429c155d5f49335a2582fd060532d2cfb",
+      "notes": ""
+    },
+    {
+      "step_id": "step-mac-a008",
+      "file": "screens/step-mac-a008.html",
+      "title": "Mac App 原型",
+      "group_id": "group-gen-cap",
+      "platform": "Desktop",
+      "prd_sections": [
+        "2.7 Mac App 原型"
+      ],
+      "status": "rendered",
+      "hash": "7b7953538dd8234e16f0ac83b8992a7f75e8d4f449688431e0f6cdde953b1abc",
+      "notes": ""
+    },
+    {
+      "step_id": "step-win-a009",
+      "file": "screens/step-win-a009.html",
+      "title": "Windows App 原型",
+      "group_id": "group-gen-cap",
+      "platform": "Desktop",
+      "prd_sections": [
+        "2.8 Windows App 原型"
+      ],
+      "status": "rendered",
+      "hash": "fae4ce85ce8d8f6ac9e992b85be847d128f17690020817cd8ae67fb8ba76d8c8",
+      "notes": ""
+    },
+    {
+      "step_id": "step-deliver-b001",
+      "file": "screens/step-deliver-b001.html",
+      "title": "原型交付包是什么",
+      "group_id": "group-presentation",
+      "platform": "Web",
+      "prd_sections": [
+        "3.1 原型交付包是什么"
+      ],
+      "status": "rendered",
+      "hash": "dfee1737f5039c79854e7610833ace2bde42cd14fe1d8b2579ab2fd1aaa47bd5",
+      "notes": ""
+    },
+    {
+      "step_id": "step-nav-b002",
+      "file": "screens/step-nav-b002.html",
+      "title": "目录是讲解路线",
+      "group_id": "group-presentation",
+      "platform": "Web",
+      "prd_sections": [
+        "3.2 目录是讲解路线"
+      ],
+      "status": "rendered",
+      "hash": "894ad3454b3b45cc7bf27b7f5713327e52119f8d25ee35663c4d08d2a2e32769",
+      "notes": ""
+    },
+    {
+      "step_id": "step-prdviewer-b003",
+      "file": "screens/step-prdviewer-b003.html",
+      "title": "PRD Viewer 是需求依据",
+      "group_id": "group-presentation",
+      "platform": "Web",
+      "prd_sections": [
+        "3.3 PRD Viewer 是需求依据"
+      ],
+      "status": "rendered",
+      "hash": "77f73bb6a2b4a62e631cdcd21327df582561552583fff754140d4459db3596f1",
+      "notes": ""
+    },
+    {
+      "step_id": "step-annotate-b004",
+      "file": "screens/step-annotate-b004.html",
+      "title": "标注与 Spotlight 是讲解辅助",
+      "group_id": "group-presentation",
+      "platform": "Web",
+      "prd_sections": [
+        "3.4 标注与 Spotlight 是讲解辅助"
+      ],
+      "status": "rendered",
+      "hash": "981db499e379253b49e169c7e69f8eede389431fa22bd75e1af676fcfa9b7eb7",
+      "notes": ""
+    },
+    {
+      "step_id": "step-edit-text-c001",
+      "file": "screens/step-edit-text-c001.html",
+      "title": "本地改文字",
+      "group_id": "group-local-rev",
+      "platform": "Web",
+      "prd_sections": [
+        "4.1 本地改文字"
+      ],
+      "status": "rendered",
+      "hash": "d4f2de561bc289a3d31bbdd80006261d99620c261fd3b16921088bce20ebf75b",
+      "notes": ""
+    },
+    {
+      "step_id": "step-ai-note-c002",
+      "file": "screens/step-ai-note-c002.html",
+      "title": "大改备注给 AI",
+      "group_id": "group-local-rev",
+      "platform": "Web",
+      "prd_sections": [
+        "4.2 大改备注给 AI"
+      ],
+      "status": "rendered",
+      "hash": "bbf5f5f75ed7ce0a04e6cc51f10f602a245046280934541267d7c7de21e8d71f",
+      "notes": ""
+    },
+    {
+      "step_id": "step-quality-c003",
+      "file": "screens/step-quality-c003.html",
+      "title": "质量检查概念",
+      "group_id": "group-local-rev",
+      "platform": "Web",
+      "prd_sections": [
+        "4.3 质量检查概念"
+      ],
+      "status": "rendered",
+      "hash": "51a90a583404c6cd85b6d12d546da8f5253f8b820c0be9752de4849c811f30d1",
+      "notes": ""
+    }
+  ],
+  "build": {
+    "fragment_path": "generated-area-fragment.html",
+    "last_built_at": "2026-05-22T09:12:12Z",
+    "fragment_hash": "c74017324b87d17acbb999b446b5d2284b6d9682fe984511345b36ae08012099",
+    "content_css_hash": "d6d11f367623cbefda25756f79c7e03b7f60153a5cd79842ea6a01c1c5e0a381"
+  }
+}

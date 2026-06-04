@@ -1,0 +1,250 @@
+﻿/* Excalidraw ProtoPilot adapter styles.
+ * Keep the maintained ProtoPilot shell in prototype-base.css unchanged.
+ */
+
+body[data-prototype-kind="excalidraw"] {
+  --proto-excalidraw-preview-min-h: 360px;
+}
+
+body[data-prototype-kind="excalidraw"].proto-excalidraw-edit-mode {
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M0 0.5H32M0.5 0V32' fill='none' stroke='%2394a3b8' stroke-opacity='0.165' stroke-dasharray='3 7'/%3E%3C/svg%3E"),
+    linear-gradient(180deg, #ebecee 0%, #f6f7f8 46%, #e3e5e9 100%);
+  background-size: 32px 32px, auto;
+}
+
+body[data-prototype-kind="excalidraw"] .proto-excalidraw-card {
+  display: block;
+  padding: 0;
+  border-radius: calc(var(--proto-radius) + 2px);
+}
+
+body[data-prototype-kind="excalidraw"] .proto-excalidraw-preview svg rect[fill="none"][stroke="#bbb"][stroke-width="2"],
+body[data-prototype-kind="excalidraw"] .proto-excalidraw-preview svg rect[fill="none"][stroke="#BBBBBB"][stroke-width="2"],
+body[data-prototype-kind="excalidraw"] .proto-excalidraw-preview svg rect[fill="none"][stroke="#bbbbbb"][stroke-width="2"] {
+  stroke-opacity: 0 !important;
+}
+
+body[data-prototype-kind="excalidraw"] .proto-excalidraw-preview svg text[font-family="Helvetica, Segoe UI Emoji"][font-size="14px"][fill="#999999"][text-anchor="start"] {
+  fill-opacity: 0 !important;
+}
+
+body[data-prototype-kind="excalidraw"].proto-excalidraw-edit-mode .proto-excalidraw-card {
+  cursor: pointer;
+  outline: 2px dashed rgba(37, 99, 235, 0.42);
+  outline-offset: 7px;
+  transition: outline-color var(--proto-duration) var(--proto-ease-out), transform var(--proto-duration) var(--proto-ease-out);
+}
+
+body[data-prototype-kind="excalidraw"].proto-excalidraw-edit-mode .proto-excalidraw-card:hover,
+body[data-prototype-kind="excalidraw"].proto-excalidraw-edit-mode .proto-excalidraw-card:focus-visible {
+  outline-color: rgba(37, 99, 235, 0.84);
+  transform: translateY(-1px);
+}
+
+body[data-prototype-kind="excalidraw"] .proto-excalidraw-preview {
+  position: relative;
+  min-height: var(--proto-excalidraw-preview-min-h);
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid var(--proto-border);
+  border-radius: var(--proto-radius);
+  background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.025);
+}
+
+body[data-prototype-kind="excalidraw"] .proto-excalidraw-preview svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: var(--proto-excalidraw-preview-min-h);
+  background: #fff;
+}
+
+body[data-prototype-kind="excalidraw"] .proto-excalidraw-card[data-preview-kind="mobile"] .proto-excalidraw-preview {
+  width: min(390px, calc(100vw - 40px));
+  min-height: 0;
+  aspect-ratio: 300 / 580;
+}
+
+body[data-prototype-kind="excalidraw"] .proto-excalidraw-card[data-preview-kind="mobile"] .proto-excalidraw-preview svg {
+  min-height: 0;
+}
+
+body[data-prototype-kind="excalidraw"] .proto-excalidraw-card[data-preview-kind="web"] .proto-excalidraw-preview {
+  width: min(720px, calc(100vw - 40px));
+}
+
+body[data-prototype-kind="excalidraw"] .proto-excalidraw-preview[data-render-state="loading"]::after {
+  content: "正在渲染画布...";
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.86);
+  color: var(--proto-text-muted);
+  font-size: 11px;
+  font-weight: 700;
+  box-shadow: 0 0 0 1px var(--proto-hairline);
+}
+
+body[data-prototype-kind="excalidraw"] .proto-excalidraw-preview[data-render-state="fallback"]::after,
+body[data-prototype-kind="excalidraw"] .proto-excalidraw-preview[data-render-state="failed"]::after {
+  content: "预览快照";
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.64);
+  color: var(--proto-text-muted);
+  font-size: 11px;
+  font-weight: 800;
+  opacity: 0.24;
+  pointer-events: none;
+  box-shadow: 0 0 0 1px var(--proto-hairline);
+}
+
+body[data-prototype-kind="excalidraw"] .proto-excalidraw-preview[data-render-state="fallback"]:hover::after,
+body[data-prototype-kind="excalidraw"] .proto-excalidraw-preview[data-render-state="failed"]:hover::after,
+body[data-prototype-kind="excalidraw"] .proto-excalidraw-preview[data-render-state="fallback"]:focus-within::after,
+body[data-prototype-kind="excalidraw"] .proto-excalidraw-preview[data-render-state="failed"]:focus-within::after {
+  opacity: 0.72;
+}
+
+body[data-prototype-kind="excalidraw"] .proto-excalidraw-placeholder,
+body[data-prototype-kind="excalidraw"] .excalidraw-editor-loading {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  color: var(--proto-text-muted);
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.excalidraw-editor-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: grid;
+  padding: 10px;
+  background: linear-gradient(180deg, #f8fafc 0%, #edf2f8 100%);
+}
+
+.excalidraw-editor-modal.hidden {
+  display: none;
+}
+
+.excalidraw-editor-shell {
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  overflow: hidden;
+  border: 1px solid rgba(148, 163, 184, 0.26);
+  border-radius: var(--proto-radius);
+  background: var(--proto-stage);
+  box-shadow: var(--proto-shadow);
+}
+
+.excalidraw-editor-header {
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 12px 10px 16px;
+  border-bottom: 1px solid var(--proto-border);
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(18px);
+}
+
+.excalidraw-editor-title-wrap {
+  min-width: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.excalidraw-editor-title-wrap strong {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--proto-text);
+  font-size: 15px;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.excalidraw-save-status {
+  color: var(--proto-text-muted);
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.excalidraw-editor-actions {
+  position: static;
+  transform: none;
+  padding: 4px;
+}
+
+.excalidraw-editor-root {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.excalidraw-editor-root > div:not(.excalidraw-editor-loading):not(.excalidraw-editor-error) {
+  width: 100%;
+  height: 100%;
+}
+
+.excalidraw-editor-error {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 28px;
+  color: var(--proto-danger);
+  background: #fff;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.excalidraw-editor-error > div {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  max-width: min(520px, calc(100vw - 64px));
+}
+
+.excalidraw-editor-error p {
+  margin: 0;
+  color: var(--proto-text-muted);
+}
+
+.excalidraw-copy-diagnostics {
+  margin-top: 4px;
+}
+
+@media (max-width: 720px) {
+  .excalidraw-editor-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .excalidraw-editor-actions {
+    width: 100%;
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+}
+

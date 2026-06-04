@@ -1,0 +1,2554 @@
+<div class="proto-area-label"><span class="proto-generated-note">Generated area - Content package render</span></div>
+<style data-proto-content-css data-proto-source="prototype-content/content.css">
+/* ProtoPilot HTML Showcase — scoped under .protopilot-html-showcase--prototype */
+.protopilot-html-showcase--prototype {
+  --pp-primary: #6366f1;
+  --pp-primary-soft: #eef2ff;
+  --pp-accent: #22d3ee;
+  --pp-bg: #0f172a;
+  --pp-surface: #ffffff;
+  --pp-text: #0f172a;
+  --pp-muted: #64748b;
+  --pp-border: #e2e8f0;
+  --pp-radius: 16px;
+  font-family: "PingFang SC", "HarmonyOS Sans SC", "Segoe UI", sans-serif;
+  color: var(--pp-text);
+}
+
+.protopilot-html-showcase--prototype .web-surface {
+  border-radius: var(--pp-radius);
+  overflow: hidden;
+}
+
+/* Hero — full-bleed dark surface, wide canvas */
+.protopilot-html-showcase--prototype .pp-hero-surface {
+  width: min(1180px, calc(100vw - 24px));
+  max-width: none;
+  min-height: 560px;
+  background: #030712;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  box-shadow:
+    0 32px 80px rgba(2, 6, 23, 0.62),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    inset 0 0 0 1px rgba(99, 102, 241, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-surface .pp-hero {
+  flex: 1 1 auto;
+  min-height: 560px;
+  width: 100%;
+}
+
+.protopilot-html-showcase--prototype .pp-hero {
+  position: relative;
+  overflow: hidden;
+  color: #f8fafc;
+  padding: 44px 52px 48px;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 100% 80% at 0% 0%, rgba(99, 102, 241, 0.42) 0%, transparent 52%),
+    radial-gradient(ellipse 80% 60% at 100% 10%, rgba(34, 211, 238, 0.22) 0%, transparent 48%),
+    radial-gradient(ellipse 60% 50% at 50% 100%, rgba(167, 139, 250, 0.12) 0%, transparent 55%),
+    linear-gradient(155deg, #111827 0%, #020617 52%, #000 100%);
+}
+
+.protopilot-html-showcase--prototype .pp-hero-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 62%, rgba(0, 0, 0, 0.35) 100%);
+  pointer-events: none;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-orb-a {
+  width: 220px;
+  height: 220px;
+  top: -40px;
+  left: -30px;
+  background: #6366f1;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-orb-b {
+  width: 180px;
+  height: 180px;
+  bottom: 10%;
+  right: 8%;
+  background: #22d3ee;
+  opacity: 0.35;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-orb-c {
+  width: 120px;
+  height: 120px;
+  top: 42%;
+  left: 38%;
+  background: #a78bfa;
+  opacity: 0.28;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.22;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, #000 20%, transparent 100%);
+}
+
+.protopilot-html-showcase--prototype .pp-hero-layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 40px;
+  align-items: center;
+  min-height: 472px;
+  width: 100%;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-showcase {
+  position: relative;
+  min-height: 320px;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-chip {
+  position: absolute;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(20px);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.protopilot-html-showcase--prototype .pp-hero-chip-phone {
+  left: 4%;
+  top: 8%;
+  width: 132px;
+  height: 220px;
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transform: rotate(-6deg);
+}
+
+.protopilot-html-showcase--prototype .pp-hero-chip-web {
+  right: 0;
+  bottom: 6%;
+  width: 168px;
+  height: 118px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transform: rotate(4deg);
+}
+
+.protopilot-html-showcase--prototype .pp-hero-chip-badge {
+  left: 42%;
+  top: 2%;
+  padding: 6px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #c7d2fe;
+  transform: rotate(-2deg);
+}
+
+.protopilot-html-showcase--prototype .pp-hero-chip-bar {
+  height: 6px;
+  width: 36%;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.protopilot-html-showcase--prototype .pp-hero-chip-block {
+  flex: 1;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.protopilot-html-showcase--prototype .pp-hero-chip-block.is-accent {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.55), rgba(34, 211, 238, 0.35));
+}
+
+.protopilot-html-showcase--prototype .pp-hero-chip-block.is-sm {
+  flex: 0 0 28px;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-chip-block.is-wide {
+  flex: 1;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-chip-row {
+  display: flex;
+  gap: 8px;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-chip-dots {
+  display: flex;
+  gap: 4px;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-chip-dots span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.protopilot-html-showcase--prototype .pp-hero-chip-dots span:first-child {
+  background: #ff5f57;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-chip-dots span:nth-child(2) {
+  background: #febc2e;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-chip-dots span:nth-child(3) {
+  background: #28c840;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #a5b4fc;
+  margin-bottom: 18px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(99, 102, 241, 0.12);
+  border: 1px solid rgba(129, 140, 248, 0.28);
+}
+
+.protopilot-html-showcase--prototype .pp-hero-brand::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #818cf8;
+  box-shadow: 0 0 10px #818cf8;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-title {
+  font-size: clamp(32px, 3.8vw, 44px);
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0 0 18px;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-title-accent {
+  background: linear-gradient(120deg, #f8fafc 0%, #c7d2fe 35%, #67e8f9 70%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-slogan {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #94a3b8;
+  margin: 0 0 24px;
+  max-width: 540px;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-tag {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.62);
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  color: #e2e8f0;
+  backdrop-filter: blur(10px);
+}
+
+.protopilot-html-showcase--prototype .pp-hero-cta-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(148, 163, 184, 0.18);
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-stat strong {
+  color: #f1f5f9;
+  font-weight: 700;
+}
+
+.protopilot-html-showcase--prototype .pp-hero-stat-divider {
+  width: 1px;
+  height: 14px;
+  background: rgba(148, 163, 184, 0.28);
+}
+
+/* Web surface fill / compact — avoid shell min-height whitespace */
+.protopilot-html-showcase--prototype .web-surface.pp-web-wide-surface {
+  width: min(1180px, calc(100vw - 24px));
+  max-width: none;
+  min-height: 640px;
+}
+
+.protopilot-html-showcase--prototype .web-surface.pp-fill-surface {
+  min-height: 640px;
+  display: flex;
+  flex-direction: column;
+  background: #f1f5f9;
+}
+
+.protopilot-html-showcase--prototype .web-surface.pp-compact-surface {
+  min-height: auto;
+  height: auto;
+  width: min(760px, calc(100vw - 64px));
+}
+
+.protopilot-html-showcase--prototype .web-surface.pp-tall-surface {
+  min-height: 520px;
+  height: auto;
+  width: min(860px, calc(100vw - 64px));
+  display: flex;
+  flex-direction: column;
+}
+
+.protopilot-html-showcase--prototype .pp-tall-surface > .pp-mac-win,
+.protopilot-html-showcase--prototype .pp-tall-surface > .pp-win-win {
+  flex: 1;
+  min-height: 480px;
+}
+
+.protopilot-html-showcase--prototype .pp-fill-surface > .pp-saas {
+  flex: 1 1 auto;
+  min-height: 100%;
+  width: 100%;
+}
+
+/* Music player — minimal premium */
+.protopilot-html-showcase--prototype .pp-music-screen {
+  display: flex;
+  flex-direction: column;
+  background: #0a0a0a;
+  color: #fafafa;
+}
+
+.protopilot-html-showcase--prototype .pp-music-screen .phone-status-bar {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.92);
+  flex-shrink: 0;
+}
+
+.protopilot-html-showcase--prototype .pp-music-screen .phone-home-indicator {
+  background: rgba(255, 255, 255, 0.38);
+}
+
+.protopilot-html-showcase--prototype .pp-music-player {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 24px 20px;
+  background: transparent;
+}
+
+.protopilot-html-showcase--prototype .pp-music-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.protopilot-html-showcase--prototype .pp-music-nav-title {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.protopilot-html-showcase--prototype .pp-music-nav-btn {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+}
+
+.protopilot-html-showcase--prototype .pp-music-nav-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.protopilot-html-showcase--prototype .pp-music-art-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  padding: 8px 0 20px;
+}
+
+.protopilot-html-showcase--prototype .pp-album {
+  width: min(78%, 240px);
+  aspect-ratio: 1;
+  border-radius: 8px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.08), transparent 40%),
+    linear-gradient(135deg, #1a1a2e 0%, #16213e 45%, #0f3460 100%);
+  box-shadow:
+    0 24px 48px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.protopilot-html-showcase--prototype .pp-music-meta {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.protopilot-html-showcase--prototype .pp-song {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+
+.protopilot-html-showcase--prototype .pp-artist {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.48);
+}
+
+.protopilot-html-showcase--prototype .pp-music-progress-wrap {
+  margin-bottom: 28px;
+}
+
+.protopilot-html-showcase--prototype .pp-progress {
+  height: 3px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.protopilot-html-showcase--prototype .pp-progress-fill {
+  width: 32%;
+  height: 100%;
+  background: #fff;
+  border-radius: 999px;
+}
+
+.protopilot-html-showcase--prototype .pp-time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.38);
+  font-variant-numeric: tabular-nums;
+}
+
+.protopilot-html-showcase--prototype .pp-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  margin-bottom: 24px;
+}
+
+.protopilot-html-showcase--prototype .pp-music-icon-btn {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.protopilot-html-showcase--prototype .pp-music-icon-btn svg {
+  width: 22px;
+  height: 22px;
+}
+
+.protopilot-html-showcase--prototype .pp-play-btn {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #fff;
+  color: #0a0a0a;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.protopilot-html-showcase--prototype .pp-play-btn svg {
+  width: 26px;
+  height: 26px;
+}
+
+.protopilot-html-showcase--prototype .pp-music-footer {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.protopilot-html-showcase--prototype .pp-music-footer-btn {
+  display: grid;
+  place-items: center;
+}
+
+.protopilot-html-showcase--prototype .pp-music-footer-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Douyin — immersive minimal */
+.protopilot-html-showcase--prototype .pp-douyin-screen {
+  background: #000;
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-screen .pp-douyin-status {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  background: transparent;
+  color: #fff;
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-screen .phone-home-indicator.pp-douyin-home {
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 4;
+}
+
+.protopilot-html-showcase--prototype .pp-douyin {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-video {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 20%, rgba(99, 102, 241, 0.35) 0%, transparent 55%),
+    linear-gradient(180deg, #1e293b 0%, #0f172a 42%, #020617 100%);
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, transparent 28%, rgba(0, 0, 0, 0.55) 100%);
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-top {
+  position: absolute;
+  top: 46px;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-tab {
+  color: rgba(255, 255, 255, 0.45);
+  padding-bottom: 6px;
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-tab.is-active {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-search {
+  position: absolute;
+  right: 16px;
+  opacity: 0.85;
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-search svg {
+  width: 20px;
+  height: 20px;
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-side {
+  position: absolute;
+  right: 12px;
+  top: 42%;
+  transform: translateY(-50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-action-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  display: grid;
+  place-items: center;
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-action-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-bottom {
+  position: absolute;
+  left: 14px;
+  right: 72px;
+  bottom: 52px;
+  z-index: 3;
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-author-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  border: 2px solid #fff;
+  flex-shrink: 0;
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-author {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-follow {
+  margin-left: auto;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: #fe2c55;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-caption {
+  font-size: 13px;
+  line-height: 1.45;
+  margin-bottom: 10px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-music {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  max-width: 100%;
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-music span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-music svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.protopilot-html-showcase--prototype .pp-mobile-body {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  background: #f8fafc;
+}
+
+.protopilot-html-showcase--prototype .pp-saas-toolbar {
+  display: flex;
+  gap: 8px;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--pp-border);
+  flex-shrink: 0;
+}
+
+.protopilot-html-showcase--prototype .pp-saas-filter {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--pp-border);
+  font-size: 13px;
+  color: #64748b;
+  background: #fff;
+}
+
+.protopilot-html-showcase--prototype .pp-saas-filter.is-active {
+  background: #eef2ff;
+  border-color: #c7d2fe;
+  color: #4338ca;
+  font-weight: 600;
+}
+
+.protopilot-html-showcase--prototype .pp-music-screen .pp-mobile-body {
+  background: transparent;
+  padding: 0;
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-screen {
+  display: flex;
+  flex-direction: column;
+}
+
+.protopilot-html-showcase--prototype .pp-douyin-screen .pp-mobile-body {
+  background: transparent;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* XHS feed — polished discovery grid */
+.protopilot-html-showcase--prototype .pp-xhs-screen {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-screen .phone-status-bar.pp-xhs-status {
+  background: #fff;
+  color: #111;
+  flex-shrink: 0;
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-screen .phone-home-indicator.pp-xhs-home {
+  background: rgba(0, 0, 0, 0.22);
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-feed {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  background: #f7f7f8;
+  padding: 0;
+  overflow: hidden;
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 10px 14px 8px;
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  flex-shrink: 0;
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-tabs {
+  display: flex;
+  gap: 22px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #999;
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-tabs span {
+  padding-bottom: 6px;
+  position: relative;
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-tabs .is-active {
+  color: #111;
+  font-weight: 700;
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-tabs .is-active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 18px;
+  height: 3px;
+  border-radius: 999px;
+  background: #fe2c55;
+  transform: translateX(-50%);
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-search {
+  position: absolute;
+  right: 14px;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  color: #333;
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-search svg {
+  width: 20px;
+  height: 20px;
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-grid {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  padding: 6px;
+  align-content: start;
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.05);
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-cover {
+  aspect-ratio: 3/4;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, transparent 35%),
+    linear-gradient(155deg, #334155 0%, #1e293b 42%, #0f172a 100%);
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-cover.is-tall {
+  aspect-ratio: 3/4.6;
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-cover.is-tone-b {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, transparent 35%),
+    linear-gradient(155deg, #312e81 0%, #1e1b4b 48%, #0f172a 100%);
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-cover.is-tone-c {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, transparent 35%),
+    linear-gradient(155deg, #422006 0%, #292524 45%, #1c1917 100%);
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-cover.is-tone-d {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, transparent 35%),
+    linear-gradient(155deg, #134e4a 0%, #115e59 38%, #042f2e 100%);
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-card-body {
+  padding: 8px 8px 10px;
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-card-title {
+  font-size: 12px;
+  line-height: 1.45;
+  font-weight: 600;
+  color: #1a1a1a;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-meta {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: #999;
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-avatar {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: linear-gradient(145deg, #64748b, #475569);
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-avatar.is-tone-a {
+  background: linear-gradient(145deg, #f472b6, #ec4899);
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-avatar.is-tone-b {
+  background: linear-gradient(145deg, #818cf8, #6366f1);
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-avatar.is-tone-c {
+  background: linear-gradient(145deg, #fbbf24, #f59e0b);
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-avatar.is-tone-d {
+  background: linear-gradient(145deg, #34d399, #10b981);
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-author {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #666;
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-like {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: #999;
+  flex-shrink: 0;
+  font-size: 10px;
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-like svg {
+  width: 12px;
+  height: 12px;
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-tabbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 6px 0 8px;
+  background: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  flex-shrink: 0;
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  font-size: 10px;
+  color: #999;
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-tab.is-active {
+  color: #111;
+  font-weight: 600;
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-tab svg {
+  width: 20px;
+  height: 20px;
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-tab-post {
+  width: 36px;
+  height: 28px;
+  border-radius: 8px;
+  background: #fe2c55;
+  color: #fff;
+  justify-content: center;
+  padding-top: 2px;
+}
+
+.protopilot-html-showcase--prototype .pp-xhs-tab-post svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* WeChat — refined premium list */
+.protopilot-html-showcase--prototype .pp-wechat-screen {
+  display: flex;
+  flex-direction: column;
+  background: #f5f5f5;
+}
+
+.protopilot-html-showcase--prototype .pp-wechat-screen .phone-status-bar {
+  background: #ededed;
+  color: #111;
+  flex-shrink: 0;
+}
+
+.protopilot-html-showcase--prototype .pp-wechat-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  flex: 1;
+  background: #f5f5f5;
+}
+
+.protopilot-html-showcase--prototype .pp-wechat-scroll { flex: 1; min-height: 0; overflow: auto; }
+
+.protopilot-html-showcase--prototype .pp-wechat-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 14px 16px 12px;
+  background: #ededed;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #111;
+}
+
+.protopilot-html-showcase--prototype .pp-wechat-header-action {
+  position: absolute;
+  right: 16px;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  color: #111;
+}
+
+.protopilot-html-showcase--prototype .pp-wechat-header-action svg {
+  width: 22px;
+  height: 22px;
+}
+
+.protopilot-html-showcase--prototype .pp-wechat-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 12px 10px;
+  padding: 9px 12px;
+  background: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #b0b0b0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.protopilot-html-showcase--prototype .pp-wechat-search svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.protopilot-html-showcase--prototype .pp-wechat-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 16px;
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.protopilot-html-showcase--prototype .pp-wechat-row.is-unread {
+  background: #fff;
+}
+
+.protopilot-html-showcase--prototype .pp-wechat-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  background: linear-gradient(145deg, #059669, #047857);
+  flex-shrink: 0;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+.protopilot-html-showcase--prototype .pp-wechat-avatar.is-blue {
+  background: linear-gradient(145deg, #2563eb, #1d4ed8);
+}
+
+.protopilot-html-showcase--prototype .pp-wechat-avatar.is-rose {
+  background: linear-gradient(145deg, #db2777, #be185d);
+}
+
+.protopilot-html-showcase--prototype .pp-wechat-main { flex: 1; min-width: 0; }
+
+.protopilot-html-showcase--prototype .pp-wechat-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.protopilot-html-showcase--prototype .pp-wechat-name {
+  font-weight: 600;
+  font-size: 16px;
+  color: #111;
+  letter-spacing: 0.01em;
+}
+
+.protopilot-html-showcase--prototype .pp-wechat-time {
+  font-size: 11px;
+  color: #b2b2b2;
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.protopilot-html-showcase--prototype .pp-wechat-preview {
+  font-size: 14px;
+  color: #888;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.35;
+}
+
+.protopilot-html-showcase--prototype .pp-wechat-row.is-unread .pp-wechat-preview {
+  color: #666;
+}
+
+.protopilot-html-showcase--prototype .pp-wechat-badge {
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: #fa5151;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.protopilot-html-showcase--prototype .pp-wechat-tabbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 6px 0 calc(8px + env(safe-area-inset-bottom, 0px));
+  background: #f7f7f7;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  flex-shrink: 0;
+}
+
+.protopilot-html-showcase--prototype .pp-wechat-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  font-size: 10px;
+  color: #999;
+}
+
+.protopilot-html-showcase--prototype .pp-wechat-tab.is-active { color: #07c160; font-weight: 600; }
+.protopilot-html-showcase--prototype .pp-wechat-tab svg { width: 22px; height: 22px; }
+
+/* SaaS — wide dashboard */
+.protopilot-html-showcase--prototype .pp-saas {
+  background: #f8fafc;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  min-height: 640px;
+  width: 100%;
+}
+
+.protopilot-html-showcase--prototype .pp-saas-sidebar {
+  width: 200px;
+  flex-shrink: 0;
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 20px 0;
+  border-right: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.protopilot-html-showcase--prototype .pp-saas-sidebar-brand {
+  padding: 0 18px 18px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #f8fafc;
+}
+
+.protopilot-html-showcase--prototype .pp-saas-sidebar-item {
+  padding: 10px 18px;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.protopilot-html-showcase--prototype .pp-saas-sidebar-item.is-active {
+  color: #f8fafc;
+  background: rgba(99, 102, 241, 0.18);
+  border-left: 2px solid #818cf8;
+}
+
+.protopilot-html-showcase--prototype .pp-saas-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.protopilot-html-showcase--prototype .pp-saas-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  background: #fff;
+  border-bottom: 1px solid var(--pp-border);
+  flex-shrink: 0;
+}
+
+.protopilot-html-showcase--prototype .pp-saas-top-main {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.protopilot-html-showcase--prototype .pp-saas-top-main strong {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.protopilot-html-showcase--prototype .pp-saas-subtitle {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.protopilot-html-showcase--prototype .pp-saas-top-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.protopilot-html-showcase--prototype .pp-saas-action {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid var(--pp-border);
+  background: #fff;
+  display: grid;
+  place-items: center;
+  color: #64748b;
+}
+
+.protopilot-html-showcase--prototype .pp-saas-action svg {
+  width: 16px;
+  height: 16px;
+}
+
+.protopilot-html-showcase--prototype .pp-saas-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  padding: 18px 24px;
+  flex-shrink: 0;
+}
+
+.protopilot-html-showcase--prototype .pp-metric {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px 18px;
+  border: 1px solid var(--pp-border);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.protopilot-html-showcase--prototype .pp-metric-val {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+}
+
+.protopilot-html-showcase--prototype .pp-metric-label {
+  font-size: 12px;
+  color: var(--pp-muted);
+  margin-top: 6px;
+}
+
+.protopilot-html-showcase--prototype .pp-saas-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0 24px 24px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid var(--pp-border);
+  overflow: hidden;
+  min-height: 280px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+}
+
+.protopilot-html-showcase--prototype .pp-saas-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  flex: 1;
+}
+
+.protopilot-html-showcase--prototype .pp-saas-table th {
+  text-align: left;
+  padding: 12px 18px;
+  background: #f8fafc;
+  color: var(--pp-muted);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+
+.protopilot-html-showcase--prototype .pp-saas-table td {
+  padding: 14px 18px;
+  border-top: 1px solid #f1f5f9;
+  color: #334155;
+}
+
+.protopilot-html-showcase--prototype .pp-saas-link {
+  color: var(--pp-primary);
+  font-weight: 600;
+}
+
+.protopilot-html-showcase--prototype .pp-tag { display: inline-block; padding: 3px 9px; border-radius: 6px; font-size: 11px; font-weight: 600; }
+.protopilot-html-showcase--prototype .pp-tag.ok { background: #dcfce7; color: #166534; }
+.protopilot-html-showcase--prototype .pp-tag.warn { background: #fef3c7; color: #b45309; }
+.protopilot-html-showcase--prototype .pp-tag.risk { background: #fee2e2; color: #b91c1c; }
+
+/* Website — tech minimal wide landing */
+.protopilot-html-showcase--prototype .pp-site-surface {
+  background: #030712;
+  border-color: rgba(148, 163, 184, 0.14);
+  box-shadow:
+    0 32px 80px rgba(2, 6, 23, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.protopilot-html-showcase--prototype .pp-site {
+  position: relative;
+  min-height: 640px;
+  background: #030712;
+  color: #f8fafc;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.protopilot-html-showcase--prototype .pp-site-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.protopilot-html-showcase--prototype .pp-site-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.35;
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, #000 10%, transparent 75%);
+}
+
+.protopilot-html-showcase--prototype .pp-site-glow {
+  position: absolute;
+  width: 520px;
+  height: 320px;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse, rgba(99, 102, 241, 0.28) 0%, transparent 70%);
+  filter: blur(20px);
+}
+
+.protopilot-html-showcase--prototype .pp-site-nav {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+  flex-shrink: 0;
+}
+
+.protopilot-html-showcase--prototype .pp-site-logo {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #f8fafc;
+}
+
+.protopilot-html-showcase--prototype .pp-site-nav-links {
+  font-size: 13px;
+  color: #94a3b8;
+  letter-spacing: 0.02em;
+}
+
+.protopilot-html-showcase--prototype .pp-site-nav-signin {
+  font-size: 13px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  color: #e2e8f0;
+}
+
+.protopilot-html-showcase--prototype .pp-site-hero {
+  position: relative;
+  z-index: 1;
+  padding: 56px 40px 32px;
+  flex-shrink: 0;
+}
+
+.protopilot-html-showcase--prototype .pp-site-eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #818cf8;
+  margin-bottom: 16px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(99, 102, 241, 0.12);
+  border: 1px solid rgba(129, 140, 248, 0.24);
+}
+
+.protopilot-html-showcase--prototype .pp-site-h1 {
+  font-size: clamp(34px, 4vw, 48px);
+  font-weight: 700;
+  line-height: 1.08;
+  margin: 0 0 16px;
+  letter-spacing: -0.03em;
+  max-width: 720px;
+  color: #f8fafc;
+}
+
+.protopilot-html-showcase--prototype .pp-site-sub {
+  font-size: 16px;
+  color: #94a3b8;
+  line-height: 1.7;
+  max-width: 560px;
+  margin: 0 0 28px;
+}
+
+.protopilot-html-showcase--prototype .pp-site-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.protopilot-html-showcase--prototype .pp-site-cta {
+  display: inline-flex;
+  padding: 12px 22px;
+  background: #f8fafc;
+  color: #0f172a;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.protopilot-html-showcase--prototype .pp-site-cta-ghost {
+  display: inline-flex;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #cbd5e1;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+}
+
+.protopilot-html-showcase--prototype .pp-site-trust {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 36px;
+  font-size: 12px;
+  color: #64748b;
+  letter-spacing: 0.02em;
+}
+
+.protopilot-html-showcase--prototype .pp-site-trust-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #475569;
+}
+
+.protopilot-html-showcase--prototype .pp-site-preview-wrap {
+  position: relative;
+  z-index: 1;
+  padding: 8px 40px 40px;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.protopilot-html-showcase--prototype .pp-site-preview {
+  width: 100%;
+  min-height: 220px;
+  border-radius: 16px;
+  background: rgba(15, 23, 42, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  backdrop-filter: blur(12px);
+  overflow: hidden;
+  box-shadow:
+    0 24px 64px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.protopilot-html-showcase--prototype .pp-site-preview-chrome {
+  display: flex;
+  gap: 6px;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.protopilot-html-showcase--prototype .pp-site-preview-chrome span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(148, 163, 184, 0.35);
+}
+
+.protopilot-html-showcase--prototype .pp-site-preview-chrome span:first-child {
+  background: #64748b;
+}
+
+.protopilot-html-showcase--prototype .pp-site-preview-body {
+  display: flex;
+  min-height: 160px;
+  padding: 16px;
+  gap: 14px;
+}
+
+.protopilot-html-showcase--prototype .pp-site-preview-sidebar {
+  width: 22%;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+.protopilot-html-showcase--prototype .pp-site-preview-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.protopilot-html-showcase--prototype .pp-site-preview-bar {
+  height: 28px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.protopilot-html-showcase--prototype .pp-site-preview-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  flex: 1;
+}
+
+.protopilot-html-showcase--prototype .pp-site-preview-cards span {
+  border-radius: 8px;
+  background: linear-gradient(145deg, rgba(99, 102, 241, 0.22), rgba(34, 211, 238, 0.08));
+  border: 1px solid rgba(129, 140, 248, 0.16);
+  min-height: 72px;
+}
+
+/* Mac window */
+.protopilot-html-showcase--prototype .pp-mac-win {
+  background: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  color: #e5e5e5;
+  font-size: 13px;
+  width: 100%;
+}
+.protopilot-html-showcase--prototype .pp-mac-titlebar { display: flex; align-items: center; gap: 8px; padding: 10px 14px; background: #2d2d2d; border-bottom: 1px solid #404040; flex-shrink: 0; }
+.protopilot-html-showcase--prototype .pp-mac-title { margin-left: auto; margin-right: auto; font-weight: 600; font-size: 13px; }
+.protopilot-html-showcase--prototype .pp-mac-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 7px 14px;
+  background: #323233;
+  border-bottom: 1px solid #404040;
+  font-size: 12px;
+  color: #ccc;
+  flex-shrink: 0;
+}
+.protopilot-html-showcase--prototype .pp-mac-toolbar span { display: inline-flex; align-items: center; gap: 5px; }
+.protopilot-html-showcase--prototype .pp-mac-toolbar svg { width: 14px; height: 14px; }
+.protopilot-html-showcase--prototype .pp-mac-toolbar-spacer { flex: 1; }
+.protopilot-html-showcase--prototype .pp-mac-dot { width: 12px; height: 12px; border-radius: 50%; }
+.protopilot-html-showcase--prototype .pp-mac-dot.r { background: #ff5f57; }
+.protopilot-html-showcase--prototype .pp-mac-dot.y { background: #febc2e; }
+.protopilot-html-showcase--prototype .pp-mac-dot.g { background: #28c840; }
+.protopilot-html-showcase--prototype .pp-mac-body { display: flex; align-items: stretch; flex: 1; min-height: 400px; }
+.protopilot-html-showcase--prototype .pp-mac-sidebar { width: 200px; background: #252526; border-right: 1px solid #333; padding: 12px 0; flex-shrink: 0; }
+.protopilot-html-showcase--prototype .pp-mac-sidebar-item { padding: 8px 16px; color: #ccc; }
+.protopilot-html-showcase--prototype .pp-mac-sidebar-item.is-active { background: #37373d; color: #fff; }
+.protopilot-html-showcase--prototype .pp-mac-center { flex: 1; padding: 14px; display: flex; flex-direction: column; gap: 10px; justify-content: flex-start; align-self: stretch; min-height: 0; }
+.protopilot-html-showcase--prototype .pp-mac-chat { background: #2d2d2d; border-radius: 8px; padding: 12px; line-height: 1.5; flex-shrink: 0; }
+.protopilot-html-showcase--prototype .pp-mac-chat.is-user { background: #094771; }
+.protopilot-html-showcase--prototype .pp-mac-chat.is-ai { background: #2d2d2d; }
+.protopilot-html-showcase--prototype .pp-mac-composer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  background: #252526;
+  border: 1px solid #404040;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+.protopilot-html-showcase--prototype .pp-mac-composer-input { flex: 1; color: #888; font-size: 13px; }
+.protopilot-html-showcase--prototype .pp-mac-composer-send {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: #0e639c;
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
+.protopilot-html-showcase--prototype .pp-mac-composer-send svg { width: 16px; height: 16px; }
+.protopilot-html-showcase--prototype .pp-mac-inspector { width: 180px; background: #252526; border-left: 1px solid #333; padding: 12px; font-size: 11px; color: #999; flex-shrink: 0; }
+.protopilot-html-showcase--prototype .pp-mac-inspector-title { font-weight: 600; color: #ccc; margin-bottom: 10px; font-size: 12px; }
+.protopilot-html-showcase--prototype .pp-mac-inspector-block {
+  padding: 8px 10px;
+  background: #2d2d2d;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  color: #ccc;
+}
+.protopilot-html-showcase--prototype .pp-mac-inspector-block.is-muted { color: #777; background: transparent; padding-left: 0; }
+
+/* Windows window */
+.protopilot-html-showcase--prototype .pp-win-win {
+  background: #f3f3f3;
+  border: 1px solid #d4d4d4;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  width: 100%;
+}
+.protopilot-html-showcase--prototype .pp-win-titlebar { display: flex; align-items: center; justify-content: space-between; padding: 8px 12px; background: #fff; border-bottom: 1px solid #e5e5e5; flex-shrink: 0; }
+.protopilot-html-showcase--prototype .pp-win-app-icon { width: 16px; height: 16px; border-radius: 3px; background: #0078d4; margin-right: 8px; }
+.protopilot-html-showcase--prototype .pp-win-toolbar {
+  display: flex;
+  gap: 14px;
+  padding: 7px 12px;
+  background: #fafafa;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+.protopilot-html-showcase--prototype .pp-win-toolbar span { display: inline-flex; align-items: center; gap: 5px; }
+.protopilot-html-showcase--prototype .pp-win-toolbar svg { width: 14px; height: 14px; }
+.protopilot-html-showcase--prototype .pp-win-controls { display: flex; gap: 4px; }
+.protopilot-html-showcase--prototype .pp-win-ctrl { width: 36px; height: 28px; display: grid; place-items: center; font-size: 10px; color: #666; }
+.protopilot-html-showcase--prototype .pp-win-body { display: flex; align-items: stretch; flex: 1; min-height: 360px; }
+.protopilot-html-showcase--prototype .pp-win-nav { width: 200px; background: #fafafa; border-right: 1px solid #e5e5e5; padding: 12px; flex-shrink: 0; }
+.protopilot-html-showcase--prototype .pp-win-nav-item { padding: 8px 10px; border-radius: 6px; margin-bottom: 4px; }
+.protopilot-html-showcase--prototype .pp-win-nav-item.is-active { background: #e8f4ff; color: #0078d4; font-weight: 600; }
+.protopilot-html-showcase--prototype .pp-win-main { flex: 1; display: flex; flex-direction: column; padding: 12px; background: #fff; min-height: 0; }
+.protopilot-html-showcase--prototype .pp-win-log {
+  flex: 1;
+  min-height: 280px;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  border-radius: 6px;
+  padding: 14px;
+  font-family: Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.65;
+}
+.protopilot-html-showcase--prototype .pp-win-status { padding: 6px 12px; background: #0078d4; color: #fff; font-size: 11px; flex-shrink: 0; }
+
+/* Slide panels */
+.protopilot-html-showcase--prototype .pp-slide {
+  min-height: 420px; background: #fff; padding: 28px 32px; display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start;
+}
+.protopilot-html-showcase--prototype .pp-slide-full { grid-template-columns: 1fr; max-width: 640px; margin: 0 auto; }
+.protopilot-html-showcase--prototype .pp-slide h2 { font-size: 22px; font-weight: 700; margin-bottom: 12px; }
+.protopilot-html-showcase--prototype .pp-slide p, .protopilot-html-showcase--prototype .pp-slide li { font-size: 14px; line-height: 1.65; color: var(--pp-muted); }
+.protopilot-html-showcase--prototype .pp-slide ul { padding-left: 18px; margin: 0; }
+.protopilot-html-showcase--prototype .pp-slide li { margin-bottom: 8px; }
+.protopilot-html-showcase--prototype .pp-flow-box {
+  background: var(--pp-primary-soft); border: 1px solid #c7d2fe; border-radius: 12px;
+  padding: 20px; font-size: 13px; line-height: 1.8;
+}
+.protopilot-html-showcase--prototype .pp-flow-arrow { text-align: center; color: var(--pp-primary); font-weight: 700; padding: 4px 0; }
+.protopilot-html-showcase--prototype .pp-route-cards { display: flex; flex-direction: column; gap: 10px; }
+.protopilot-html-showcase--prototype .pp-route-card {
+  padding: 14px 16px; border-radius: 10px; border: 1px solid var(--pp-border);
+  background: #f8fafc; font-weight: 600; font-size: 14px;
+}
+.protopilot-html-showcase--prototype .pp-diagram {
+  border: 2px dashed #cbd5e1; border-radius: 12px; padding: 20px; min-height: 280px; position: relative;
+}
+.protopilot-html-showcase--prototype .pp-diagram-proto {
+  position: absolute; left: 12%; top: 20%; width: 38%; height: 55%;
+  background: linear-gradient(135deg, #e0e7ff, #c7d2fe); border-radius: 12px;
+  display: grid; place-items: center; font-weight: 600; color: #4338ca; font-size: 13px;
+}
+.protopilot-html-showcase--prototype .pp-diagram-prd {
+  position: absolute; right: 10%; top: 20%; width: 38%; height: 55%;
+  background: #f1f5f9; border: 1px solid var(--pp-border); border-radius: 12px;
+  display: grid; place-items: center; font-weight: 600; color: var(--pp-muted); font-size: 13px;
+}
+.protopilot-html-showcase--prototype .pp-diagram-line {
+  position: absolute; left: 50%; top: 45%; width: 80px; height: 2px; background: var(--pp-primary); transform: translateX(-50%);
+}
+.protopilot-html-showcase--prototype .pp-spotlight-map { position: relative; min-height: 300px; background: #f8fafc; border-radius: 12px; border: 1px solid var(--pp-border); }
+.protopilot-html-showcase--prototype .pp-map-ui {
+  position: absolute; left: 8%; top: 12%; width: 55%; height: 70%;
+  background: #fff; border-radius: 10px; border: 1px solid var(--pp-border);
+  display: grid; place-items: center; font-size: 13px; color: var(--pp-muted);
+}
+.protopilot-html-showcase--prototype .pp-map-ann-zone {
+  position: absolute; right: 6%; top: 18%; width: 28%; height: 24%;
+  border: 2px dashed #f59e0b; border-radius: 8px; background: rgba(254,243,199,.3);
+  display: grid; place-items: center; font-size: 11px; color: #b45309; font-weight: 600;
+}
+.protopilot-html-showcase--prototype .pp-map-spot {
+  position: absolute; right: 8%; bottom: 15%; width: 30%; height: 28%;
+  border: 2px solid var(--pp-primary); border-radius: 8px; background: rgba(99,102,241,.08);
+  display: grid; place-items: center; font-size: 11px; color: var(--pp-primary); font-weight: 600;
+}
+.protopilot-html-showcase--prototype .pp-check-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.protopilot-html-showcase--prototype .pp-check-item {
+  padding: 14px; border-radius: 10px; background: #f0fdf4; border: 1px solid #bbf7d0;
+  font-size: 13px; font-weight: 600; color: #166534;
+}
+.protopilot-html-showcase--prototype .pp-edit-flow { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.protopilot-html-showcase--prototype .pp-edit-step {
+  width: 100%; padding: 12px; text-align: center; background: #fff; border: 1px solid var(--pp-border);
+  border-radius: 10px; font-size: 13px; font-weight: 600;
+}
+.protopilot-html-showcase--prototype .pp-slide-simple { padding: 32px 36px; }
+.protopilot-html-showcase--prototype .pp-folder-hint {
+  margin-top: 20px; padding: 16px 18px; background: #f8fafc; border: 1px solid var(--pp-border);
+  border-radius: 12px; font-family: Consolas, "Courier New", monospace; font-size: 13px; line-height: 1.7; color: #334155;
+}
+.protopilot-html-showcase--prototype .pp-folder-line.is-indent { padding-left: 16px; }
+.protopilot-html-showcase--prototype .pp-folder-line.is-indent2 { padding-left: 32px; }
+.protopilot-html-showcase--prototype .pp-flow-inline {
+  display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px;
+  margin-top: 20px; padding: 16px; font-size: 14px; font-weight: 600;
+}
+.protopilot-html-showcase--prototype .pp-flow-inline svg { width: 16px; height: 16px; color: var(--pp-primary); flex-shrink: 0; }
+.protopilot-html-showcase--prototype .pp-diff-box { padding: 12px; border-radius: 8px; font-size: 14px; font-weight: 600; text-align: center; }
+.protopilot-html-showcase--prototype .pp-diff-old { background: #fee2e2; color: #991b1b; }
+.protopilot-html-showcase--prototype .pp-diff-new { background: #dcfce7; color: #166534; }
+</style>
+<div class="section-divider" data-proto-id="group-opening" data-proto-label="group-opening">group-opening</div>
+<section class="journey-row">
+  <div class="journey-step is-active" id="step-hero-a001" data-proto-id="step-hero-a001" data-proto-label="Hero 首屏">
+    <div class="step-header"><span class="step-number">1</span><span class="step-title">Hero 首屏</span></div>
+    <div class="protopilot-html-showcase--prototype proto-content-screen" data-proto-id="step-hero-a001-content" data-proto-label="Hero 首屏 content">
+      <div class="web-surface pp-hero-surface" data-proto-id="step-hero-a001-surface" data-proto-label="Hero 首屏">
+        <div class="pp-hero" data-proto-id="hero-main" data-proto-label="Hero 主视觉">
+          <div class="pp-hero-bg" aria-hidden="true">
+            <div class="pp-hero-orb pp-hero-orb-a"></div>
+            <div class="pp-hero-orb pp-hero-orb-b"></div>
+            <div class="pp-hero-orb pp-hero-orb-c"></div>
+            <div class="pp-hero-grid"></div>
+          </div>
+          <div class="pp-hero-layout">
+            <div class="pp-hero-showcase" aria-hidden="true">
+              <div class="pp-hero-chip pp-hero-chip-phone">
+                <div class="pp-hero-chip-bar"></div>
+                <div class="pp-hero-chip-block is-accent"></div>
+                <div class="pp-hero-chip-block"></div>
+                <div class="pp-hero-chip-block is-sm"></div>
+              </div>
+              <div class="pp-hero-chip pp-hero-chip-web">
+                <div class="pp-hero-chip-dots"><span></span><span></span><span></span></div>
+                <div class="pp-hero-chip-block is-wide"></div>
+                <div class="pp-hero-chip-row"><span class="pp-hero-chip-block is-sm"></span><span class="pp-hero-chip-block is-sm"></span></div>
+              </div>
+              <div class="pp-hero-chip pp-hero-chip-badge" data-proto-id="step-hero-a001-div-1-c6e2f5a0" data-proto-label="Prototype">Prototype</div>
+            </div>
+            <div class="pp-hero-content">
+              <div class="pp-hero-brand" data-proto-id="hero-brand" data-proto-label="品牌">Finn ProtoPilot</div>
+              <h1 class="pp-hero-title" data-proto-id="hero-title" data-proto-label="主标题"><span class="pp-hero-title-accent" data-proto-id="step-hero-a001-span-2-e5f1e174" data-proto-label="Turn PRDs">Turn PRDs</span> into review-ready prototypes.</h1>
+              <p class="pp-hero-slogan" data-proto-id="hero-slogan" data-proto-label="Slogan">把 PRD/spec 转成可宣讲、可本地修订、可质量检查的 HTML 原型交付包。</p>
+              <div class="pp-hero-tags" data-proto-id="hero-tags" data-proto-label="能力标签">
+                <span class="pp-hero-tag" data-proto-id="step-hero-a001-span-1-b1faebc9" data-proto-label="HTML Prototype">HTML Prototype</span>
+                <span class="pp-hero-tag" data-proto-id="step-hero-a001-span-2-9785f695" data-proto-label="PRD Viewer">PRD Viewer</span>
+                <span class="pp-hero-tag" data-proto-id="step-hero-a001-span-3-50901f26" data-proto-label="Presentation Shell">Presentation Shell</span>
+                <span class="pp-hero-tag" data-proto-id="step-hero-a001-span-4-d70a73a8" data-proto-label="Local Revision">Local Revision</span>
+              </div>
+              <div class="pp-hero-cta-row" data-proto-id="hero-cta" data-proto-label="能力概览">
+                <span class="pp-hero-stat"><strong data-proto-id="step-hero-a001-strong-1-59f71adf" data-proto-label="16">16</strong> screens</span>
+                <span class="pp-hero-stat-divider"></span>
+                <span class="pp-hero-stat"><strong data-proto-id="step-hero-a001-strong-2-766a517b" data-proto-label="4">4</strong> chapters</span>
+                <span class="pp-hero-stat-divider"></span>
+                <span class="pp-hero-stat" data-proto-id="step-hero-a001-span-3-6e6e1d43" data-proto-label="Review-ready delivery">Review-ready delivery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="section-divider" data-proto-id="group-gen-cap" data-proto-label="group-gen-cap">group-gen-cap</div>
+<section class="journey-row">
+  <div class="journey-step" id="step-music-a002" data-proto-id="step-music-a002" data-proto-label="音乐播放 App">
+    <div class="step-header"><span class="step-number">2</span><span class="step-title">音乐播放 App</span></div>
+    <div class="protopilot-html-showcase--prototype proto-content-screen" data-proto-id="step-music-a002-content" data-proto-label="音乐播放 App content">
+      <div class="phone-frame" data-proto-id="step-music-a002-phone" data-proto-label="音乐播放 App">
+        <div class="phone-screen">
+          <div class="app-screen protopilot-html-showcase--prototype pp-music-screen" data-proto-id="step-music-a002-screen" data-proto-label="音乐播放 App">
+            <div class="phone-status-bar"><span data-proto-id="step-music-a002-span-1-0389d1e4" data-proto-label="12:30">12:30</span><span data-proto-id="step-music-a002-span-2-b9ae660c" data-proto-label="5G">5G</span></div>
+            <div class="pp-mobile-body pp-music-player" data-proto-id="music-player" data-proto-label="播放器页">
+              <div class="pp-music-nav">
+                <span class="pp-music-nav-btn"><i data-lucide="chevron-down"></i></span>
+                <span class="pp-music-nav-title" data-proto-id="music-nav-title" data-proto-label="正在播放">正在播放</span>
+                <span class="pp-music-nav-btn"><i data-lucide="more-horizontal"></i></span>
+              </div>
+              <div class="pp-music-art-wrap">
+                <div class="pp-album" data-proto-id="music-album" data-proto-label="专辑封面"></div>
+              </div>
+              <div class="pp-music-meta">
+                <div class="pp-song" data-proto-id="music-song" data-proto-label="歌曲名">Blinding Lights</div>
+                <div class="pp-artist" data-proto-id="music-artist" data-proto-label="歌手">The Weeknd</div>
+              </div>
+              <div class="pp-music-progress-wrap">
+                <div class="pp-progress" data-proto-id="music-progress" data-proto-label="播放进度"><div class="pp-progress-fill"></div></div>
+                <div class="pp-time"><span data-proto-id="step-music-a002-span-3-b8bcc9b9" data-proto-label="1:24">1:24</span><span data-proto-id="step-music-a002-span-4-0cb15275" data-proto-label="4:32">4:32</span></div>
+              </div>
+              <div class="pp-controls" data-proto-id="music-controls" data-proto-label="播放控制">
+                <span class="pp-music-icon-btn" aria-label="随机"><i data-lucide="shuffle"></i></span>
+                <span class="pp-music-icon-btn" aria-label="上一首"><i data-lucide="skip-back"></i></span>
+                <span class="pp-play-btn" aria-label="播放暂停"><i data-lucide="pause"></i></span>
+                <span class="pp-music-icon-btn" aria-label="下一首"><i data-lucide="skip-forward"></i></span>
+                <span class="pp-music-icon-btn" aria-label="循环"><i data-lucide="repeat"></i></span>
+              </div>
+              <div class="pp-music-footer">
+                <span class="pp-music-footer-btn"><i data-lucide="heart"></i></span>
+                <span class="pp-music-footer-btn"><i data-lucide="share-2"></i></span>
+                <span class="pp-music-footer-btn"><i data-lucide="list-music"></i></span>
+              </div>
+            </div>
+            <div class="phone-home-indicator"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="journey-step" id="step-xhs-a003" data-proto-id="step-xhs-a003" data-proto-label="小红书风格内容 App">
+    <div class="step-header"><span class="step-number">3</span><span class="step-title">小红书风格内容 App</span></div>
+    <div class="protopilot-html-showcase--prototype proto-content-screen" data-proto-id="step-xhs-a003-content" data-proto-label="小红书风格内容 App content">
+      <div class="phone-frame" data-proto-id="step-xhs-a003-phone" data-proto-label="小红书风格内容 App">
+
+        <div class="phone-screen">
+
+          <div class="app-screen protopilot-html-showcase--prototype pp-xhs-screen" data-proto-id="step-xhs-a003-screen" data-proto-label="小红书风格内容 App">
+
+            <div class="phone-status-bar pp-xhs-status"><span data-proto-id="step-xhs-a003-span-1-1fd5147b" data-proto-label="12:30">12:30</span><span data-proto-id="step-xhs-a003-span-2-10a31be8" data-proto-label="5G">5G</span></div>
+
+            <div class="pp-mobile-body pp-xhs-feed" data-proto-id="xhs-feed" data-proto-label="笔记信息流">
+
+              <div class="pp-xhs-header">
+
+                <div class="pp-xhs-tabs">
+
+                  <span data-proto-id="xhs-tab-follow" data-proto-label="关注">关注</span>
+
+                  <span class="is-active" data-proto-id="xhs-tab-discover" data-proto-label="发现">发现</span>
+
+                  <span data-proto-id="step-xhs-a003-span-3-b95af82d" data-proto-label="附近">附近</span>
+
+                </div>
+
+                <span class="pp-xhs-search" aria-label="搜索"><i data-lucide="search"></i></span>
+
+              </div>
+
+              <div class="pp-xhs-grid">
+
+                <article class="pp-xhs-card">
+
+                  <div class="pp-xhs-cover"></div>
+
+                  <div class="pp-xhs-card-body">
+
+                    <div class="pp-xhs-card-title" data-proto-id="xhs-title-1" data-proto-label="笔记标题">周末探店｜这家咖啡店太好拍了</div>
+
+                    <div class="pp-xhs-meta">
+
+                      <span class="pp-xhs-avatar is-tone-a"></span>
+
+                      <span class="pp-xhs-author" data-proto-id="step-xhs-a003-span-4-6a2c99e4" data-proto-label="小红薯">小红薯</span>
+
+                      <span class="pp-xhs-like" data-proto-id="step-xhs-a003-span-5-243a3e2a" data-proto-label="♥ 1.2k"><i data-lucide="heart"></i>1.2k</span>
+
+                    </div>
+
+                  </div>
+
+                </article>
+
+                <article class="pp-xhs-card">
+
+                  <div class="pp-xhs-cover is-tone-b is-tall"></div>
+
+                  <div class="pp-xhs-card-body">
+
+                    <div class="pp-xhs-card-title" data-proto-id="step-xhs-a003-div-6-d24211da" data-proto-label="极简穿搭公式，三套够穿一整个月">极简穿搭公式，三套够穿一整个月</div>
+
+                    <div class="pp-xhs-meta">
+
+                      <span class="pp-xhs-avatar is-tone-b"></span>
+
+                      <span class="pp-xhs-author" data-proto-id="step-xhs-a003-span-7-7ccb648d" data-proto-label="穿搭日记">穿搭日记</span>
+
+                      <span class="pp-xhs-like" data-proto-id="step-xhs-a003-span-8-b5434dc4" data-proto-label="♥ 856"><i data-lucide="heart"></i>856</span>
+
+                    </div>
+
+                  </div>
+
+                </article>
+
+                <article class="pp-xhs-card">
+
+                  <div class="pp-xhs-cover is-tone-c"></div>
+
+                  <div class="pp-xhs-card-body">
+
+                    <div class="pp-xhs-card-title" data-proto-id="step-xhs-a003-div-9-a5769213" data-proto-label="#旅行 三天两夜城市漫步路线">#旅行 三天两夜城市漫步路线</div>
+
+                    <div class="pp-xhs-meta">
+
+                      <span class="pp-xhs-avatar is-tone-c"></span>
+
+                      <span class="pp-xhs-author" data-proto-id="step-xhs-a003-span-10-21d730af" data-proto-label="在路上">在路上</span>
+
+                      <span class="pp-xhs-like" data-proto-id="step-xhs-a003-span-11-77163476" data-proto-label="♥ 2.3k"><i data-lucide="heart"></i>2.3k</span>
+
+                    </div>
+
+                  </div>
+
+                </article>
+
+                <article class="pp-xhs-card">
+
+                  <div class="pp-xhs-cover is-tone-d is-tall"></div>
+
+                  <div class="pp-xhs-card-body">
+
+                    <div class="pp-xhs-card-title" data-proto-id="step-xhs-a003-div-12-a3912408" data-proto-label="新手化妆教程，5 分钟出门妆">新手化妆教程，5 分钟出门妆</div>
+
+                    <div class="pp-xhs-meta">
+
+                      <span class="pp-xhs-avatar is-tone-d"></span>
+
+                      <span class="pp-xhs-author" data-proto-id="step-xhs-a003-span-13-ff2603d7" data-proto-label="美妆酱">美妆酱</span>
+
+                      <span class="pp-xhs-like" data-proto-id="step-xhs-a003-span-14-b66f90c4" data-proto-label="♥ 643"><i data-lucide="heart"></i>643</span>
+
+                    </div>
+
+                  </div>
+
+                </article>
+
+              </div>
+
+              <div class="pp-xhs-tabbar" aria-hidden="true">
+
+                <span class="pp-xhs-tab is-active"><i data-lucide="home"></i>首页</span>
+
+                <span class="pp-xhs-tab"><i data-lucide="shopping-bag"></i>购物</span>
+
+                <span class="pp-xhs-tab pp-xhs-tab-post"><i data-lucide="plus"></i></span>
+
+                <span class="pp-xhs-tab"><i data-lucide="message-circle"></i>消息</span>
+
+                <span class="pp-xhs-tab"><i data-lucide="user"></i>我</span>
+
+              </div>
+
+            </div>
+
+            <div class="phone-home-indicator pp-xhs-home"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="annotation" data-proto-id="ann-xhs-tags" data-proto-label="小红书标注">标签与互动数据密度可按 PRD 再确认。</div>
+    </div>
+  </div>
+  <div class="journey-step" id="step-douyin-a004" data-proto-id="step-douyin-a004" data-proto-label="短视频 App">
+    <div class="step-header"><span class="step-number">4</span><span class="step-title">短视频 App</span></div>
+    <div class="protopilot-html-showcase--prototype proto-content-screen" data-proto-id="step-douyin-a004-content" data-proto-label="短视频 App content">
+      <div class="phone-frame" data-proto-id="step-douyin-a004-phone" data-proto-label="短视频 App">
+        <div class="phone-screen">
+          <div class="app-screen protopilot-html-showcase--prototype pp-douyin-screen" data-proto-id="step-douyin-a004-screen" data-proto-label="短视频 App">
+            <div class="phone-status-bar pp-douyin-status"><span data-proto-id="step-douyin-a004-span-1-7ce916c0" data-proto-label="12:30">12:30</span><span data-proto-id="step-douyin-a004-span-2-c09655e5" data-proto-label="5G">5G</span></div>
+            <div class="pp-mobile-body pp-douyin" data-proto-id="douyin-player" data-proto-label="短视频播放页">
+              <div class="pp-douyin-video">
+                <div class="pp-douyin-scrim"></div>
+              </div>
+              <div class="pp-douyin-top">
+                <span class="pp-douyin-tab" data-proto-id="step-douyin-a004-span-1-d3ba0439" data-proto-label="关注">关注</span>
+                <span class="pp-douyin-tab is-active" data-proto-id="step-douyin-a004-span-2-6c4a38ca" data-proto-label="推荐">推荐</span>
+                <span class="pp-douyin-search"><i data-lucide="search"></i></span>
+              </div>
+              <div class="pp-douyin-side" data-proto-id="douyin-actions" data-proto-label="右侧操作">
+                <div class="pp-douyin-action">
+                  <span class="pp-douyin-action-icon"><i data-lucide="heart"></i></span>
+                  <span data-proto-id="step-douyin-a004-span-3-af2df103" data-proto-label="12.8w">12.8w</span>
+                </div>
+                <div class="pp-douyin-action">
+                  <span class="pp-douyin-action-icon"><i data-lucide="message-circle"></i></span>
+                  <span data-proto-id="step-douyin-a004-span-4-eeec4fb4" data-proto-label="3421">3421</span>
+                </div>
+                <div class="pp-douyin-action">
+                  <span class="pp-douyin-action-icon"><i data-lucide="bookmark"></i></span>
+                  <span data-proto-id="step-douyin-a004-span-5-52e566e9" data-proto-label="收藏">收藏</span>
+                </div>
+                <div class="pp-douyin-action">
+                  <span class="pp-douyin-action-icon"><i data-lucide="share-2"></i></span>
+                  <span data-proto-id="step-douyin-a004-span-6-b9186c73" data-proto-label="分享">分享</span>
+                </div>
+              </div>
+              <div class="pp-douyin-bottom">
+                <div class="pp-douyin-author-row">
+                  <span class="pp-douyin-avatar"></span>
+                  <span class="pp-douyin-author" data-proto-id="douyin-author" data-proto-label="作者">@创意工作室</span>
+                  <span class="pp-douyin-follow" data-proto-id="step-douyin-a004-span-7-25e2df8e" data-proto-label="关注">关注</span>
+                </div>
+                <div class="pp-douyin-caption" data-proto-id="douyin-caption" data-proto-label="视频标题">沉浸式产品发布短片，一镜到底展示界面动效 #科技 #设计</div>
+                <div class="pp-douyin-music" data-proto-id="douyin-music" data-proto-label="音乐条">
+                  <i data-lucide="music-2"></i>
+                  <span data-proto-id="step-douyin-a004-span-8-937389b1" data-proto-label="原声 · ProtoPilot Theme">原声 · ProtoPilot Theme</span>
+                </div>
+              </div>
+            </div>
+            <div class="phone-home-indicator pp-douyin-home"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="journey-step" id="step-wechat-a005" data-proto-id="step-wechat-a005" data-proto-label="微信风格聊天 App">
+    <div class="step-header"><span class="step-number">5</span><span class="step-title">微信风格聊天 App</span></div>
+    <div class="protopilot-html-showcase--prototype proto-content-screen" data-proto-id="step-wechat-a005-content" data-proto-label="微信风格聊天 App content">
+      <div class="phone-frame" data-proto-id="step-wechat-a005-phone" data-proto-label="微信风格聊天 App">
+
+        <div class="phone-screen">
+
+          <div class="app-screen protopilot-html-showcase--prototype pp-wechat-screen" data-proto-id="step-wechat-a005-screen" data-proto-label="微信风格聊天 App">
+
+            <div class="phone-status-bar"><span data-proto-id="step-wechat-a005-span-1-5601182a" data-proto-label="12:30">12:30</span><span data-proto-id="step-wechat-a005-span-2-94c5667f" data-proto-label="5G">5G</span></div>
+
+            <div class="pp-mobile-body pp-wechat-shell" data-proto-id="wechat-list" data-proto-label="会话列表">
+
+              <div class="pp-wechat-scroll">
+
+                <div class="pp-wechat-header" data-proto-id="wechat-title" data-proto-label="微信标题">
+
+                  微信
+
+                  <span class="pp-wechat-header-action" aria-hidden="true"><i data-lucide="plus"></i></span>
+
+                </div>
+
+                <div class="pp-wechat-search" data-proto-id="wechat-search" data-proto-label="搜索框"><i data-lucide="search"></i><span data-proto-id="step-wechat-a005-span-1-6f0bd17c" data-proto-label="搜索">搜索</span></div>
+
+                <div class="pp-wechat-row is-unread">
+
+                  <span class="pp-wechat-avatar"></span>
+
+                  <div class="pp-wechat-main">
+
+                    <div class="pp-wechat-top">
+
+                      <span class="pp-wechat-name" data-proto-id="step-wechat-a005-span-3-dad13d5d" data-proto-label="产品讨论组">产品讨论组</span>
+
+                      <span class="pp-wechat-time" data-proto-id="step-wechat-a005-span-4-60383003" data-proto-label="12:28">12:28</span>
+
+                    </div>
+
+                    <div class="pp-wechat-preview" data-proto-id="step-wechat-a005-div-5-bb59cd9f" data-proto-label="Finn: 原型已更新，请本地 preview 验收">Finn: 原型已更新，请本地 preview 验收</div>
+
+                  </div>
+
+                  <span class="pp-wechat-badge" data-proto-id="step-wechat-a005-span-6-64dd69e4" data-proto-label="3">3</span>
+
+                </div>
+
+                <div class="pp-wechat-row">
+
+                  <span class="pp-wechat-avatar is-blue"></span>
+
+                  <div class="pp-wechat-main">
+
+                    <div class="pp-wechat-top">
+
+                      <span class="pp-wechat-name" data-proto-id="step-wechat-a005-span-7-b4e0053d" data-proto-label="设计同学">设计同学</span>
+
+                      <span class="pp-wechat-time" data-proto-id="step-wechat-a005-span-8-9a45754a" data-proto-label="昨天">昨天</span>
+
+                    </div>
+
+                    <div class="pp-wechat-preview" data-proto-id="step-wechat-a005-div-9-5d421592" data-proto-label="[图片] 新版 Hero 视觉稿">[图片] 新版 Hero 视觉稿</div>
+
+                  </div>
+
+                </div>
+
+                <div class="pp-wechat-row">
+
+                  <span class="pp-wechat-avatar is-rose"></span>
+
+                  <div class="pp-wechat-main">
+
+                    <div class="pp-wechat-top">
+
+                      <span class="pp-wechat-name" data-proto-id="step-wechat-a005-span-10-cc6c3d36" data-proto-label="文件传输助手">文件传输助手</span>
+
+                      <span class="pp-wechat-time" data-proto-id="step-wechat-a005-span-11-4dc84fa9" data-proto-label="周一">周一</span>
+
+                    </div>
+
+                    <div class="pp-wechat-preview" data-proto-id="step-wechat-a005-div-12-693373fa" data-proto-label="prototype-plan.json">prototype-plan.json</div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="pp-wechat-tabbar" data-proto-id="wechat-tabbar" data-proto-label="底部 TabBar">
+
+                <div class="pp-wechat-tab is-active"><i data-lucide="message-circle"></i><span data-proto-id="step-wechat-a005-span-1-d5742b85" data-proto-label="微信">微信</span></div>
+
+                <div class="pp-wechat-tab"><i data-lucide="users"></i><span data-proto-id="step-wechat-a005-span-2-2b9db39e" data-proto-label="通讯录">通讯录</span></div>
+
+                <div class="pp-wechat-tab"><i data-lucide="compass"></i><span data-proto-id="step-wechat-a005-span-3-6ede1eed" data-proto-label="发现">发现</span></div>
+
+                <div class="pp-wechat-tab"><i data-lucide="user"></i><span data-proto-id="step-wechat-a005-span-4-c3e70b0a" data-proto-label="我">我</span></div>
+
+              </div>
+
+            </div>
+
+            <div class="phone-home-indicator"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<section class="journey-row">
+  <div class="journey-step" id="step-saas-a006" data-proto-id="step-saas-a006" data-proto-label="SaaS 工作台">
+    <div class="step-header"><span class="step-number">6</span><span class="step-title">SaaS 工作台</span></div>
+    <div class="protopilot-html-showcase--prototype proto-content-screen" data-proto-id="step-saas-a006-content" data-proto-label="SaaS 工作台 content">
+      <div class="web-surface pp-fill-surface pp-web-wide-surface" data-proto-id="step-saas-a006-surface" data-proto-label="SaaS 工作台">
+
+        <div class="pp-saas" data-proto-id="saas-dashboard" data-proto-label="AI 内容审核台">
+
+          <aside class="pp-saas-sidebar" aria-hidden="true">
+
+            <div class="pp-saas-sidebar-brand" data-proto-id="step-saas-a006-div-1-d7d09e71" data-proto-label="ReviewOS">ReviewOS</div>
+
+            <div class="pp-saas-sidebar-item is-active" data-proto-id="step-saas-a006-div-2-1b1d7b2d" data-proto-label="审核队列">审核队列</div>
+
+            <div class="pp-saas-sidebar-item" data-proto-id="step-saas-a006-div-3-35160974" data-proto-label="规则引擎">规则引擎</div>
+
+            <div class="pp-saas-sidebar-item" data-proto-id="step-saas-a006-div-4-98089022" data-proto-label="数据报表">数据报表</div>
+
+            <div class="pp-saas-sidebar-item" data-proto-id="step-saas-a006-div-5-3bef4d84" data-proto-label="团队设置">团队设置</div>
+
+          </aside>
+
+          <div class="pp-saas-body">
+
+            <div class="pp-saas-top">
+
+              <div class="pp-saas-top-main">
+
+                <strong data-proto-id="saas-title" data-proto-label="工作台标题">AI 内容审核台</strong>
+
+                <span class="pp-saas-subtitle" data-proto-id="step-saas-a006-span-1-ae8939ab" data-proto-label="今日待审 128 条">今日待审 128 条</span>
+
+              </div>
+
+              <div class="pp-saas-top-actions">
+
+                <span class="pp-saas-action"><i data-lucide="refresh-cw"></i></span>
+
+                <span class="pp-saas-action"><i data-lucide="bell"></i></span>
+
+              </div>
+
+            </div>
+
+            <div class="pp-saas-metrics">
+
+              <div class="pp-metric"><div class="pp-metric-val" data-proto-id="step-saas-a006-div-2-e573812b" data-proto-label="96.2%">96.2%</div><div class="pp-metric-label" data-proto-id="step-saas-a006-div-3-40ba61db" data-proto-label="自动通过率">自动通过率</div></div>
+
+              <div class="pp-metric"><div class="pp-metric-val" data-proto-id="step-saas-a006-div-4-3883f494" data-proto-label="128">128</div><div class="pp-metric-label" data-proto-id="step-saas-a006-div-5-f13bb587" data-proto-label="待人工复核">待人工复核</div></div>
+
+              <div class="pp-metric"><div class="pp-metric-val" data-proto-id="step-saas-a006-div-6-aa08398e" data-proto-label="14">14</div><div class="pp-metric-label" data-proto-id="step-saas-a006-div-7-f4c9439b" data-proto-label="高风险拦截">高风险拦截</div></div>
+
+              <div class="pp-metric"><div class="pp-metric-val" data-proto-id="step-saas-a006-div-8-fc23554a" data-proto-label="2.1s">2.1s</div><div class="pp-metric-label" data-proto-id="step-saas-a006-div-9-d8c77739" data-proto-label="平均处理时长">平均处理时长</div></div>
+
+            </div>
+
+            <div class="pp-saas-main">
+
+              <div class="pp-saas-toolbar"><span class="pp-saas-filter is-active" data-proto-id="step-saas-a006-span-10-86b8db90" data-proto-label="全部状态">全部状态</span><span class="pp-saas-filter" data-proto-id="step-saas-a006-span-11-29f15c3c" data-proto-label="高风险">高风险</span><span class="pp-saas-filter" data-proto-id="step-saas-a006-span-12-7e972a11" data-proto-label="今日">今日</span></div>
+
+              <table class="pp-saas-table"><thead><tr><th data-proto-id="step-saas-a006-th-13-f4a4c0e4" data-proto-label="内容 ID">内容 ID</th><th data-proto-id="step-saas-a006-th-14-343b81a0" data-proto-label="类型">类型</th><th data-proto-id="step-saas-a006-th-15-95fa11bd" data-proto-label="风险等级">风险等级</th><th data-proto-id="step-saas-a006-th-16-66fdb9f8" data-proto-label="状态">状态</th><th data-proto-id="step-saas-a006-th-17-713409fe" data-proto-label="操作">操作</th></tr></thead>
+
+              <tbody>
+
+                <tr><td data-proto-id="step-saas-a006-td-18-707ccc92" data-proto-label="#A-28491">#A-28491</td><td data-proto-id="step-saas-a006-td-19-6064df43" data-proto-label="图文">图文</td><td><span class="pp-tag risk" data-proto-id="step-saas-a006-span-20-7c7bfc66" data-proto-label="高">高</span></td><td data-proto-id="step-saas-a006-td-21-0713709c" data-proto-label="待复核">待复核</td><td class="pp-saas-link" data-proto-id="step-saas-a006-td-22-fce110e8" data-proto-label="审核">审核</td></tr>
+
+                <tr><td data-proto-id="step-saas-a006-td-23-a8cbeb66" data-proto-label="#A-28490">#A-28490</td><td data-proto-id="step-saas-a006-td-24-52fd9352" data-proto-label="视频">视频</td><td><span class="pp-tag warn" data-proto-id="step-saas-a006-span-25-06a66ae3" data-proto-label="中">中</span></td><td data-proto-id="step-saas-a006-td-26-23f27524" data-proto-label="已通过">已通过</td><td class="pp-saas-link" data-proto-id="step-saas-a006-td-27-28d598a2" data-proto-label="查看">查看</td></tr>
+
+                <tr><td data-proto-id="step-saas-a006-td-28-3e8223fb" data-proto-label="#A-28489">#A-28489</td><td data-proto-id="step-saas-a006-td-29-81080945" data-proto-label="评论">评论</td><td><span class="pp-tag ok" data-proto-id="step-saas-a006-span-30-48fbe18a" data-proto-label="低">低</span></td><td data-proto-id="step-saas-a006-td-31-0722654c" data-proto-label="已通过">已通过</td><td class="pp-saas-link" data-proto-id="step-saas-a006-td-32-c1586cc8" data-proto-label="查看">查看</td></tr>
+
+                <tr><td data-proto-id="step-saas-a006-td-6-cb7dd76d" data-proto-label="#A-28488">#A-28488</td><td data-proto-id="step-saas-a006-td-7-e166cb15" data-proto-label="直播">直播</td><td><span class="pp-tag warn" data-proto-id="step-saas-a006-span-8-3bf64c33" data-proto-label="中">中</span></td><td data-proto-id="step-saas-a006-td-9-6e5e685f" data-proto-label="待复核">待复核</td><td class="pp-saas-link" data-proto-id="step-saas-a006-td-10-910cebde" data-proto-label="审核">审核</td></tr>
+
+              </tbody></table>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="journey-step" id="step-website-a007" data-proto-id="step-website-a007" data-proto-label="科技官网首页">
+    <div class="step-header"><span class="step-number">7</span><span class="step-title">科技官网首页</span></div>
+    <div class="protopilot-html-showcase--prototype proto-content-screen" data-proto-id="step-website-a007-content" data-proto-label="科技官网首页 content">
+      <div class="web-surface pp-web-wide-surface pp-site-surface" data-proto-id="step-website-a007-surface" data-proto-label="科技官网首页">
+        <div class="pp-site" data-proto-id="site-home" data-proto-label="科技官网首页">
+          <div class="pp-site-bg" aria-hidden="true">
+            <div class="pp-site-grid"></div>
+            <div class="pp-site-glow"></div>
+          </div>
+          <div class="pp-site-nav">
+            <span class="pp-site-logo" data-proto-id="site-logo" data-proto-label="品牌名">NexusAI</span>
+            <span class="pp-site-nav-links" data-proto-id="step-website-a007-span-1-76142106" data-proto-label="产品 · 定价 · 文档">产品 · 定价 · 文档</span>
+            <span class="pp-site-nav-signin" data-proto-id="step-website-a007-span-1-75895af2" data-proto-label="登录">登录</span>
+          </div>
+          <div class="pp-site-hero">
+            <span class="pp-site-eyebrow" data-proto-id="step-website-a007-span-2-4fd78636" data-proto-label="Enterprise AI Platform">Enterprise AI Platform</span>
+            <h1 class="pp-site-h1" data-proto-id="site-h1" data-proto-label="Hero 文案">让团队用 AI 更快交付可靠产品</h1>
+            <p class="pp-site-sub" data-proto-id="site-sub" data-proto-label="副标题">从需求到原型，从原型到上线——一体化协作平台，服务成长型科技团队。</p>
+            <div class="pp-site-cta-row">
+              <span class="pp-site-cta" data-proto-id="site-cta" data-proto-label="CTA">免费开始试用</span>
+              <span class="pp-site-cta-ghost" data-proto-id="step-website-a007-span-3-7a8e4aa0" data-proto-label="查看产品演示">查看产品演示</span>
+            </div>
+            <div class="pp-site-trust">
+              <span data-proto-id="step-website-a007-span-2-9b361289" data-proto-label="500+ 团队在用">500+ 团队在用</span>
+              <span class="pp-site-trust-dot"></span>
+              <span data-proto-id="step-website-a007-span-3-6401ad7a" data-proto-label="99.9% SLA">99.9% SLA</span>
+              <span class="pp-site-trust-dot"></span>
+              <span data-proto-id="step-website-a007-span-4-971f06bf" data-proto-label="SOC2 合规">SOC2 合规</span>
+            </div>
+          </div>
+          <div class="pp-site-preview-wrap">
+            <div class="pp-site-preview" data-proto-id="site-preview" data-proto-label="产品预览">
+              <div class="pp-site-preview-chrome">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="pp-site-preview-body">
+                <div class="pp-site-preview-sidebar"></div>
+                <div class="pp-site-preview-main">
+                  <div class="pp-site-preview-bar"></div>
+                  <div class="pp-site-preview-cards">
+                    <span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="journey-step" id="step-mac-a008" data-proto-id="step-mac-a008" data-proto-label="Mac App 原型">
+    <div class="step-header"><span class="step-number">8</span><span class="step-title">Mac App 原型</span></div>
+    <div class="protopilot-html-showcase--prototype proto-content-screen" data-proto-id="step-mac-a008-content" data-proto-label="Mac App 原型 content">
+      <div class="web-surface pp-tall-surface" data-proto-id="step-mac-a008-surface" data-proto-label="Mac App 原型">
+        <div class="pp-mac-win" data-proto-id="mac-app" data-proto-label="Mac AI 助手">
+          <div class="pp-mac-titlebar">
+            <span class="pp-mac-dot r"></span><span class="pp-mac-dot y"></span><span class="pp-mac-dot g"></span>
+            <span class="pp-mac-title" data-proto-id="step-mac-a008-span-1-140bebbb" data-proto-label="Codex Assistant">Codex Assistant</span>
+          </div>
+          <div class="pp-mac-toolbar" data-proto-id="mac-toolbar" data-proto-label="工具栏">
+            <span><i data-lucide="folder"></i> showcase</span>
+            <span><i data-lucide="git-branch"></i> main</span>
+            <span class="pp-mac-toolbar-spacer"></span>
+            <span><i data-lucide="play"></i> Preview</span>
+          </div>
+          <div class="pp-mac-body">
+            <div class="pp-mac-sidebar" data-proto-id="mac-sidebar" data-proto-label="项目 sidebar">
+              <div class="pp-mac-sidebar-item is-active" data-proto-id="step-mac-a008-div-2-97f73dca" data-proto-label="当前项目">当前项目</div>
+              <div class="pp-mac-sidebar-item" data-proto-id="step-mac-a008-div-3-b0494360" data-proto-label="会话历史">会话历史</div>
+              <div class="pp-mac-sidebar-item" data-proto-id="step-mac-a008-div-4-dda7e031" data-proto-label="设置">设置</div>
+              <div class="pp-mac-sidebar-item" data-proto-id="step-mac-a008-div-1-62d6e2a5" data-proto-label="原型 screens">原型 screens</div>
+              <div class="pp-mac-sidebar-item" data-proto-id="step-mac-a008-div-2-3369af54" data-proto-label="质量检查">质量检查</div>
+            </div>
+            <div class="pp-mac-center" data-proto-id="mac-chat" data-proto-label="对话区">
+              <div class="pp-mac-chat is-user" data-proto-id="step-mac-a008-div-5-8da09ae7" data-proto-label="用户消息">帮我把登录页空态改成权限不足态，并增加申请权限入口。</div>
+              <div class="pp-mac-chat is-ai" data-proto-id="step-mac-a008-div-6-02660f97" data-proto-label="AI 回复">已定位 step-login-empty，将生成权限不足 screen 并更新 plan。</div>
+              <div class="pp-mac-chat is-ai" data-proto-id="step-mac-a008-div-3-81e02d94" data-proto-label="下一步：package-check → build-content → inje">下一步：package-check → build-content → inject → preview。</div>
+              <div class="pp-mac-composer" data-proto-id="mac-composer" data-proto-label="输入框">
+                <span class="pp-mac-composer-input" data-proto-id="step-mac-a008-span-4-7927eef7" data-proto-label="描述你想修改的原型…">描述你想修改的原型…</span>
+                <span class="pp-mac-composer-send"><i data-lucide="arrow-up"></i></span>
+              </div>
+            </div>
+            <div class="pp-mac-inspector" data-proto-id="mac-inspector" data-proto-label="Preview / Diff">
+              <div class="pp-mac-inspector-title" data-proto-id="step-mac-a008-div-5-8f6d0d8f" data-proto-label="Inspector">Inspector</div>
+              <div class="pp-mac-inspector-block" data-proto-id="step-mac-a008-div-6-08778115" data-proto-label="Preview">Preview</div>
+              <div class="pp-mac-inspector-block" data-proto-id="step-mac-a008-div-7-a7b3c58e" data-proto-label="Diff">Diff</div>
+              <div class="pp-mac-inspector-block is-muted" data-proto-id="step-mac-a008-div-8-d9a4cb8c" data-proto-label="Files changed: 2">Files changed: 2</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="journey-step" id="step-win-a009" data-proto-id="step-win-a009" data-proto-label="Windows App 原型">
+    <div class="step-header"><span class="step-number">9</span><span class="step-title">Windows App 原型</span></div>
+    <div class="protopilot-html-showcase--prototype proto-content-screen" data-proto-id="step-win-a009-content" data-proto-label="Windows App 原型 content">
+      <div class="web-surface pp-tall-surface" data-proto-id="step-win-a009-surface" data-proto-label="Windows App 原型">
+        <div class="pp-win-win" data-proto-id="win-app" data-proto-label="Windows AI 助手">
+          <div class="pp-win-titlebar">
+            <span class="pp-win-app-icon"></span>
+            <span style="font-weight:600" data-proto-id="step-win-a009-span-1-a2751f85" data-proto-label="Enterprise Task Runner">Enterprise Task Runner</span>
+            <div class="pp-win-controls">
+              <span class="pp-win-ctrl">—</span>
+              <span class="pp-win-ctrl" data-proto-id="step-win-a009-span-2-3d521164" data-proto-label="□">□</span>
+              <span class="pp-win-ctrl" data-proto-id="step-win-a009-span-3-e8f29bd1" data-proto-label="×">×</span>
+            </div>
+          </div>
+          <div class="pp-win-toolbar" data-proto-id="win-toolbar" data-proto-label="命令栏">
+            <span><i data-lucide="play"></i> 运行检查</span>
+            <span><i data-lucide="refresh-cw"></i> 重建</span>
+            <span><i data-lucide="folder-open"></i> 打开目录</span>
+          </div>
+          <div class="pp-win-body">
+            <div class="pp-win-nav" data-proto-id="win-nav" data-proto-label="项目树">
+              <div class="pp-win-nav-item is-active" data-proto-id="step-win-a009-div-4-e819e98d" data-proto-label="任务队列">任务队列</div>
+              <div class="pp-win-nav-item" data-proto-id="step-win-a009-div-5-7987fa76" data-proto-label="执行日志">执行日志</div>
+              <div class="pp-win-nav-item" data-proto-id="step-win-a009-div-6-bf489c0f" data-proto-label="文件变更">文件变更</div>
+              <div class="pp-win-nav-item" data-proto-id="step-win-a009-div-1-896378b7" data-proto-label="Screens">Screens</div>
+              <div class="pp-win-nav-item" data-proto-id="step-win-a009-div-2-3c4e2956" data-proto-label="Manifest">Manifest</div>
+            </div>
+            <div class="pp-win-main" data-proto-id="win-log" data-proto-label="任务日志">
+              <div class="pp-win-log">
+                &gt; package-check --strict OK<br/>
+                &gt; build-content OK<br/>
+                &gt; inject --strict OK<br/>
+                &gt; quality-check --strict OK<br/>
+                &gt; preview started on :4310<br/>
+                &gt; waiting for local review…
+              </div>
+            </div>
+          </div>
+          <div class="pp-win-status" data-proto-id="win-status" data-proto-label="状态栏">就绪 · 上次检查 2 分钟前 · 6 steps validated</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="section-divider" data-proto-id="group-presentation" data-proto-label="group-presentation">group-presentation</div>
+<section class="journey-row">
+  <div class="journey-step" id="step-deliver-b001" data-proto-id="step-deliver-b001" data-proto-label="原型交付包是什么">
+    <div class="step-header"><span class="step-number">10</span><span class="step-title">原型交付包是什么</span></div>
+    <div class="protopilot-html-showcase--prototype proto-content-screen" data-proto-id="step-deliver-b001-content" data-proto-label="原型交付包是什么 content">
+      <div class="web-surface" data-proto-id="step-deliver-b001-surface" data-proto-label="原型交付包是什么">
+        <div class="pp-slide pp-slide-full pp-slide-simple" data-proto-id="slide-deliver" data-proto-label="交付包说明">
+          <h2 data-proto-id="deliver-h2" data-proto-label="标题">原型交付包是什么</h2>
+          <p data-proto-id="deliver-intro" data-proto-label="简介">一个标准需求目录里，主要就两类文件：</p>
+          <ul data-proto-id="deliver-list" data-proto-label="目录内容">
+            <li data-proto-id="deliver-prd" data-proto-label="PRD 文件"><strong data-proto-id="step-deliver-b001-strong-1-47a03f59" data-proto-label="PRD 文件">PRD 文件</strong>（*.md）— 需求来源与规则说明</li>
+            <li data-proto-id="deliver-proto" data-proto-label="原型文件"><strong data-proto-id="step-deliver-b001-strong-2-3e304f2f" data-proto-label="原型文件">原型文件</strong>（prototype/）— 可 preview 的 HTML 原型交付包</li>
+          </ul>
+          <div class="pp-folder-hint" data-proto-id="deliver-flow" data-proto-label="目录示意">
+            <div class="pp-folder-line" data-proto-id="step-deliver-b001-div-3-0ab9535a" data-proto-label="需求目录/">需求目录/</div>
+            <div class="pp-folder-line is-indent" data-proto-id="step-deliver-b001-div-4-189be4a1" data-proto-label="├── feature.md">├── feature.md</div>
+            <div class="pp-folder-line is-indent" data-proto-id="step-deliver-b001-div-5-2e581007" data-proto-label="└── prototype/">└── prototype/</div>
+            <div class="pp-folder-line is-indent2" data-proto-id="step-deliver-b001-div-6-add26f14" data-proto-label="├── index.html">├── index.html</div>
+            <div class="pp-folder-line is-indent2" data-proto-id="step-deliver-b001-div-7-e81df216" data-proto-label="└── prototype-content/">└── prototype-content/</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="journey-step" id="step-nav-b002" data-proto-id="step-nav-b002" data-proto-label="目录是讲解路线">
+    <div class="step-header"><span class="step-number">11</span><span class="step-title">目录是讲解路线</span></div>
+    <div class="protopilot-html-showcase--prototype proto-content-screen" data-proto-id="step-nav-b002-content" data-proto-label="目录是讲解路线 content">
+      <div class="web-surface" data-proto-id="step-nav-b002-surface" data-proto-label="目录是讲解路线">
+        <div class="pp-slide" data-proto-id="slide-nav" data-proto-label="目录路线">
+          <div><h2 data-proto-id="step-nav-b002-h2-1-4a47d574" data-proto-label="目录是讲解路线">目录是讲解路线</h2><p data-proto-id="step-nav-b002-p-2-d1a1d847" data-proto-label="目录不是网站导航，而是按章节推进的讲解路线。多个独立原型界面不会散掉，使用者可以">目录不是网站导航，而是按章节推进的讲解路线。多个独立原型界面不会散掉，使用者可以按章节讲。</p></div>
+          <div class="pp-route-cards" data-proto-id="nav-routes" data-proto-label="路线卡片">
+            <div class="pp-route-card" data-proto-id="step-nav-b002-div-3-02beaafb" data-proto-label="1 · 开场">1 · 开场</div>
+            <div class="pp-route-card" data-proto-id="step-nav-b002-div-4-ad0467a4" data-proto-label="2 · 生成能力">2 · 生成能力</div>
+            <div class="pp-route-card" data-proto-id="step-nav-b002-div-5-b11ecd14" data-proto-label="3 · 宣讲解决方案">3 · 宣讲解决方案</div>
+            <div class="pp-route-card" data-proto-id="step-nav-b002-div-6-056b5b5c" data-proto-label="4 · 本地修订方案">4 · 本地修订方案</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="journey-step" id="step-prdviewer-b003" data-proto-id="step-prdviewer-b003" data-proto-label="PRD Viewer 是需求依据">
+    <div class="step-header"><span class="step-number">12</span><span class="step-title">PRD Viewer 是需求依据</span></div>
+    <div class="protopilot-html-showcase--prototype proto-content-screen" data-proto-id="step-prdviewer-b003-content" data-proto-label="PRD Viewer 是需求依据 content">
+      <div class="web-surface" data-proto-id="step-prdviewer-b003-surface" data-proto-label="PRD Viewer 是需求依据">
+        <div class="pp-slide" data-proto-id="slide-prdviewer" data-proto-label="PRD Viewer 示意">
+          <div><h2 data-proto-id="step-prdviewer-b003-h2-1-7c63d2c9" data-proto-label="PRD Viewer 是需求依据">PRD Viewer 是需求依据</h2><p data-proto-id="step-prdviewer-b003-p-2-fc18014e" data-proto-label="PRD Viewer 承载长说明、规则、背景和验收标准；原型 screen 承载">PRD Viewer 承载长说明、规则、背景和验收标准；原型 screen 承载用户真实能看到的界面。二者并排帮助解释「为什么生成成这样」。</p></div>
+          <div class="pp-diagram" data-proto-id="prd-diagram" data-proto-label="位置指示图">
+            <div class="pp-diagram-proto" data-proto-id="step-prdviewer-b003-div-3-96cc9c1c" data-proto-label="原型 Screen">原型 Screen</div>
+            <div class="pp-diagram-line"></div>
+            <div class="pp-diagram-prd" data-proto-id="step-prdviewer-b003-div-4-51d45a27" data-proto-label="PRD Viewer">PRD Viewer</div>
+          </div>
+        </div>
+      </div>
+      <div class="annotation" data-proto-id="ann-prdviewer" data-proto-label="PRD 标注">长说明归位：规则、背景和验收标准不要塞进 screen。</div>
+    </div>
+  </div>
+  <div class="journey-step" id="step-annotate-b004" data-proto-id="step-annotate-b004" data-proto-label="标注与 Spotlight 是讲解辅助">
+    <div class="step-header"><span class="step-number">13</span><span class="step-title">标注与 Spotlight 是讲解辅助</span></div>
+    <div class="protopilot-html-showcase--prototype proto-content-screen" data-proto-id="step-annotate-b004-content" data-proto-label="标注与 Spotlight 是讲解辅助 content">
+      <div class="web-surface" data-proto-id="step-annotate-b004-surface" data-proto-label="标注与 Spotlight 是讲解辅助">
+        <div class="pp-slide" data-proto-id="slide-annotate" data-proto-label="标注 Spotlight 示意">
+          <div><h2 data-proto-id="step-annotate-b004-h2-1-5ad192ff" data-proto-label="标注与 Spotlight 是讲解辅助">标注与 Spotlight 是讲解辅助</h2><ul><li><strong data-proto-id="step-annotate-b004-strong-2-a3e16058" data-proto-label="Annotation">Annotation</strong>：短规则、风险、待确认点</li><li><strong data-proto-id="step-annotate-b004-strong-3-6d0a24bd" data-proto-label="Spotlight">Spotlight</strong>：聚焦当前界面，放大查看细节</li><li><strong data-proto-id="step-annotate-b004-strong-4-102110a4" data-proto-label="演讲光标">演讲光标</strong>：指向关键区域</li></ul></div>
+          <div class="pp-spotlight-map" data-proto-id="spotlight-map" data-proto-label="区域示意">
+            <div class="pp-map-ui" data-proto-id="step-annotate-b004-div-5-4966cd42" data-proto-label="界面主 Surface">界面主 Surface</div>
+            <div class="pp-map-ann-zone" data-proto-id="step-annotate-b004-div-6-6e700dcc" data-proto-label="Annotation 区">Annotation 区</div>
+            <div class="pp-map-spot" data-proto-id="step-annotate-b004-div-7-e8a8f937" data-proto-label="Spotlight 区">Spotlight 区</div>
+          </div>
+        </div>
+      </div>
+      <div class="annotation" data-proto-id="ann-spotlight" data-proto-label="标注说明">标注使用 skill 原生样式，放在 surface 外侧。</div>
+    </div>
+  </div>
+</section>
+<div class="section-divider" data-proto-id="group-local-rev" data-proto-label="group-local-rev">group-local-rev</div>
+<section class="journey-row">
+  <div class="journey-step" id="step-edit-text-c001" data-proto-id="step-edit-text-c001" data-proto-label="本地改文字">
+    <div class="step-header"><span class="step-number">14</span><span class="step-title">本地改文字</span></div>
+    <div class="protopilot-html-showcase--prototype proto-content-screen" data-proto-id="step-edit-text-c001-content" data-proto-label="本地改文字 content">
+      <div class="web-surface" data-proto-id="step-edit-text-c001-surface" data-proto-label="本地改文字">
+        <div class="pp-slide" data-proto-id="slide-edit-text" data-proto-label="改文字说明">
+          <div><h2 data-proto-id="step-edit-text-c001-h2-1-0654efef" data-proto-label="本地改文字">本地改文字</h2><ul><li data-proto-id="step-edit-text-c001-li-2-fa64654b" data-proto-label="场景：本地 preview 验收时发现文案不准确">场景：本地 preview 验收时发现文案不准确</li><li data-proto-id="step-edit-text-c001-li-3-890b52d6" data-proto-label="操作：进入「改文字」模式，修改安全文本并保存">操作：进入「改文字」模式，修改安全文本并保存</li><li data-proto-id="step-edit-text-c001-li-4-3bc44f56" data-proto-label="回流：保存到 prototype-content/screens/*.html">回流：保存到 prototype-content/screens/*.html</li></ul>
+          </div>
+          <div class="pp-edit-flow" data-proto-id="edit-flow" data-proto-label="编辑流程"><div class="pp-edit-step" data-proto-id="step-edit-text-c001-div-7-d02dfa22" data-proto-label="本地 Preview">本地 Preview</div><div class="pp-flow-arrow" data-proto-id="step-edit-text-c001-div-8-2f01402a" data-proto-label="↓">↓</div><div class="pp-edit-step" data-proto-id="step-edit-text-c001-div-9-d97a5d54" data-proto-label="改文字模式">改文字模式</div><div class="pp-flow-arrow" data-proto-id="step-edit-text-c001-div-10-b28c945f" data-proto-label="↓">↓</div><div class="pp-edit-step" data-proto-id="step-edit-text-c001-div-11-e3ce6902" data-proto-label="保存到 screens">保存到 screens</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="journey-step" id="step-ai-note-c002" data-proto-id="step-ai-note-c002" data-proto-label="大改备注给 AI">
+    <div class="step-header"><span class="step-number">15</span><span class="step-title">大改备注给 AI</span></div>
+    <div class="protopilot-html-showcase--prototype proto-content-screen" data-proto-id="step-ai-note-c002-content" data-proto-label="大改备注给 AI content">
+      <div class="web-surface" data-proto-id="step-ai-note-c002-surface" data-proto-label="大改备注给 AI">
+        <div class="pp-slide pp-slide-full" data-proto-id="slide-ai-note" data-proto-label="大改备注流程">
+          <h2 data-proto-id="step-ai-note-c002-h2-1-c884722c" data-proto-label="大改备注给 AI">大改备注给 AI</h2>
+          <p data-proto-id="step-ai-note-c002-p-2-1a17e55b" data-proto-label="结构、流程、布局、状态变化不在页面里硬改。使用者点选目标元素，写下修改意图；备注">结构、流程、布局、状态变化不在页面里硬改。使用者点选目标元素，写下修改意图；备注携带 data-proto-id / data-proto-label，方便下一轮 AI 定位。</p>
+          <div class="pp-flow-box pp-flow-inline" data-proto-id="ai-note-flow" data-proto-label="备注流程">
+            <span data-proto-id="step-ai-note-c002-span-1-6bc8f50c" data-proto-label="选中元素">选中元素</span>
+            <i data-lucide="arrow-right"></i>
+            <span data-proto-id="step-ai-note-c002-span-2-b2b8b827" data-proto-label="写备注">写备注</span>
+            <i data-lucide="arrow-right"></i>
+            <span data-proto-id="step-ai-note-c002-span-3-82a40351" data-proto-label="复制给 AI">复制给 AI</span>
+            <i data-lucide="arrow-right"></i>
+            <span data-proto-id="step-ai-note-c002-span-4-63bc8178" data-proto-label="下一轮修改">下一轮修改</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="journey-step" id="step-quality-c003" data-proto-id="step-quality-c003" data-proto-label="质量检查概念">
+    <div class="step-header"><span class="step-number">16</span><span class="step-title">质量检查概念</span></div>
+    <div class="protopilot-html-showcase--prototype proto-content-screen" data-proto-id="step-quality-c003-content" data-proto-label="质量检查概念 content">
+      <div class="web-surface" data-proto-id="step-quality-c003-surface" data-proto-label="质量检查概念">
+        <div class="pp-slide pp-slide-full" data-proto-id="slide-quality" data-proto-label="质量检查">
+          <h2 data-proto-id="step-quality-c003-h2-1-f99aef4e" data-proto-label="质量检查概念">质量检查概念</h2>
+          <p data-proto-id="step-quality-c003-p-2-8179b88f" data-proto-label="ProtoPilot 生成物不是「画完就算」，它有基本的交付检查闭环。">ProtoPilot 生成物不是「画完就算」，它有基本的交付检查闭环。</p>
+          <div class="pp-check-grid" style="margin-top:20px" data-proto-id="quality-checks" data-proto-label="检查项">
+            <div class="pp-check-item" data-proto-id="step-quality-c003-div-3-18a7f9b2" data-proto-label="✓ 内容包完整">✓ 内容包完整</div>
+            <div class="pp-check-item" data-proto-id="step-quality-c003-div-4-401c72dc" data-proto-label="✓ 计划与页面一致">✓ 计划与页面一致</div>
+            <div class="pp-check-item" data-proto-id="step-quality-c003-div-5-e5e774db" data-proto-label="✓ PRD 可读取">✓ PRD 可读取</div>
+            <div class="pp-check-item" data-proto-id="step-quality-c003-div-6-e232b166" data-proto-label="✓ 目录可导航">✓ 目录可导航</div>
+            <div class="pp-check-item" data-proto-id="step-quality-c003-div-7-0e27a55e" data-proto-label="✓ 标注位置安全">✓ 标注位置安全</div>
+            <div class="pp-check-item" data-proto-id="step-quality-c003-div-8-4c1fbffb" data-proto-label="✓ 预览可打开">✓ 预览可打开</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,5075 @@
+{
+  "schema_version": 4,
+  "created_at": "2026-05-25T02:50:08Z",
+  "updated_at": "2026-05-25T02:50:08Z",
+  "generation_mode": "excalidraw_storyboard_boards",
+  "source": {
+    "prd_path": "../proto-pilot-manual.md",
+    "demand_dir": "F:\\Skills\\©Finn\\finn-protopilot\\finn-protopilot\\examples\\showcase-sketch",
+    "prototype_dir": "F:\\Skills\\©Finn\\finn-protopilot\\finn-protopilot\\examples\\showcase-sketch\\prototype",
+    "design_context": {
+      "status": "showcase_manual"
+    }
+  },
+  "context_summary": {
+    "prd_title": "ProtoPilot HTML Showcase 内容规格",
+    "prd_section_count": 15,
+    "design_context_status": "showcase_manual",
+    "platform_hint": "mixed",
+    "reference_count": 0,
+    "component_baseline": [
+      "board",
+      "frame",
+      "PRD Viewer",
+      "Spotlight",
+      "Excalidraw editor"
+    ]
+  },
+  "groups": [
+    {
+      "id": "group-开场-413be2b2",
+      "title": "开场",
+      "description": "草图风格预览 section",
+      "step_ids": [
+        "step-开场-hero-首屏-1f6e7de5"
+      ]
+    },
+    {
+      "id": "group-生成能力-3ddb7bd4",
+      "title": "生成能力",
+      "description": "草图风格预览 section",
+      "step_ids": [
+        "step-生成能力-音乐播放-app-f94b45aa",
+        "step-生成能力-小红书风格内容-app-a5ebda6f",
+        "step-生成能力-短视频-app-f9c0da99",
+        "step-生成能力-微信风格聊天-app-570443a9",
+        "step-生成能力-saa-s-工作台-a4e26e10",
+        "step-生成能力-科技官网首页-d16f659d",
+        "step-生成能力-mac-app-原型-d333fcd5",
+        "step-生成能力-windows-app-原型-b4c0b043"
+      ]
+    },
+    {
+      "id": "group-宣讲解决方案-e3b9787a",
+      "title": "宣讲解决方案",
+      "description": "草图风格预览 section",
+      "step_ids": [
+        "step-宣讲解决方案-原型交付包是什么-3e5a08e3",
+        "step-宣讲解决方案-目录是讲解路线-1e6c922e",
+        "step-宣讲解决方案-prd-viewer-是需求依据-d430107e",
+        "step-宣讲解决方案-标注与-spotlight-是讲解辅助-ede97056"
+      ]
+    },
+    {
+      "id": "group-本地修订方案-a2ac212e",
+      "title": "本地修订方案",
+      "description": "草图风格预览 section",
+      "step_ids": [
+        "step-本地修订方案-面板直接编辑草图-ec8a0505",
+        "step-本地修订方案-质量检查概念-569c620c"
+      ]
+    }
+  ],
+  "boards": [
+    {
+      "id": "board-2-生成能力-part-1-13467082",
+      "title": "2. 生成能力 Part 1",
+      "kind": "storyboard_board",
+      "file": "prototype-excalidraw/boards/board-2-生成能力-part-1-13467082.excalidraw",
+      "board_strategy": "semantic_chunked",
+      "max_frames_per_board": 6,
+      "frame_ids": [
+        "c7bf5a98-frame",
+        "47d8fc03-frame",
+        "045e3ce8-frame",
+        "69bed536-frame",
+        "1201abba-frame",
+        "28d8bb7e-frame"
+      ],
+      "step_ids": [
+        "step-生成能力-音乐播放-app-f94b45aa",
+        "step-生成能力-小红书风格内容-app-a5ebda6f",
+        "step-生成能力-短视频-app-f9c0da99",
+        "step-生成能力-微信风格聊天-app-570443a9",
+        "step-生成能力-saa-s-工作台-a4e26e10",
+        "step-生成能力-科技官网首页-d16f659d"
+      ],
+      "frame_count": 6,
+      "platforms": [
+        "mobile",
+        "web"
+      ],
+      "surface_kinds": [
+        "page",
+        "state"
+      ],
+      "design_hints": {
+        "platform_hint": "web",
+        "reference_count": 0,
+        "navigation_terms": [],
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      }
+    },
+    {
+      "id": "board-2-生成能力-part-2-43303650",
+      "title": "2. 生成能力 Part 2",
+      "kind": "storyboard_board",
+      "file": "prototype-excalidraw/boards/board-2-生成能力-part-2-43303650.excalidraw",
+      "board_strategy": "semantic_chunked",
+      "max_frames_per_board": 6,
+      "frame_ids": [
+        "1f3c15dc-frame",
+        "bf4b529d-frame"
+      ],
+      "step_ids": [
+        "step-生成能力-mac-app-原型-d333fcd5",
+        "step-生成能力-windows-app-原型-b4c0b043"
+      ],
+      "frame_count": 2,
+      "platforms": [
+        "web"
+      ],
+      "surface_kinds": [
+        "page",
+        "state"
+      ],
+      "design_hints": {
+        "platform_hint": "web",
+        "reference_count": 0,
+        "navigation_terms": [],
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      }
+    },
+    {
+      "id": "board-3-宣讲解决方案-482e4077",
+      "title": "3. 宣讲解决方案",
+      "kind": "storyboard_board",
+      "file": "prototype-excalidraw/boards/board-3-宣讲解决方案-482e4077.excalidraw",
+      "board_strategy": "semantic_chunked",
+      "max_frames_per_board": 6,
+      "frame_ids": [
+        "eef16ff5-frame",
+        "cc6e0d08-frame",
+        "ff9824ee-frame",
+        "b3179fa0-frame"
+      ],
+      "step_ids": [
+        "step-宣讲解决方案-原型交付包是什么-3e5a08e3",
+        "step-宣讲解决方案-目录是讲解路线-1e6c922e",
+        "step-宣讲解决方案-prd-viewer-是需求依据-d430107e",
+        "step-宣讲解决方案-标注与-spotlight-是讲解辅助-ede97056"
+      ],
+      "frame_count": 4,
+      "platforms": [
+        "web"
+      ],
+      "surface_kinds": [
+        "page",
+        "modal"
+      ],
+      "design_hints": {
+        "platform_hint": "web",
+        "reference_count": 0,
+        "navigation_terms": [],
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      }
+    },
+    {
+      "id": "board-4-本地修订方案-f70fe16d",
+      "title": "4. 本地修订方案",
+      "kind": "storyboard_board",
+      "file": "prototype-excalidraw/boards/board-4-本地修订方案-f70fe16d.excalidraw",
+      "board_strategy": "semantic_chunked",
+      "max_frames_per_board": 6,
+      "frame_ids": [
+        "5c5fb911-frame",
+        "0f309191-frame"
+      ],
+      "step_ids": [
+        "step-本地修订方案-面板直接编辑草图-ec8a0505",
+        "step-本地修订方案-质量检查概念-569c620c"
+      ],
+      "frame_count": 2,
+      "platforms": [
+        "web"
+      ],
+      "surface_kinds": [
+        "page"
+      ],
+      "design_hints": {
+        "platform_hint": "web",
+        "reference_count": 0,
+        "navigation_terms": [],
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      }
+    },
+    {
+      "id": "board-supporting-states-6a2eae56",
+      "title": "Supporting states",
+      "kind": "storyboard_board",
+      "file": "prototype-excalidraw/boards/board-supporting-states-6a2eae56.excalidraw",
+      "board_strategy": "semantic_chunked",
+      "max_frames_per_board": 6,
+      "frame_ids": [
+        "71c5072e-frame"
+      ],
+      "step_ids": [
+        "step-开场-hero-首屏-1f6e7de5"
+      ],
+      "frame_count": 1,
+      "platforms": [
+        "web"
+      ],
+      "surface_kinds": [
+        "page"
+      ],
+      "design_hints": {
+        "platform_hint": "web",
+        "reference_count": 0,
+        "navigation_terms": [],
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      }
+    }
+  ],
+  "frames": [
+    {
+      "step_id": "step-开场-hero-首屏-1f6e7de5",
+      "board_id": "board-supporting-states-6a2eae56",
+      "frame_id": "71c5072e-frame",
+      "surface_id": "surface-1-开场-1-1-hero-首屏-73e09457",
+      "surface_kind": "page",
+      "platform": "web",
+      "frame_intent": "网站式首屏：品牌、slogan 和整体气质是主角，不做工作台布局。",
+      "source_evidence": [
+        "Finn ProtoPilot",
+        "Turn PRDs into review-ready prototypes.",
+        "把 PRD/spec 转成可宣讲、可本地修订、可质量检查的 HTML 原型交付包。",
+        "HTML Prototype"
+      ],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "Hero 首屏",
+        "surface_archetype": "hero_launch",
+        "layout_regions": [
+          "状态栏",
+          "导航栏",
+          "内容区",
+          "底部操作"
+        ],
+        "component_inventory": [
+          "statusbar",
+          "navigationbar",
+          "screenbody",
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "Finn ProtoPilot",
+          "Turn PRDs into review-ready prototypes.",
+          "把 PRD/spec 转成可宣讲、可本地修订、可质量检查的 HTML 原型交付包。",
+          "HTML Prototype",
+          "PRD Viewer",
+          "Presentation Shell",
+          "Local Revision"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "这是一个完整、专业、有审美的原型生成 skill。",
+          "第一眼先建立品牌感和能力气质，不急着解释细节。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "Finn ProtoPilot",
+          "Turn PRDs into review-ready prototypes.",
+          "把 PRD/spec 转成可宣讲、可本地修订、可质量检查的 HTML 原型交付包。",
+          "HTML Prototype"
+        ]
+      }
+    },
+    {
+      "step_id": "step-生成能力-音乐播放-app-f94b45aa",
+      "board_id": "board-2-生成能力-part-1-13467082",
+      "frame_id": "c7bf5a98-frame",
+      "surface_id": "surface-2-生成能力-2-1-音乐播放-app-参考网易云音乐-4312be05",
+      "surface_kind": "page",
+      "platform": "mobile",
+      "frame_intent": "播放器页面：封面、歌曲信息、进度条与控制区构成完整媒体 App 界面。",
+      "source_evidence": [
+        "专辑封面",
+        "歌曲名、歌手名",
+        "播放进度",
+        "播放控制"
+      ],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "音乐播放 App",
+        "surface_archetype": "music_player",
+        "layout_regions": [
+          "规则标题",
+          "关键条件",
+          "结果状态",
+          "关联界面"
+        ],
+        "component_inventory": [
+          "statusbar",
+          "navigationbar",
+          "screenbody",
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "Midnight Drive",
+          "Finn Studio",
+          "专辑封面",
+          "播放控制",
+          "歌词",
+          "播放队列",
+          "1:24",
+          "3:48"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "ProtoPilot 能生成媒体类 App 的视觉氛围。",
+          "手机原型应有完整展示面积，可被单独 Spotlight。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "专辑封面",
+          "歌曲名、歌手名",
+          "播放进度",
+          "播放控制"
+        ]
+      }
+    },
+    {
+      "step_id": "step-生成能力-小红书风格内容-app-a5ebda6f",
+      "board_id": "board-2-生成能力-part-1-13467082",
+      "frame_id": "47d8fc03-frame",
+      "surface_id": "surface-2-生成能力-2-2-小红书风格内容-app-参考小红书首页-8480869a",
+      "surface_kind": "page",
+      "platform": "mobile",
+      "frame_intent": "小红书式双列笔记瀑布流：大图封面 + 标题 + 作者 + 互动数据。",
+      "source_evidence": [
+        "封面图",
+        "标题、作者、正文摘要",
+        "点赞、收藏、评论信息",
+        "标签"
+      ],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "小红书风格内容 App",
+        "surface_archetype": "content_feed",
+        "layout_regions": [
+          "状态栏",
+          "导航栏",
+          "内容区",
+          "底部操作"
+        ],
+        "component_inventory": [
+          "statusbar",
+          "navigationbar",
+          "screenbody",
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "周末露营攻略",
+          "Finn 生活",
+          "通勤 OOTD",
+          "City walk 路线",
+          "封面图",
+          "点赞",
+          "收藏",
+          "评论",
+          "#露营",
+          "#穿搭"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "ProtoPilot 能生成内容社区类布局。",
+          "内容产品的信息密度和视觉气质应独立呈现。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "封面图",
+          "标题、作者、正文摘要",
+          "点赞、收藏、评论信息",
+          "标签"
+        ]
+      }
+    },
+    {
+      "step_id": "step-生成能力-短视频-app-f9c0da99",
+      "board_id": "board-2-生成能力-part-1-13467082",
+      "frame_id": "045e3ce8-frame",
+      "surface_id": "surface-2-生成能力-2-3-短视频-app-参考抖音-bc70f750",
+      "surface_kind": "page",
+      "platform": "mobile",
+      "frame_intent": "抖音式沉浸式竖屏：全屏视频 + 右侧互动栏 + 底部作者与音乐条。",
+      "source_evidence": [
+        "全屏视频区域",
+        "右侧点赞、评论、分享",
+        "底部作者、标题、音乐条"
+      ],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "短视频 App",
+        "surface_archetype": "short_video_immersive",
+        "layout_regions": [
+          "状态栏",
+          "导航栏",
+          "内容区",
+          "底部操作"
+        ],
+        "component_inventory": [
+          "statusbar",
+          "navigationbar",
+          "screenbody",
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "@FinnStudio",
+          "Prototype walkthrough",
+          "原声 - Midnight Drive",
+          "点赞",
+          "评论",
+          "分享",
+          "全屏视频"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "ProtoPilot 能表达沉浸式移动端界面。",
+          "不同 App 类型不应共用同一种通用模板。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "全屏视频区域",
+          "右侧点赞、评论、分享",
+          "底部作者、标题、音乐条"
+        ]
+      }
+    },
+    {
+      "step_id": "step-生成能力-微信风格聊天-app-570443a9",
+      "board_id": "board-2-生成能力-part-1-13467082",
+      "frame_id": "69bed536-frame",
+      "surface_id": "surface-2-生成能力-2-4-微信风格聊天-app-参考微信聊天列表-2e8dd0fb",
+      "surface_kind": "page",
+      "platform": "mobile",
+      "frame_intent": "微信会话列表：头像、预览、时间、未读角标与顶部工具栏。",
+      "source_evidence": [
+        "头像",
+        "消息预览",
+        "时间",
+        "未读状态",
+        "顶部搜索或新增入口"
+      ],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "微信风格聊天 App",
+        "surface_archetype": "chat_session_list",
+        "layout_regions": [
+          "状态栏",
+          "导航栏",
+          "内容区",
+          "底部操作"
+        ],
+        "component_inventory": [
+          "statusbar",
+          "navigationbar",
+          "screenbody",
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "微信",
+          "Finn 产品群",
+          "今晚把原型发一下？",
+          "阿南",
+          "[图片]",
+          "18:32",
+          "未读",
+          "搜索"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "ProtoPilot 能表达高频工具型 App 的信息密度。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "头像",
+          "消息预览",
+          "时间",
+          "未读状态",
+          "顶部搜索或新增入口"
+        ]
+      }
+    },
+    {
+      "step_id": "step-生成能力-saa-s-工作台-a4e26e10",
+      "board_id": "board-2-生成能力-part-1-13467082",
+      "frame_id": "1201abba-frame",
+      "surface_id": "surface-2-生成能力-2-5-saa-s-工作台-5e9a01bc",
+      "surface_kind": "state",
+      "platform": "web",
+      "frame_intent": "AI 内容审核后台：侧栏导航、指标卡、筛选条、带状态标签的数据表格。",
+      "source_evidence": [
+        "指标卡",
+        "筛选或导航",
+        "表格",
+        "状态标签",
+        "操作入口"
+      ],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "SaaS 工作台",
+        "surface_archetype": "saas_workbench",
+        "layout_regions": [
+          "顶部栏",
+          "侧边导航",
+          "内容卡片",
+          "数据区"
+        ],
+        "component_inventory": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "stateillustration",
+          "statecopy",
+          "stateaction",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "Finn Admin",
+          "内容审核",
+          "待审核",
+          "已通过",
+          "风险命中",
+          "今日处理",
+          "待处理队列",
+          "状态",
+          "操作"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "ProtoPilot 能生成工作台、后台、SaaS 类界面。",
+          "Web 工作台不能和官网首页合并在同一页。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "指标卡",
+          "筛选或导航",
+          "表格",
+          "状态标签",
+          "操作入口"
+        ]
+      }
+    },
+    {
+      "step_id": "step-生成能力-科技官网首页-d16f659d",
+      "board_id": "board-2-生成能力-part-1-13467082",
+      "frame_id": "28d8bb7e-frame",
+      "surface_id": "surface-2-生成能力-2-6-科技官网首页-07e8abb8",
+      "surface_kind": "page",
+      "platform": "web",
+      "frame_intent": "科技产品营销官网：顶栏导航 + Hero 文案 + 双 CTA + 产品预览窗 + 信任指标。",
+      "source_evidence": [
+        "产品名或品牌名",
+        "Hero 文案",
+        "CTA",
+        "产品视觉或界面预览",
+        "信任指标"
+      ],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "科技官网首页",
+        "surface_archetype": "tech_marketing_site",
+        "layout_regions": [
+          "顶部栏",
+          "侧边导航",
+          "内容卡片",
+          "数据区"
+        ],
+        "component_inventory": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "Finn ProtoPilot",
+          "Ship prototypes from your PRD",
+          "Start free",
+          "View demo",
+          "Product",
+          "Docs",
+          "Pricing",
+          "500+ Teams"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "HTML showcase 不应全是功能型界面。",
+          "ProtoPilot 也能生成营销官网、产品首页、发布页这一类非后台界面。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "产品名或品牌名",
+          "Hero 文案",
+          "CTA",
+          "产品视觉或界面预览",
+          "信任指标"
+        ]
+      }
+    },
+    {
+      "step_id": "step-生成能力-mac-app-原型-d333fcd5",
+      "board_id": "board-2-生成能力-part-2-43303650",
+      "frame_id": "1f3c15dc-frame",
+      "surface_id": "surface-2-生成能力-2-7-mac-app-原型-e93f69d5",
+      "surface_kind": "page",
+      "platform": "web",
+      "frame_intent": "Codex 式 macOS 桌面应用：三栏布局 + 会话 sidebar + 代码对话 + 右侧 Preview。",
+      "source_evidence": [
+        "macOS 红黄绿窗口按钮",
+        "左侧项目或会话 sidebar",
+        "中间任务或代码对话区",
+        "右侧 preview / diff / inspector",
+        "顶部 toolbar"
+      ],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "Mac App 原型",
+        "surface_archetype": "mac_desktop_app",
+        "layout_regions": [
+          "状态栏",
+          "导航栏",
+          "内容区",
+          "底部操作"
+        ],
+        "component_inventory": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "Finn Codex",
+          "Projects",
+          "Preview",
+          "Diff",
+          "Ask Finn Codex…",
+          "Generate SaaS dashboard sketch"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "ProtoPilot 可以生成具有系统气质的桌面软件原型。",
+          "Mac App 原型不等同于普通网页套壳。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "macOS 红黄绿窗口按钮",
+          "左侧项目或会话 sidebar",
+          "中间任务或代码对话区",
+          "右侧 preview / diff / inspector",
+          "顶部 toolbar"
+        ]
+      }
+    },
+    {
+      "step_id": "step-生成能力-windows-app-原型-b4c0b043",
+      "board_id": "board-2-生成能力-part-2-43303650",
+      "frame_id": "bf4b529d-frame",
+      "surface_id": "surface-2-生成能力-2-8-windows-app-原型-db573581",
+      "surface_kind": "state",
+      "platform": "web",
+      "frame_intent": "Windows 任务执行器：项目树 + 命令栏 + 终端日志 + diff 区 + 底部状态栏。",
+      "source_evidence": [
+        "Windows 标题栏和窗口控制按钮",
+        "左侧导航或项目树",
+        "顶部命令栏 / toolbar",
+        "中间任务日志、执行结果、diff",
+        "底部状态栏"
+      ],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "Windows App 原型",
+        "surface_archetype": "windows_desktop_app",
+        "layout_regions": [
+          "规则标题",
+          "关键条件",
+          "结果状态",
+          "关联界面"
+        ],
+        "component_inventory": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "stateillustration",
+          "statecopy",
+          "stateaction",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "Finn Agent",
+          "Task Runner",
+          "运行",
+          "导出日志",
+          "工作区",
+          "Diff",
+          "就绪"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "ProtoPilot 不只生成移动端和 Web，也能表达桌面软件。",
+          "Windows App 和 Mac App 应有不同系统气质。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "Windows 标题栏和窗口控制按钮",
+          "左侧导航或项目树",
+          "顶部命令栏 / toolbar",
+          "中间任务日志、执行结果、diff",
+          "底部状态栏"
+        ]
+      }
+    },
+    {
+      "step_id": "step-宣讲解决方案-原型交付包是什么-3e5a08e3",
+      "board_id": "board-3-宣讲解决方案-482e4077",
+      "frame_id": "eef16ff5-frame",
+      "surface_id": "surface-3-宣讲解决方案-3-1-原型交付包是什么-85186674",
+      "surface_kind": "page",
+      "platform": "web",
+      "frame_intent": "左侧说明 + 右侧交付链路：从 PRD 到本地验收的完整交付包结构。",
+      "source_evidence": [
+        "PRD/spec 是需求来源",
+        "原型界面是可讲解的生成结果",
+        "宣讲台负责目录与 Spotlight",
+        "本地 preview 支持修订"
+      ],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "原型交付包是什么",
+        "surface_archetype": "delivery_package_overview",
+        "layout_regions": [
+          "状态栏",
+          "导航栏",
+          "内容区",
+          "底部操作"
+        ],
+        "component_inventory": [
+          "statusbar",
+          "navigationbar",
+          "screenbody",
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "PRD/spec",
+          "Plan",
+          "Prototype Screens",
+          "Presentation Shell",
+          "Local Review",
+          "可宣讲的原型交付包"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "用户看到的不只是页面，而是一套可宣讲的原型交付包。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "PRD/spec 是需求来源",
+          "原型界面是可讲解的生成结果",
+          "宣讲台负责目录与 Spotlight",
+          "本地 preview 支持修订"
+        ]
+      }
+    },
+    {
+      "step_id": "step-宣讲解决方案-目录是讲解路线-1e6c922e",
+      "board_id": "board-3-宣讲解决方案-482e4077",
+      "frame_id": "cc6e0d08-frame",
+      "surface_id": "surface-3-宣讲解决方案-3-2-目录是讲解路线-60d40eb3",
+      "surface_kind": "page",
+      "platform": "web",
+      "frame_intent": "Slide 式路线图：左侧目录栏 + 右侧章节卡片，强调目录是讲解路线。",
+      "source_evidence": [
+        "开场",
+        "生成能力",
+        "宣讲解决方案",
+        "本地修订方案"
+      ],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "目录是讲解路线",
+        "surface_archetype": "presentation_route_map",
+        "layout_regions": [
+          "顶部栏",
+          "侧边导航",
+          "内容卡片",
+          "数据区"
+        ],
+        "component_inventory": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "开场",
+          "生成能力",
+          "宣讲解决方案",
+          "本地修订方案",
+          "讲解路线",
+          "按章节宣讲"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "目录不是网站导航，而是讲解路线。",
+          "多个独立原型界面不会散掉，使用者可以按章节讲。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "开场",
+          "生成能力",
+          "宣讲解决方案",
+          "本地修订方案"
+        ]
+      }
+    },
+    {
+      "step_id": "step-宣讲解决方案-prd-viewer-是需求依据-d430107e",
+      "board_id": "board-3-宣讲解决方案-482e4077",
+      "frame_id": "ff9824ee-frame",
+      "surface_id": "surface-3-宣讲解决方案-3-3-prd-viewer-是需求依据-fff07a69",
+      "surface_kind": "page",
+      "platform": "web",
+      "frame_intent": "左右并排：原型区 + PRD Viewer，并用原生标注说明长说明归位。",
+      "source_evidence": [
+        "PRD Viewer 承载长说明",
+        "原型 screen 承载可见界面",
+        "二者并排解释生成原因"
+      ],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "PRD Viewer 是需求依据",
+        "surface_archetype": "prd_viewer_split",
+        "layout_regions": [
+          "状态栏",
+          "导航栏",
+          "内容区",
+          "底部操作"
+        ],
+        "component_inventory": [
+          "statusbar",
+          "navigationbar",
+          "screenbody",
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "PRD Viewer",
+          "原型 screen",
+          "需求依据",
+          "长说明归位",
+          "规则与验收标准"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "不把长说明塞进手机屏或业务界面。",
+          "PRD Viewer 是宣讲方案的一部分，不是附属文件。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "PRD Viewer 承载长说明",
+          "原型 screen 承载可见界面",
+          "二者并排解释生成原因"
+        ]
+      }
+    },
+    {
+      "step_id": "step-宣讲解决方案-标注与-spotlight-是讲解辅助-ede97056",
+      "board_id": "board-3-宣讲解决方案-482e4077",
+      "frame_id": "b3179fa0-frame",
+      "surface_id": "surface-3-宣讲解决方案-3-4-标注与-spotlight-是讲解辅助-fb5b0bdf",
+      "surface_kind": "modal",
+      "platform": "web",
+      "frame_intent": "位置示意图：界面区、标注区、Spotlight 放大区，并含一条原生标注。",
+      "source_evidence": [
+        "Annotation：短规则与待确认点",
+        "Spotlight：放大查看细节",
+        "标注不是装饰"
+      ],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "标注与 Spotlight 是讲解辅助",
+        "surface_archetype": "annotation_spotlight_map",
+        "layout_regions": [
+          "遮罩层",
+          "弹窗标题",
+          "说明文案",
+          "取消/确认操作"
+        ],
+        "component_inventory": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "Annotation",
+          "Spotlight",
+          "演讲光标",
+          "讲解辅助",
+          "聚焦细节"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "标注不是装饰，是讲解辅助。",
+          "Showcase 不能只介绍标注而不使用标注。",
+          "Spotlight 适合讲细节，不改变原型内容本身。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "Annotation：短规则与待确认点",
+          "Spotlight：放大查看细节",
+          "标注不是装饰"
+        ]
+      }
+    },
+    {
+      "step_id": "step-本地修订方案-面板直接编辑草图-ec8a0505",
+      "board_id": "board-4-本地修订方案-f70fe16d",
+      "frame_id": "5c5fb911-frame",
+      "surface_id": "surface-4-本地修订方案-4-1-面板直接编辑草图-5852ce15",
+      "surface_kind": "page",
+      "platform": "web",
+      "frame_intent": "左侧说明 + 右侧 preview 壳与 Excalidraw 编辑面板示意。",
+      "source_evidence": [
+        "点击宣讲台「编辑」",
+        "选中草图卡片",
+        "面板内直接修改",
+        "保存写回 board"
+      ],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "面板直接编辑草图",
+        "surface_archetype": "sketch_panel_edit",
+        "layout_regions": [
+          "规则标题",
+          "关键条件",
+          "结果状态",
+          "关联界面"
+        ],
+        "component_inventory": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "编辑",
+          "Excalidraw 面板",
+          "保存",
+          "草图画板",
+          "本地 preview 验收",
+          "提交给主管"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "草图可直接在 preview 面板里编辑，不必打开外部 Excalidraw 文件。",
+          "编辑发生在本地 preview，保存后即时生效。",
+          "适合文字微调与形状位置调整；大规模结构重做仍可通过 AI 下一轮生成。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "点击宣讲台「编辑」",
+          "选中草图卡片",
+          "面板内直接修改",
+          "保存写回 board"
+        ]
+      }
+    },
+    {
+      "step_id": "step-本地修订方案-质量检查概念-569c620c",
+      "board_id": "board-4-本地修订方案-f70fe16d",
+      "frame_id": "0f309191-frame",
+      "surface_id": "surface-4-本地修订方案-4-2-质量检查概念-bfd07c53",
+      "surface_kind": "page",
+      "platform": "web",
+      "frame_intent": "简洁检查报告 slide：六项交付检查概念，不堆命令细节。",
+      "source_evidence": [
+        "内容包完整",
+        "计划一致",
+        "PRD 可读取",
+        "目录可导航",
+        "标注安全",
+        "本地可验收"
+      ],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "质量检查概念",
+        "surface_archetype": "quality_check_report",
+        "layout_regions": [
+          "顶部栏",
+          "侧边导航",
+          "内容卡片",
+          "数据区"
+        ],
+        "component_inventory": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "内容包完整",
+          "计划一致",
+          "PRD 可读取",
+          "目录可导航",
+          "标注安全",
+          "本地可验收"
+        ],
+        "data_examples": [],
+        "state_variants": [
+          "内容包完整。",
+          "计划和页面一致。",
+          "PRD 可读取。",
+          "目录可导航。",
+          "标注位置安全。",
+          "预览可打开。"
+        ],
+        "interaction_jumps": [],
+        "annotations": [
+          "ProtoPilot 生成物不是“画完就算”。",
+          "它有基本的交付检查闭环。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "内容包完整",
+          "计划一致",
+          "PRD 可读取",
+          "目录可导航",
+          "标注安全",
+          "本地可验收"
+        ]
+      }
+    }
+  ],
+  "steps": [
+    {
+      "id": "step-开场-hero-首屏-1f6e7de5",
+      "title": "Hero 首屏",
+      "group_id": "group-开场-413be2b2",
+      "kind": "prototype_step",
+      "platform": "web",
+      "prd_sections": [
+        "1. 开场",
+        "1.1 Hero 首屏"
+      ],
+      "scene_type": "web_wireframe",
+      "scene_type_reason": "「Hero 首屏」按 PRD 呈现形式：网站式首屏。",
+      "source_evidence": [
+        "Finn ProtoPilot",
+        "Turn PRDs into review-ready prototypes.",
+        "把 PRD/spec 转成可宣讲、可本地修订、可质量检查的 HTML 原型交付包。",
+        "HTML Prototype"
+      ],
+      "business_entities": [
+        "Hero",
+        "首屏"
+      ],
+      "interaction_goal": "第一眼建立 ProtoPilot 品牌感与能力气质。",
+      "states_or_rules": [],
+      "state": "planned",
+      "rendered": false,
+      "notes": "Prototype content lives in the Excalidraw scene.",
+      "screen_kind": "mobile",
+      "surface_id": "surface-1-开场-1-1-hero-首屏-73e09457",
+      "surface_kind": "page",
+      "state_id": "",
+      "base_surface_id": "",
+      "frame_intent": "网站式首屏：品牌、slogan 和整体气质是主角，不做工作台布局。",
+      "screen_purpose": "把「Hero 首屏」表达成可讨论、可编辑的草图",
+      "primary_ui_regions": [
+        "状态栏",
+        "导航栏",
+        "内容区",
+        "底部操作"
+      ],
+      "key_copy": [
+        "Finn ProtoPilot",
+        "Turn PRDs into review-ready prototypes.",
+        "把 PRD/spec 转成可宣讲、可本地修订、可质量检查的 HTML 原型交付包。",
+        "HTML Prototype",
+        "PRD Viewer",
+        "Presentation Shell",
+        "Local Revision"
+      ],
+      "state_data": [],
+      "linked_steps": [],
+      "annotation_refs": [],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "component_baseline": [
+        "statusbar",
+        "navigationbar",
+        "screenbody",
+        "topbar",
+        "sidenavortoolbar",
+        "contentcards",
+        "tableorformregion"
+      ],
+      "semantic_frame_spec": {
+        "platform": "mobile",
+        "surface_kind": "page",
+        "frame_intent": "呈现「Hero 首屏」这一真实产品界面/状态，便于围绕 PRD 证据讨论。",
+        "primary_ui_regions": [
+          "状态栏",
+          "导航栏",
+          "内容区",
+          "底部操作"
+        ],
+        "key_copy": [
+          "Finn ProtoPilot",
+          "Turn PRDs into review-ready prototypes.",
+          "把 PRD/spec 转成可宣讲、可本地修订、可质量检查的 HTML 原型交付包。",
+          "HTML Prototype",
+          "PRD Viewer",
+          "Presentation Shell",
+          "Local Revision"
+        ],
+        "state_data": [],
+        "component_baseline": [
+          "statusbar",
+          "navigationbar",
+          "screenbody",
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "source_evidence": [
+          "1.1 Hero 首屏",
+          "1. 开场",
+          "呈现形式",
+          "网站式首屏",
+          "整屏视觉，不使用手机框或普通卡片堆叠"
+        ],
+        "design_hints": {
+          "platform_hint": "web",
+          "navigation_terms": [],
+          "reference_count": 0,
+          "component_baseline": [
+            "topbar",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ]
+        },
+        "storyboard_brief": {
+          "status": "authored_from_prd",
+          "screen_role": "Hero 首屏",
+          "surface_archetype": "hero_launch",
+          "layout_regions": [
+            "状态栏",
+            "导航栏",
+            "内容区",
+            "底部操作"
+          ],
+          "component_inventory": [
+            "statusbar",
+            "navigationbar",
+            "screenbody",
+            "topbar",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ],
+          "visible_copy": [
+            "Finn ProtoPilot",
+            "Turn PRDs into review-ready prototypes.",
+            "把 PRD/spec 转成可宣讲、可本地修订、可质量检查的 HTML 原型交付包。",
+            "HTML Prototype",
+            "PRD Viewer",
+            "Presentation Shell",
+            "Local Revision"
+          ],
+          "data_examples": [],
+          "state_variants": [],
+          "interaction_jumps": [],
+          "annotations": [
+            "这是一个完整、专业、有审美的原型生成 skill。",
+            "第一眼先建立品牌感和能力气质，不急着解释细节。"
+          ],
+          "design_refs": [],
+          "must_not_draw": [
+            "HTML screen 源码",
+            "revision note 卡片",
+            "iframe",
+            "TODO",
+            "集合页"
+          ],
+          "source_evidence": [
+            "Finn ProtoPilot",
+            "Turn PRDs into review-ready prototypes.",
+            "把 PRD/spec 转成可宣讲、可本地修订、可质量检查的 HTML 原型交付包。",
+            "HTML Prototype"
+          ]
+        }
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "Hero 首屏",
+        "surface_archetype": "hero_launch",
+        "layout_regions": [
+          "状态栏",
+          "导航栏",
+          "内容区",
+          "底部操作"
+        ],
+        "component_inventory": [
+          "statusbar",
+          "navigationbar",
+          "screenbody",
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "Finn ProtoPilot",
+          "Turn PRDs into review-ready prototypes.",
+          "把 PRD/spec 转成可宣讲、可本地修订、可质量检查的 HTML 原型交付包。",
+          "HTML Prototype",
+          "PRD Viewer",
+          "Presentation Shell",
+          "Local Revision"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "这是一个完整、专业、有审美的原型生成 skill。",
+          "第一眼先建立品牌感和能力气质，不急着解释细节。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "Finn ProtoPilot",
+          "Turn PRDs into review-ready prototypes.",
+          "把 PRD/spec 转成可宣讲、可本地修订、可质量检查的 HTML 原型交付包。",
+          "HTML Prototype"
+        ]
+      },
+      "storyboard_brief_status": "authored_from_prd",
+      "screen_role": "Hero 首屏",
+      "surface_archetype": "hero_launch",
+      "board_id": "board-supporting-states-6a2eae56",
+      "board_file": "prototype-excalidraw/boards/board-supporting-states-6a2eae56.excalidraw",
+      "frame_id": "71c5072e-frame",
+      "frame_name": "1 · Hero 首屏",
+      "frame_order": 1
+    },
+    {
+      "id": "step-生成能力-音乐播放-app-f94b45aa",
+      "title": "音乐播放 App",
+      "group_id": "group-生成能力-3ddb7bd4",
+      "kind": "prototype_step",
+      "platform": "mobile",
+      "prd_sections": [
+        "2. 生成能力",
+        "2.1 音乐播放 App（参考网易云音乐）"
+      ],
+      "scene_type": "mobile_wireframe",
+      "scene_type_reason": "「音乐播放 App」按 PRD 呈现形式：独立手机 App 原型页。",
+      "source_evidence": [
+        "专辑封面",
+        "歌曲名、歌手名",
+        "播放进度",
+        "播放控制"
+      ],
+      "business_entities": [
+        "音乐播放",
+        "App",
+        "参考网易云音乐"
+      ],
+      "interaction_goal": "展示媒体类 App 的播放器视觉结构，可被单独 Spotlight。",
+      "states_or_rules": [],
+      "state": "planned",
+      "rendered": false,
+      "notes": "Prototype content lives in the Excalidraw scene.",
+      "screen_kind": "flow_note",
+      "surface_id": "surface-2-生成能力-2-1-音乐播放-app-参考网易云音乐-4312be05",
+      "surface_kind": "page",
+      "state_id": "",
+      "base_surface_id": "",
+      "frame_intent": "播放器页面：封面、歌曲信息、进度条与控制区构成完整媒体 App 界面。",
+      "screen_purpose": "把「音乐播放 App」表达成可讨论、可编辑的草图",
+      "primary_ui_regions": [
+        "规则标题",
+        "关键条件",
+        "结果状态",
+        "关联界面"
+      ],
+      "key_copy": [
+        "Midnight Drive",
+        "Finn Studio",
+        "专辑封面",
+        "播放控制",
+        "歌词",
+        "播放队列",
+        "1:24",
+        "3:48"
+      ],
+      "state_data": [],
+      "linked_steps": [],
+      "annotation_refs": [],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "component_baseline": [
+        "statusbar",
+        "navigationbar",
+        "screenbody",
+        "topbar",
+        "sidenavortoolbar",
+        "contentcards",
+        "tableorformregion"
+      ],
+      "semantic_frame_spec": {
+        "platform": "mobile",
+        "surface_kind": "page",
+        "frame_intent": "呈现「音乐播放 App」这一真实产品界面/状态，便于围绕 PRD 证据讨论。",
+        "primary_ui_regions": [
+          "规则标题",
+          "关键条件",
+          "结果状态",
+          "关联界面"
+        ],
+        "key_copy": [
+          "Midnight Drive",
+          "Finn Studio",
+          "专辑封面",
+          "播放控制",
+          "歌词",
+          "播放队列",
+          "1:24",
+          "3:48"
+        ],
+        "state_data": [],
+        "component_baseline": [
+          "statusbar",
+          "navigationbar",
+          "screenbody",
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "source_evidence": [
+          "2.1 音乐播放 App（参考网易云音乐）",
+          "2. 生成能力",
+          "呈现形式",
+          "独立手机 App 原型页",
+          "手机界面是主 surface"
+        ],
+        "design_hints": {
+          "platform_hint": "web",
+          "navigation_terms": [],
+          "reference_count": 0,
+          "component_baseline": [
+            "topbar",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ]
+        },
+        "storyboard_brief": {
+          "status": "authored_from_prd",
+          "screen_role": "音乐播放 App",
+          "surface_archetype": "music_player",
+          "layout_regions": [
+            "规则标题",
+            "关键条件",
+            "结果状态",
+            "关联界面"
+          ],
+          "component_inventory": [
+            "statusbar",
+            "navigationbar",
+            "screenbody",
+            "topbar",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ],
+          "visible_copy": [
+            "Midnight Drive",
+            "Finn Studio",
+            "专辑封面",
+            "播放控制",
+            "歌词",
+            "播放队列",
+            "1:24",
+            "3:48"
+          ],
+          "data_examples": [],
+          "state_variants": [],
+          "interaction_jumps": [],
+          "annotations": [
+            "ProtoPilot 能生成媒体类 App 的视觉氛围。",
+            "手机原型应有完整展示面积，可被单独 Spotlight。"
+          ],
+          "design_refs": [],
+          "must_not_draw": [
+            "HTML screen 源码",
+            "revision note 卡片",
+            "iframe",
+            "TODO",
+            "集合页"
+          ],
+          "source_evidence": [
+            "专辑封面",
+            "歌曲名、歌手名",
+            "播放进度",
+            "播放控制"
+          ]
+        }
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "音乐播放 App",
+        "surface_archetype": "music_player",
+        "layout_regions": [
+          "规则标题",
+          "关键条件",
+          "结果状态",
+          "关联界面"
+        ],
+        "component_inventory": [
+          "statusbar",
+          "navigationbar",
+          "screenbody",
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "Midnight Drive",
+          "Finn Studio",
+          "专辑封面",
+          "播放控制",
+          "歌词",
+          "播放队列",
+          "1:24",
+          "3:48"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "ProtoPilot 能生成媒体类 App 的视觉氛围。",
+          "手机原型应有完整展示面积，可被单独 Spotlight。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "专辑封面",
+          "歌曲名、歌手名",
+          "播放进度",
+          "播放控制"
+        ]
+      },
+      "storyboard_brief_status": "authored_from_prd",
+      "screen_role": "音乐播放 App",
+      "surface_archetype": "music_player",
+      "board_id": "board-2-生成能力-part-1-13467082",
+      "board_file": "prototype-excalidraw/boards/board-2-生成能力-part-1-13467082.excalidraw",
+      "frame_id": "c7bf5a98-frame",
+      "frame_name": "1 · 音乐播放 App",
+      "frame_order": 1
+    },
+    {
+      "id": "step-生成能力-小红书风格内容-app-a5ebda6f",
+      "title": "小红书风格内容 App",
+      "group_id": "group-生成能力-3ddb7bd4",
+      "kind": "prototype_step",
+      "platform": "mobile",
+      "prd_sections": [
+        "2. 生成能力",
+        "2.2 小红书风格内容 App（参考小红书首页）"
+      ],
+      "scene_type": "mobile_wireframe",
+      "scene_type_reason": "「小红书风格内容 App」按 PRD 呈现形式：独立手机 App 原型页。",
+      "source_evidence": [
+        "封面图",
+        "标题、作者、正文摘要",
+        "点赞、收藏、评论信息",
+        "标签"
+      ],
+      "business_entities": [
+        "小红书风格内容",
+        "App",
+        "参考小红书首页"
+      ],
+      "interaction_goal": "展示内容社区的信息密度与视觉气质，可被单独 Spotlight。",
+      "states_or_rules": [
+        "可在手机外侧放一条真实标注，用于演示短规则或待确认点"
+      ],
+      "state": "planned",
+      "rendered": false,
+      "notes": "Prototype content lives in the Excalidraw scene.",
+      "screen_kind": "mobile",
+      "surface_id": "surface-2-生成能力-2-2-小红书风格内容-app-参考小红书首页-8480869a",
+      "surface_kind": "page",
+      "state_id": "",
+      "base_surface_id": "",
+      "frame_intent": "小红书式双列笔记瀑布流：大图封面 + 标题 + 作者 + 互动数据。",
+      "screen_purpose": "把「小红书风格内容 App」表达成可讨论、可编辑的草图",
+      "primary_ui_regions": [
+        "状态栏",
+        "导航栏",
+        "内容区",
+        "底部操作"
+      ],
+      "key_copy": [
+        "周末露营攻略",
+        "Finn 生活",
+        "通勤 OOTD",
+        "City walk 路线",
+        "封面图",
+        "点赞",
+        "收藏",
+        "评论",
+        "露营",
+        "穿搭"
+      ],
+      "state_data": [
+        "可在手机外侧放一条真实标注，用于演示短规则或待确认点"
+      ],
+      "linked_steps": [],
+      "annotation_refs": [],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "component_baseline": [
+        "statusbar",
+        "navigationbar",
+        "screenbody",
+        "topbar",
+        "sidenavortoolbar",
+        "contentcards",
+        "tableorformregion"
+      ],
+      "semantic_frame_spec": {
+        "platform": "mobile",
+        "surface_kind": "page",
+        "frame_intent": "呈现「小红书风格内容 App」这一真实产品界面/状态，便于围绕 PRD 证据讨论。",
+        "primary_ui_regions": [
+          "状态栏",
+          "导航栏",
+          "内容区",
+          "底部操作"
+        ],
+        "key_copy": [
+          "周末露营攻略",
+          "Finn 生活",
+          "通勤 OOTD",
+          "City walk 路线",
+          "封面图",
+          "点赞",
+          "收藏",
+          "评论",
+          "露营",
+          "穿搭"
+        ],
+        "state_data": [
+          "可在手机外侧放一条真实标注，用于演示短规则或待确认点"
+        ],
+        "component_baseline": [
+          "statusbar",
+          "navigationbar",
+          "screenbody",
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "source_evidence": [
+          "2.2 小红书风格内容 App（参考小红书首页）",
+          "2. 生成能力",
+          "呈现形式",
+          "独立手机 App 原型页",
+          "手机界面是主 surface"
+        ],
+        "design_hints": {
+          "platform_hint": "web",
+          "navigation_terms": [],
+          "reference_count": 0,
+          "component_baseline": [
+            "topbar",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ]
+        },
+        "storyboard_brief": {
+          "status": "authored_from_prd",
+          "screen_role": "小红书风格内容 App",
+          "surface_archetype": "content_feed",
+          "layout_regions": [
+            "状态栏",
+            "导航栏",
+            "内容区",
+            "底部操作"
+          ],
+          "component_inventory": [
+            "statusbar",
+            "navigationbar",
+            "screenbody",
+            "topbar",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ],
+          "visible_copy": [
+            "周末露营攻略",
+            "Finn 生活",
+            "通勤 OOTD",
+            "City walk 路线",
+            "封面图",
+            "点赞",
+            "收藏",
+            "评论",
+            "#露营",
+            "#穿搭"
+          ],
+          "data_examples": [],
+          "state_variants": [],
+          "interaction_jumps": [],
+          "annotations": [
+            "ProtoPilot 能生成内容社区类布局。",
+            "内容产品的信息密度和视觉气质应独立呈现。"
+          ],
+          "design_refs": [],
+          "must_not_draw": [
+            "HTML screen 源码",
+            "revision note 卡片",
+            "iframe",
+            "TODO",
+            "集合页"
+          ],
+          "source_evidence": [
+            "封面图",
+            "标题、作者、正文摘要",
+            "点赞、收藏、评论信息",
+            "标签"
+          ]
+        }
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "小红书风格内容 App",
+        "surface_archetype": "content_feed",
+        "layout_regions": [
+          "状态栏",
+          "导航栏",
+          "内容区",
+          "底部操作"
+        ],
+        "component_inventory": [
+          "statusbar",
+          "navigationbar",
+          "screenbody",
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "周末露营攻略",
+          "Finn 生活",
+          "通勤 OOTD",
+          "City walk 路线",
+          "封面图",
+          "点赞",
+          "收藏",
+          "评论",
+          "#露营",
+          "#穿搭"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "ProtoPilot 能生成内容社区类布局。",
+          "内容产品的信息密度和视觉气质应独立呈现。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "封面图",
+          "标题、作者、正文摘要",
+          "点赞、收藏、评论信息",
+          "标签"
+        ]
+      },
+      "storyboard_brief_status": "authored_from_prd",
+      "screen_role": "小红书风格内容 App",
+      "surface_archetype": "content_feed",
+      "board_id": "board-2-生成能力-part-1-13467082",
+      "board_file": "prototype-excalidraw/boards/board-2-生成能力-part-1-13467082.excalidraw",
+      "frame_id": "47d8fc03-frame",
+      "frame_name": "2 · 小红书风格内容 App",
+      "frame_order": 2
+    },
+    {
+      "id": "step-生成能力-短视频-app-f9c0da99",
+      "title": "短视频 App",
+      "group_id": "group-生成能力-3ddb7bd4",
+      "kind": "prototype_step",
+      "platform": "mobile",
+      "prd_sections": [
+        "2. 生成能力",
+        "2.3 短视频 App（参考抖音）"
+      ],
+      "scene_type": "mobile_wireframe",
+      "scene_type_reason": "「短视频 App」按 PRD 呈现形式：独立手机 App 原型页。",
+      "source_evidence": [
+        "全屏视频区域",
+        "右侧点赞、评论、分享",
+        "底部作者、标题、音乐条"
+      ],
+      "business_entities": [
+        "短视频",
+        "App",
+        "参考抖音"
+      ],
+      "interaction_goal": "展示沉浸式短视频界面，不与其它 App 共用通用模板。",
+      "states_or_rules": [],
+      "state": "planned",
+      "rendered": false,
+      "notes": "Prototype content lives in the Excalidraw scene.",
+      "screen_kind": "mobile",
+      "surface_id": "surface-2-生成能力-2-3-短视频-app-参考抖音-bc70f750",
+      "surface_kind": "page",
+      "state_id": "",
+      "base_surface_id": "",
+      "frame_intent": "抖音式沉浸式竖屏：全屏视频 + 右侧互动栏 + 底部作者与音乐条。",
+      "screen_purpose": "把「短视频 App」表达成可讨论、可编辑的草图",
+      "primary_ui_regions": [
+        "状态栏",
+        "导航栏",
+        "内容区",
+        "底部操作"
+      ],
+      "key_copy": [
+        "@FinnStudio",
+        "Prototype walkthrough",
+        "原声 - Midnight Drive",
+        "点赞",
+        "评论",
+        "分享",
+        "全屏视频"
+      ],
+      "state_data": [],
+      "linked_steps": [],
+      "annotation_refs": [],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "component_baseline": [
+        "statusbar",
+        "navigationbar",
+        "screenbody",
+        "topbar",
+        "sidenavortoolbar",
+        "contentcards",
+        "tableorformregion"
+      ],
+      "semantic_frame_spec": {
+        "platform": "mobile",
+        "surface_kind": "page",
+        "frame_intent": "呈现「短视频 App」这一真实产品界面/状态，便于围绕 PRD 证据讨论。",
+        "primary_ui_regions": [
+          "状态栏",
+          "导航栏",
+          "内容区",
+          "底部操作"
+        ],
+        "key_copy": [
+          "@FinnStudio",
+          "Prototype walkthrough",
+          "原声 - Midnight Drive",
+          "点赞",
+          "评论",
+          "分享",
+          "全屏视频"
+        ],
+        "state_data": [],
+        "component_baseline": [
+          "statusbar",
+          "navigationbar",
+          "screenbody",
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "source_evidence": [
+          "2.3 短视频 App（参考抖音）",
+          "2. 生成能力",
+          "呈现形式",
+          "独立手机 App 原型页",
+          "全屏视频界面是主 surface"
+        ],
+        "design_hints": {
+          "platform_hint": "web",
+          "navigation_terms": [],
+          "reference_count": 0,
+          "component_baseline": [
+            "topbar",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ]
+        },
+        "storyboard_brief": {
+          "status": "authored_from_prd",
+          "screen_role": "短视频 App",
+          "surface_archetype": "short_video_immersive",
+          "layout_regions": [
+            "状态栏",
+            "导航栏",
+            "内容区",
+            "底部操作"
+          ],
+          "component_inventory": [
+            "statusbar",
+            "navigationbar",
+            "screenbody",
+            "topbar",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ],
+          "visible_copy": [
+            "@FinnStudio",
+            "Prototype walkthrough",
+            "原声 - Midnight Drive",
+            "点赞",
+            "评论",
+            "分享",
+            "全屏视频"
+          ],
+          "data_examples": [],
+          "state_variants": [],
+          "interaction_jumps": [],
+          "annotations": [
+            "ProtoPilot 能表达沉浸式移动端界面。",
+            "不同 App 类型不应共用同一种通用模板。"
+          ],
+          "design_refs": [],
+          "must_not_draw": [
+            "HTML screen 源码",
+            "revision note 卡片",
+            "iframe",
+            "TODO",
+            "集合页"
+          ],
+          "source_evidence": [
+            "全屏视频区域",
+            "右侧点赞、评论、分享",
+            "底部作者、标题、音乐条"
+          ]
+        }
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "短视频 App",
+        "surface_archetype": "short_video_immersive",
+        "layout_regions": [
+          "状态栏",
+          "导航栏",
+          "内容区",
+          "底部操作"
+        ],
+        "component_inventory": [
+          "statusbar",
+          "navigationbar",
+          "screenbody",
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "@FinnStudio",
+          "Prototype walkthrough",
+          "原声 - Midnight Drive",
+          "点赞",
+          "评论",
+          "分享",
+          "全屏视频"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "ProtoPilot 能表达沉浸式移动端界面。",
+          "不同 App 类型不应共用同一种通用模板。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "全屏视频区域",
+          "右侧点赞、评论、分享",
+          "底部作者、标题、音乐条"
+        ]
+      },
+      "storyboard_brief_status": "authored_from_prd",
+      "screen_role": "短视频 App",
+      "surface_archetype": "short_video_immersive",
+      "board_id": "board-2-生成能力-part-1-13467082",
+      "board_file": "prototype-excalidraw/boards/board-2-生成能力-part-1-13467082.excalidraw",
+      "frame_id": "045e3ce8-frame",
+      "frame_name": "3 · 短视频 App",
+      "frame_order": 3
+    },
+    {
+      "id": "step-生成能力-微信风格聊天-app-570443a9",
+      "title": "微信风格聊天 App",
+      "group_id": "group-生成能力-3ddb7bd4",
+      "kind": "prototype_step",
+      "platform": "mobile",
+      "prd_sections": [
+        "2. 生成能力",
+        "2.4 微信风格聊天 App（参考微信聊天列表）"
+      ],
+      "scene_type": "mobile_wireframe",
+      "scene_type_reason": "「微信风格聊天 App」按 PRD 呈现形式：独立手机 App 原型页。",
+      "source_evidence": [
+        "头像",
+        "消息预览",
+        "时间",
+        "未读状态",
+        "顶部搜索或新增入口"
+      ],
+      "business_entities": [
+        "微信风格聊天",
+        "App",
+        "参考微信聊天列表"
+      ],
+      "interaction_goal": "展示高频工具型 App 的信息密度与列表结构。",
+      "states_or_rules": [
+        "未读状态"
+      ],
+      "state": "planned",
+      "rendered": false,
+      "notes": "Prototype content lives in the Excalidraw scene.",
+      "screen_kind": "mobile",
+      "surface_id": "surface-2-生成能力-2-4-微信风格聊天-app-参考微信聊天列表-2e8dd0fb",
+      "surface_kind": "page",
+      "state_id": "",
+      "base_surface_id": "",
+      "frame_intent": "微信会话列表：头像、预览、时间、未读角标与顶部工具栏。",
+      "screen_purpose": "把「微信风格聊天 App」表达成可讨论、可编辑的草图",
+      "primary_ui_regions": [
+        "状态栏",
+        "导航栏",
+        "内容区",
+        "底部操作"
+      ],
+      "key_copy": [
+        "微信",
+        "Finn 产品群",
+        "今晚把原型发一下？",
+        "阿南",
+        "[图片]",
+        "18:32",
+        "未读",
+        "搜索"
+      ],
+      "state_data": [
+        "未读状态"
+      ],
+      "linked_steps": [],
+      "annotation_refs": [],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "component_baseline": [
+        "statusbar",
+        "navigationbar",
+        "screenbody",
+        "topbar",
+        "sidenavortoolbar",
+        "contentcards",
+        "tableorformregion"
+      ],
+      "semantic_frame_spec": {
+        "platform": "mobile",
+        "surface_kind": "page",
+        "frame_intent": "呈现「微信风格聊天 App」这一真实产品界面/状态，便于围绕 PRD 证据讨论。",
+        "primary_ui_regions": [
+          "状态栏",
+          "导航栏",
+          "内容区",
+          "底部操作"
+        ],
+        "key_copy": [
+          "微信",
+          "Finn 产品群",
+          "今晚把原型发一下？",
+          "阿南",
+          "[图片]",
+          "18:32",
+          "未读",
+          "搜索"
+        ],
+        "state_data": [
+          "未读状态"
+        ],
+        "component_baseline": [
+          "statusbar",
+          "navigationbar",
+          "screenbody",
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "source_evidence": [
+          "2.4 微信风格聊天 App（参考微信聊天列表）",
+          "2. 生成能力",
+          "呈现形式",
+          "独立手机 App 原型页",
+          "会话列表或聊天窗口是主 surface"
+        ],
+        "design_hints": {
+          "platform_hint": "web",
+          "navigation_terms": [],
+          "reference_count": 0,
+          "component_baseline": [
+            "topbar",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ]
+        },
+        "storyboard_brief": {
+          "status": "authored_from_prd",
+          "screen_role": "微信风格聊天 App",
+          "surface_archetype": "chat_session_list",
+          "layout_regions": [
+            "状态栏",
+            "导航栏",
+            "内容区",
+            "底部操作"
+          ],
+          "component_inventory": [
+            "statusbar",
+            "navigationbar",
+            "screenbody",
+            "topbar",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ],
+          "visible_copy": [
+            "微信",
+            "Finn 产品群",
+            "今晚把原型发一下？",
+            "阿南",
+            "[图片]",
+            "18:32",
+            "未读",
+            "搜索"
+          ],
+          "data_examples": [],
+          "state_variants": [],
+          "interaction_jumps": [],
+          "annotations": [
+            "ProtoPilot 能表达高频工具型 App 的信息密度。"
+          ],
+          "design_refs": [],
+          "must_not_draw": [
+            "HTML screen 源码",
+            "revision note 卡片",
+            "iframe",
+            "TODO",
+            "集合页"
+          ],
+          "source_evidence": [
+            "头像",
+            "消息预览",
+            "时间",
+            "未读状态",
+            "顶部搜索或新增入口"
+          ]
+        }
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "微信风格聊天 App",
+        "surface_archetype": "chat_session_list",
+        "layout_regions": [
+          "状态栏",
+          "导航栏",
+          "内容区",
+          "底部操作"
+        ],
+        "component_inventory": [
+          "statusbar",
+          "navigationbar",
+          "screenbody",
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "微信",
+          "Finn 产品群",
+          "今晚把原型发一下？",
+          "阿南",
+          "[图片]",
+          "18:32",
+          "未读",
+          "搜索"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "ProtoPilot 能表达高频工具型 App 的信息密度。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "头像",
+          "消息预览",
+          "时间",
+          "未读状态",
+          "顶部搜索或新增入口"
+        ]
+      },
+      "storyboard_brief_status": "authored_from_prd",
+      "screen_role": "微信风格聊天 App",
+      "surface_archetype": "chat_session_list",
+      "board_id": "board-2-生成能力-part-1-13467082",
+      "board_file": "prototype-excalidraw/boards/board-2-生成能力-part-1-13467082.excalidraw",
+      "frame_id": "69bed536-frame",
+      "frame_name": "4 · 微信风格聊天 App",
+      "frame_order": 4
+    },
+    {
+      "id": "step-生成能力-saa-s-工作台-a4e26e10",
+      "title": "SaaS 工作台",
+      "group_id": "group-生成能力-3ddb7bd4",
+      "kind": "prototype_step",
+      "platform": "web",
+      "prd_sections": [
+        "2. 生成能力",
+        "2.5 SaaS 工作台"
+      ],
+      "scene_type": "list_table",
+      "scene_type_reason": "「SaaS 工作台」按 PRD 呈现形式：独立 Web App 原型页。",
+      "source_evidence": [
+        "指标卡",
+        "筛选或导航",
+        "表格",
+        "状态标签",
+        "操作入口"
+      ],
+      "business_entities": [
+        "SaaS",
+        "工作台"
+      ],
+      "interaction_goal": "展示 SaaS 工作台的信息架构，与官网首页分离成独立 Web App 页。",
+      "states_or_rules": [
+        "状态标签"
+      ],
+      "state": "planned",
+      "rendered": false,
+      "notes": "Prototype content lives in the Excalidraw scene.",
+      "screen_kind": "web",
+      "surface_id": "surface-2-生成能力-2-5-saa-s-工作台-5e9a01bc",
+      "surface_kind": "state",
+      "state_id": "state-saa-s-工作台-8d2b3850",
+      "base_surface_id": "",
+      "frame_intent": "AI 内容审核后台：侧栏导航、指标卡、筛选条、带状态标签的数据表格。",
+      "screen_purpose": "把「SaaS 工作台」表达成可讨论、可编辑的草图",
+      "primary_ui_regions": [
+        "顶部栏",
+        "侧边导航",
+        "内容卡片",
+        "数据区"
+      ],
+      "key_copy": [
+        "Finn Admin",
+        "内容审核",
+        "待审核",
+        "已通过",
+        "风险命中",
+        "今日处理",
+        "待处理队列",
+        "状态",
+        "操作"
+      ],
+      "state_data": [
+        "状态标签"
+      ],
+      "linked_steps": [],
+      "annotation_refs": [],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "component_baseline": [
+        "topbar",
+        "navigationortoolbar",
+        "contentpanel",
+        "stateillustration",
+        "statecopy",
+        "stateaction",
+        "sidenavortoolbar",
+        "contentcards",
+        "tableorformregion"
+      ],
+      "semantic_frame_spec": {
+        "platform": "web",
+        "surface_kind": "state",
+        "frame_intent": "呈现「SaaS 工作台」这一真实产品界面/状态，便于围绕 PRD 证据讨论。",
+        "primary_ui_regions": [
+          "顶部栏",
+          "侧边导航",
+          "内容卡片",
+          "数据区"
+        ],
+        "key_copy": [
+          "Finn Admin",
+          "内容审核",
+          "待审核",
+          "已通过",
+          "风险命中",
+          "今日处理",
+          "待处理队列",
+          "状态",
+          "操作"
+        ],
+        "state_data": [
+          "状态标签"
+        ],
+        "component_baseline": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "stateillustration",
+          "statecopy",
+          "stateaction",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "source_evidence": [
+          "2.5 SaaS 工作台",
+          "2. 生成能力",
+          "呈现形式",
+          "独立 Web App 原型页",
+          "浏览器/后台工作台是主 surface"
+        ],
+        "design_hints": {
+          "platform_hint": "web",
+          "navigation_terms": [],
+          "reference_count": 0,
+          "component_baseline": [
+            "topbar",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ]
+        },
+        "storyboard_brief": {
+          "status": "authored_from_prd",
+          "screen_role": "SaaS 工作台",
+          "surface_archetype": "saas_workbench",
+          "layout_regions": [
+            "顶部栏",
+            "侧边导航",
+            "内容卡片",
+            "数据区"
+          ],
+          "component_inventory": [
+            "topbar",
+            "navigationortoolbar",
+            "contentpanel",
+            "stateillustration",
+            "statecopy",
+            "stateaction",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ],
+          "visible_copy": [
+            "Finn Admin",
+            "内容审核",
+            "待审核",
+            "已通过",
+            "风险命中",
+            "今日处理",
+            "待处理队列",
+            "状态",
+            "操作"
+          ],
+          "data_examples": [],
+          "state_variants": [],
+          "interaction_jumps": [],
+          "annotations": [
+            "ProtoPilot 能生成工作台、后台、SaaS 类界面。",
+            "Web 工作台不能和官网首页合并在同一页。"
+          ],
+          "design_refs": [],
+          "must_not_draw": [
+            "HTML screen 源码",
+            "revision note 卡片",
+            "iframe",
+            "TODO",
+            "集合页"
+          ],
+          "source_evidence": [
+            "指标卡",
+            "筛选或导航",
+            "表格",
+            "状态标签",
+            "操作入口"
+          ]
+        }
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "SaaS 工作台",
+        "surface_archetype": "saas_workbench",
+        "layout_regions": [
+          "顶部栏",
+          "侧边导航",
+          "内容卡片",
+          "数据区"
+        ],
+        "component_inventory": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "stateillustration",
+          "statecopy",
+          "stateaction",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "Finn Admin",
+          "内容审核",
+          "待审核",
+          "已通过",
+          "风险命中",
+          "今日处理",
+          "待处理队列",
+          "状态",
+          "操作"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "ProtoPilot 能生成工作台、后台、SaaS 类界面。",
+          "Web 工作台不能和官网首页合并在同一页。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "指标卡",
+          "筛选或导航",
+          "表格",
+          "状态标签",
+          "操作入口"
+        ]
+      },
+      "storyboard_brief_status": "authored_from_prd",
+      "screen_role": "SaaS 工作台",
+      "surface_archetype": "saas_workbench",
+      "is_showcase_sample": false,
+      "board_id": "board-2-生成能力-part-1-13467082",
+      "board_file": "prototype-excalidraw/boards/board-2-生成能力-part-1-13467082.excalidraw",
+      "frame_id": "1201abba-frame",
+      "frame_name": "5 · SaaS 工作台",
+      "frame_order": 5
+    },
+    {
+      "id": "step-生成能力-科技官网首页-d16f659d",
+      "title": "科技官网首页",
+      "group_id": "group-生成能力-3ddb7bd4",
+      "kind": "prototype_step",
+      "platform": "web",
+      "prd_sections": [
+        "2. 生成能力",
+        "2.6 科技官网首页"
+      ],
+      "scene_type": "web_wireframe",
+      "scene_type_reason": "「科技官网首页」按 PRD 呈现形式：独立 Website 原型页。",
+      "source_evidence": [
+        "产品名或品牌名",
+        "Hero 文案",
+        "CTA",
+        "产品视觉或界面预览",
+        "信任指标"
+      ],
+      "business_entities": [
+        "科技官网首页"
+      ],
+      "interaction_goal": "展示 ProtoPilot 也能生成营销官网，与后台工作台区分开。",
+      "states_or_rules": [],
+      "state": "planned",
+      "rendered": false,
+      "notes": "Prototype content lives in the Excalidraw scene.",
+      "screen_kind": "web",
+      "surface_id": "surface-2-生成能力-2-6-科技官网首页-07e8abb8",
+      "surface_kind": "page",
+      "state_id": "",
+      "base_surface_id": "",
+      "frame_intent": "科技产品营销官网：顶栏导航 + Hero 文案 + 双 CTA + 产品预览窗 + 信任指标。",
+      "screen_purpose": "把「科技官网首页」表达成可讨论、可编辑的草图",
+      "primary_ui_regions": [
+        "顶部栏",
+        "侧边导航",
+        "内容卡片",
+        "数据区"
+      ],
+      "key_copy": [
+        "Finn ProtoPilot",
+        "Ship prototypes from your PRD",
+        "Start free",
+        "View demo",
+        "Product",
+        "Docs",
+        "Pricing",
+        "500+ Teams"
+      ],
+      "state_data": [],
+      "linked_steps": [],
+      "annotation_refs": [],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "component_baseline": [
+        "topbar",
+        "navigationortoolbar",
+        "contentpanel",
+        "sidenavortoolbar",
+        "contentcards",
+        "tableorformregion"
+      ],
+      "semantic_frame_spec": {
+        "platform": "web",
+        "surface_kind": "page",
+        "frame_intent": "呈现「科技官网首页」这一真实产品界面/状态，便于围绕 PRD 证据讨论。",
+        "primary_ui_regions": [
+          "顶部栏",
+          "侧边导航",
+          "内容卡片",
+          "数据区"
+        ],
+        "key_copy": [
+          "Finn ProtoPilot",
+          "Ship prototypes from your PRD",
+          "Start free",
+          "View demo",
+          "Product",
+          "Docs",
+          "Pricing",
+          "500+ Teams"
+        ],
+        "state_data": [],
+        "component_baseline": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "source_evidence": [
+          "2.6 科技官网首页",
+          "2. 生成能力",
+          "呈现形式",
+          "独立 Website 原型页",
+          "官网首页本体是主 surface"
+        ],
+        "design_hints": {
+          "platform_hint": "web",
+          "navigation_terms": [],
+          "reference_count": 0,
+          "component_baseline": [
+            "topbar",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ]
+        },
+        "storyboard_brief": {
+          "status": "authored_from_prd",
+          "screen_role": "科技官网首页",
+          "surface_archetype": "tech_marketing_site",
+          "layout_regions": [
+            "顶部栏",
+            "侧边导航",
+            "内容卡片",
+            "数据区"
+          ],
+          "component_inventory": [
+            "topbar",
+            "navigationortoolbar",
+            "contentpanel",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ],
+          "visible_copy": [
+            "Finn ProtoPilot",
+            "Ship prototypes from your PRD",
+            "Start free",
+            "View demo",
+            "Product",
+            "Docs",
+            "Pricing",
+            "500+ Teams"
+          ],
+          "data_examples": [],
+          "state_variants": [],
+          "interaction_jumps": [],
+          "annotations": [
+            "HTML showcase 不应全是功能型界面。",
+            "ProtoPilot 也能生成营销官网、产品首页、发布页这一类非后台界面。"
+          ],
+          "design_refs": [],
+          "must_not_draw": [
+            "HTML screen 源码",
+            "revision note 卡片",
+            "iframe",
+            "TODO",
+            "集合页"
+          ],
+          "source_evidence": [
+            "产品名或品牌名",
+            "Hero 文案",
+            "CTA",
+            "产品视觉或界面预览",
+            "信任指标"
+          ]
+        }
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "科技官网首页",
+        "surface_archetype": "tech_marketing_site",
+        "layout_regions": [
+          "顶部栏",
+          "侧边导航",
+          "内容卡片",
+          "数据区"
+        ],
+        "component_inventory": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "Finn ProtoPilot",
+          "Ship prototypes from your PRD",
+          "Start free",
+          "View demo",
+          "Product",
+          "Docs",
+          "Pricing",
+          "500+ Teams"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "HTML showcase 不应全是功能型界面。",
+          "ProtoPilot 也能生成营销官网、产品首页、发布页这一类非后台界面。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "产品名或品牌名",
+          "Hero 文案",
+          "CTA",
+          "产品视觉或界面预览",
+          "信任指标"
+        ]
+      },
+      "storyboard_brief_status": "authored_from_prd",
+      "screen_role": "科技官网首页",
+      "surface_archetype": "tech_marketing_site",
+      "is_showcase_sample": false,
+      "board_id": "board-2-生成能力-part-1-13467082",
+      "board_file": "prototype-excalidraw/boards/board-2-生成能力-part-1-13467082.excalidraw",
+      "frame_id": "28d8bb7e-frame",
+      "frame_name": "6 · 科技官网首页",
+      "frame_order": 6
+    },
+    {
+      "id": "step-生成能力-mac-app-原型-d333fcd5",
+      "title": "Mac App 原型",
+      "group_id": "group-生成能力-3ddb7bd4",
+      "kind": "prototype_step",
+      "platform": "web",
+      "prd_sections": [
+        "2. 生成能力",
+        "2.7 Mac App 原型"
+      ],
+      "scene_type": "web_wireframe",
+      "scene_type_reason": "「Mac App 原型」按 PRD 呈现形式：独立 Mac App 原型页。",
+      "source_evidence": [
+        "macOS 红黄绿窗口按钮",
+        "左侧项目或会话 sidebar",
+        "中间任务或代码对话区",
+        "右侧 preview / diff / inspector",
+        "顶部 toolbar"
+      ],
+      "business_entities": [
+        "Mac",
+        "App",
+        "原型"
+      ],
+      "interaction_goal": "展示 Mac 桌面软件的系统气质，区别于网页套壳。",
+      "states_or_rules": [],
+      "state": "planned",
+      "rendered": false,
+      "notes": "Prototype content lives in the Excalidraw scene.",
+      "screen_kind": "mobile",
+      "surface_id": "surface-2-生成能力-2-7-mac-app-原型-e93f69d5",
+      "surface_kind": "page",
+      "state_id": "",
+      "base_surface_id": "",
+      "frame_intent": "Codex 式 macOS 桌面应用：三栏布局 + 会话 sidebar + 代码对话 + 右侧 Preview。",
+      "screen_purpose": "把「Mac App 原型」表达成可讨论、可编辑的草图",
+      "primary_ui_regions": [
+        "状态栏",
+        "导航栏",
+        "内容区",
+        "底部操作"
+      ],
+      "key_copy": [
+        "Finn Codex",
+        "Projects",
+        "Preview",
+        "Diff",
+        "Ask Finn Codex…",
+        "Generate SaaS dashboard sketch"
+      ],
+      "state_data": [],
+      "linked_steps": [],
+      "annotation_refs": [],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "component_baseline": [
+        "topbar",
+        "navigationortoolbar",
+        "contentpanel",
+        "sidenavortoolbar",
+        "contentcards",
+        "tableorformregion"
+      ],
+      "semantic_frame_spec": {
+        "platform": "web",
+        "surface_kind": "page",
+        "frame_intent": "呈现「Mac App 原型」这一真实产品界面/状态，便于围绕 PRD 证据讨论。",
+        "primary_ui_regions": [
+          "状态栏",
+          "导航栏",
+          "内容区",
+          "底部操作"
+        ],
+        "key_copy": [
+          "Finn Codex",
+          "Projects",
+          "Preview",
+          "Diff",
+          "Ask Finn Codex…",
+          "Generate SaaS dashboard sketch"
+        ],
+        "state_data": [],
+        "component_baseline": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "source_evidence": [
+          "2.7 Mac App 原型",
+          "2. 生成能力",
+          "呈现形式",
+          "独立 Mac App 原型页",
+          "macOS 软件窗口是主 surface"
+        ],
+        "design_hints": {
+          "platform_hint": "web",
+          "navigation_terms": [],
+          "reference_count": 0,
+          "component_baseline": [
+            "topbar",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ]
+        },
+        "storyboard_brief": {
+          "status": "authored_from_prd",
+          "screen_role": "Mac App 原型",
+          "surface_archetype": "mac_desktop_app",
+          "layout_regions": [
+            "状态栏",
+            "导航栏",
+            "内容区",
+            "底部操作"
+          ],
+          "component_inventory": [
+            "topbar",
+            "navigationortoolbar",
+            "contentpanel",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ],
+          "visible_copy": [
+            "Finn Codex",
+            "Projects",
+            "Preview",
+            "Diff",
+            "Ask Finn Codex…",
+            "Generate SaaS dashboard sketch"
+          ],
+          "data_examples": [],
+          "state_variants": [],
+          "interaction_jumps": [],
+          "annotations": [
+            "ProtoPilot 可以生成具有系统气质的桌面软件原型。",
+            "Mac App 原型不等同于普通网页套壳。"
+          ],
+          "design_refs": [],
+          "must_not_draw": [
+            "HTML screen 源码",
+            "revision note 卡片",
+            "iframe",
+            "TODO",
+            "集合页"
+          ],
+          "source_evidence": [
+            "macOS 红黄绿窗口按钮",
+            "左侧项目或会话 sidebar",
+            "中间任务或代码对话区",
+            "右侧 preview / diff / inspector",
+            "顶部 toolbar"
+          ]
+        }
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "Mac App 原型",
+        "surface_archetype": "mac_desktop_app",
+        "layout_regions": [
+          "状态栏",
+          "导航栏",
+          "内容区",
+          "底部操作"
+        ],
+        "component_inventory": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "Finn Codex",
+          "Projects",
+          "Preview",
+          "Diff",
+          "Ask Finn Codex…",
+          "Generate SaaS dashboard sketch"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "ProtoPilot 可以生成具有系统气质的桌面软件原型。",
+          "Mac App 原型不等同于普通网页套壳。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "macOS 红黄绿窗口按钮",
+          "左侧项目或会话 sidebar",
+          "中间任务或代码对话区",
+          "右侧 preview / diff / inspector",
+          "顶部 toolbar"
+        ]
+      },
+      "storyboard_brief_status": "authored_from_prd",
+      "screen_role": "Mac App 原型",
+      "surface_archetype": "mac_desktop_app",
+      "board_id": "board-2-生成能力-part-2-43303650",
+      "board_file": "prototype-excalidraw/boards/board-2-生成能力-part-2-43303650.excalidraw",
+      "frame_id": "1f3c15dc-frame",
+      "frame_name": "1 · Mac App 原型",
+      "frame_order": 1
+    },
+    {
+      "id": "step-生成能力-windows-app-原型-b4c0b043",
+      "title": "Windows App 原型",
+      "group_id": "group-生成能力-3ddb7bd4",
+      "kind": "prototype_step",
+      "platform": "web",
+      "prd_sections": [
+        "2. 生成能力",
+        "2.8 Windows App 原型"
+      ],
+      "scene_type": "web_wireframe",
+      "scene_type_reason": "「Windows App 原型」按 PRD 呈现形式：独立 Windows App 原型页。",
+      "source_evidence": [
+        "Windows 标题栏和窗口控制按钮",
+        "左侧导航或项目树",
+        "顶部命令栏 / toolbar",
+        "中间任务日志、执行结果、diff",
+        "底部状态栏"
+      ],
+      "business_entities": [
+        "Windows",
+        "App",
+        "原型"
+      ],
+      "interaction_goal": "展示 Windows 桌面软件气质，与 Mac App 形成对比。",
+      "states_or_rules": [
+        "底部状态栏"
+      ],
+      "state": "planned",
+      "rendered": false,
+      "notes": "Prototype content lives in the Excalidraw scene.",
+      "screen_kind": "flow_note",
+      "surface_id": "surface-2-生成能力-2-8-windows-app-原型-db573581",
+      "surface_kind": "state",
+      "state_id": "state-windows-app-原型-46f04f09",
+      "base_surface_id": "",
+      "frame_intent": "Windows 任务执行器：项目树 + 命令栏 + 终端日志 + diff 区 + 底部状态栏。",
+      "screen_purpose": "把「Windows App 原型」表达成可讨论、可编辑的草图",
+      "primary_ui_regions": [
+        "规则标题",
+        "关键条件",
+        "结果状态",
+        "关联界面"
+      ],
+      "key_copy": [
+        "Finn Agent",
+        "Task Runner",
+        "运行",
+        "导出日志",
+        "工作区",
+        "Diff",
+        "就绪"
+      ],
+      "state_data": [
+        "底部状态栏"
+      ],
+      "linked_steps": [],
+      "annotation_refs": [],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "component_baseline": [
+        "topbar",
+        "navigationortoolbar",
+        "contentpanel",
+        "stateillustration",
+        "statecopy",
+        "stateaction",
+        "sidenavortoolbar",
+        "contentcards",
+        "tableorformregion"
+      ],
+      "semantic_frame_spec": {
+        "platform": "web",
+        "surface_kind": "state",
+        "frame_intent": "呈现「Windows App 原型」这一真实产品界面/状态，便于围绕 PRD 证据讨论。",
+        "primary_ui_regions": [
+          "规则标题",
+          "关键条件",
+          "结果状态",
+          "关联界面"
+        ],
+        "key_copy": [
+          "Finn Agent",
+          "Task Runner",
+          "运行",
+          "导出日志",
+          "工作区",
+          "Diff",
+          "就绪"
+        ],
+        "state_data": [
+          "底部状态栏"
+        ],
+        "component_baseline": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "stateillustration",
+          "statecopy",
+          "stateaction",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "source_evidence": [
+          "2.8 Windows App 原型",
+          "2. 生成能力",
+          "呈现形式",
+          "独立 Windows App 原型页",
+          "Windows 软件窗口是主 surface"
+        ],
+        "design_hints": {
+          "platform_hint": "web",
+          "navigation_terms": [],
+          "reference_count": 0,
+          "component_baseline": [
+            "topbar",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ]
+        },
+        "storyboard_brief": {
+          "status": "authored_from_prd",
+          "screen_role": "Windows App 原型",
+          "surface_archetype": "windows_desktop_app",
+          "layout_regions": [
+            "规则标题",
+            "关键条件",
+            "结果状态",
+            "关联界面"
+          ],
+          "component_inventory": [
+            "topbar",
+            "navigationortoolbar",
+            "contentpanel",
+            "stateillustration",
+            "statecopy",
+            "stateaction",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ],
+          "visible_copy": [
+            "Finn Agent",
+            "Task Runner",
+            "运行",
+            "导出日志",
+            "工作区",
+            "Diff",
+            "就绪"
+          ],
+          "data_examples": [],
+          "state_variants": [],
+          "interaction_jumps": [],
+          "annotations": [
+            "ProtoPilot 不只生成移动端和 Web，也能表达桌面软件。",
+            "Windows App 和 Mac App 应有不同系统气质。"
+          ],
+          "design_refs": [],
+          "must_not_draw": [
+            "HTML screen 源码",
+            "revision note 卡片",
+            "iframe",
+            "TODO",
+            "集合页"
+          ],
+          "source_evidence": [
+            "Windows 标题栏和窗口控制按钮",
+            "左侧导航或项目树",
+            "顶部命令栏 / toolbar",
+            "中间任务日志、执行结果、diff",
+            "底部状态栏"
+          ]
+        }
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "Windows App 原型",
+        "surface_archetype": "windows_desktop_app",
+        "layout_regions": [
+          "规则标题",
+          "关键条件",
+          "结果状态",
+          "关联界面"
+        ],
+        "component_inventory": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "stateillustration",
+          "statecopy",
+          "stateaction",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "Finn Agent",
+          "Task Runner",
+          "运行",
+          "导出日志",
+          "工作区",
+          "Diff",
+          "就绪"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "ProtoPilot 不只生成移动端和 Web，也能表达桌面软件。",
+          "Windows App 和 Mac App 应有不同系统气质。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "Windows 标题栏和窗口控制按钮",
+          "左侧导航或项目树",
+          "顶部命令栏 / toolbar",
+          "中间任务日志、执行结果、diff",
+          "底部状态栏"
+        ]
+      },
+      "storyboard_brief_status": "authored_from_prd",
+      "screen_role": "Windows App 原型",
+      "surface_archetype": "windows_desktop_app",
+      "board_id": "board-2-生成能力-part-2-43303650",
+      "board_file": "prototype-excalidraw/boards/board-2-生成能力-part-2-43303650.excalidraw",
+      "frame_id": "bf4b529d-frame",
+      "frame_name": "2 · Windows App 原型",
+      "frame_order": 2
+    },
+    {
+      "id": "step-宣讲解决方案-原型交付包是什么-3e5a08e3",
+      "title": "原型交付包是什么",
+      "group_id": "group-宣讲解决方案-e3b9787a",
+      "kind": "prototype_step",
+      "platform": "web",
+      "prd_sections": [
+        "3. 宣讲解决方案",
+        "3.1 原型交付包是什么"
+      ],
+      "scene_type": "flow",
+      "scene_type_reason": "「原型交付包是什么」按 PRD 呈现形式：左侧说明块 + 右侧简洁结构示意图。",
+      "source_evidence": [
+        "PRD/spec 是需求来源",
+        "原型界面是可讲解的生成结果",
+        "宣讲台负责目录与 Spotlight",
+        "本地 preview 支持修订"
+      ],
+      "business_entities": [
+        "原型交付包是什么"
+      ],
+      "interaction_goal": "让用户理解看到的不只是页面，而是一套可宣讲的交付包。",
+      "states_or_rules": [],
+      "state": "planned",
+      "rendered": false,
+      "notes": "Prototype content lives in the Excalidraw scene.",
+      "screen_kind": "mobile",
+      "surface_id": "surface-3-宣讲解决方案-3-1-原型交付包是什么-85186674",
+      "surface_kind": "page",
+      "state_id": "",
+      "base_surface_id": "",
+      "frame_intent": "左侧说明 + 右侧交付链路：从 PRD 到本地验收的完整交付包结构。",
+      "screen_purpose": "把「原型交付包是什么」表达成可讨论、可编辑的草图",
+      "primary_ui_regions": [
+        "状态栏",
+        "导航栏",
+        "内容区",
+        "底部操作"
+      ],
+      "key_copy": [
+        "PRD/spec",
+        "Plan",
+        "Prototype Screens",
+        "Presentation Shell",
+        "Local Review",
+        "可宣讲的原型交付包"
+      ],
+      "state_data": [],
+      "linked_steps": [],
+      "annotation_refs": [],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "component_baseline": [
+        "statusbar",
+        "navigationbar",
+        "screenbody",
+        "topbar",
+        "sidenavortoolbar",
+        "contentcards",
+        "tableorformregion"
+      ],
+      "semantic_frame_spec": {
+        "platform": "mobile",
+        "surface_kind": "page",
+        "frame_intent": "呈现「原型交付包是什么」这一真实产品界面/状态，便于围绕 PRD 证据讨论。",
+        "primary_ui_regions": [
+          "状态栏",
+          "导航栏",
+          "内容区",
+          "底部操作"
+        ],
+        "key_copy": [
+          "PRD/spec",
+          "Plan",
+          "Prototype Screens",
+          "Presentation Shell",
+          "Local Review",
+          "可宣讲的原型交付包"
+        ],
+        "state_data": [],
+        "component_baseline": [
+          "statusbar",
+          "navigationbar",
+          "screenbody",
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "source_evidence": [
+          "3.1 原型交付包是什么",
+          "3. 宣讲解决方案",
+          "呈现形式",
+          "左侧说明块 + 右侧简洁结构示意图",
+          "不使用手机演示"
+        ],
+        "design_hints": {
+          "platform_hint": "web",
+          "navigation_terms": [],
+          "reference_count": 0,
+          "component_baseline": [
+            "topbar",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ]
+        },
+        "storyboard_brief": {
+          "status": "authored_from_prd",
+          "screen_role": "原型交付包是什么",
+          "surface_archetype": "delivery_package_overview",
+          "layout_regions": [
+            "状态栏",
+            "导航栏",
+            "内容区",
+            "底部操作"
+          ],
+          "component_inventory": [
+            "statusbar",
+            "navigationbar",
+            "screenbody",
+            "topbar",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ],
+          "visible_copy": [
+            "PRD/spec",
+            "Plan",
+            "Prototype Screens",
+            "Presentation Shell",
+            "Local Review",
+            "可宣讲的原型交付包"
+          ],
+          "data_examples": [],
+          "state_variants": [],
+          "interaction_jumps": [],
+          "annotations": [
+            "用户看到的不只是页面，而是一套可宣讲的原型交付包。"
+          ],
+          "design_refs": [],
+          "must_not_draw": [
+            "HTML screen 源码",
+            "revision note 卡片",
+            "iframe",
+            "TODO",
+            "集合页"
+          ],
+          "source_evidence": [
+            "PRD/spec 是需求来源",
+            "原型界面是可讲解的生成结果",
+            "宣讲台负责目录与 Spotlight",
+            "本地 preview 支持修订"
+          ]
+        }
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "原型交付包是什么",
+        "surface_archetype": "delivery_package_overview",
+        "layout_regions": [
+          "状态栏",
+          "导航栏",
+          "内容区",
+          "底部操作"
+        ],
+        "component_inventory": [
+          "statusbar",
+          "navigationbar",
+          "screenbody",
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "PRD/spec",
+          "Plan",
+          "Prototype Screens",
+          "Presentation Shell",
+          "Local Review",
+          "可宣讲的原型交付包"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "用户看到的不只是页面，而是一套可宣讲的原型交付包。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "PRD/spec 是需求来源",
+          "原型界面是可讲解的生成结果",
+          "宣讲台负责目录与 Spotlight",
+          "本地 preview 支持修订"
+        ]
+      },
+      "storyboard_brief_status": "authored_from_prd",
+      "screen_role": "原型交付包是什么",
+      "surface_archetype": "delivery_package_overview",
+      "is_showcase_sample": false,
+      "board_id": "board-3-宣讲解决方案-482e4077",
+      "board_file": "prototype-excalidraw/boards/board-3-宣讲解决方案-482e4077.excalidraw",
+      "frame_id": "eef16ff5-frame",
+      "frame_name": "1 · 原型交付包是什么",
+      "frame_order": 1
+    },
+    {
+      "id": "step-宣讲解决方案-目录是讲解路线-1e6c922e",
+      "title": "目录是讲解路线",
+      "group_id": "group-宣讲解决方案-e3b9787a",
+      "kind": "prototype_step",
+      "platform": "web",
+      "prd_sections": [
+        "3. 宣讲解决方案",
+        "3.2 目录是讲解路线"
+      ],
+      "scene_type": "flow",
+      "scene_type_reason": "「目录是讲解路线」按 PRD 呈现形式：Slide 式路线图。",
+      "source_evidence": [
+        "开场",
+        "生成能力",
+        "宣讲解决方案",
+        "本地修订方案"
+      ],
+      "business_entities": [
+        "目录是讲解路线"
+      ],
+      "interaction_goal": "多个独立原型界面不散掉，可按章节讲。",
+      "states_or_rules": [],
+      "state": "planned",
+      "rendered": false,
+      "notes": "Prototype content lives in the Excalidraw scene.",
+      "screen_kind": "web",
+      "surface_id": "surface-3-宣讲解决方案-3-2-目录是讲解路线-60d40eb3",
+      "surface_kind": "page",
+      "state_id": "",
+      "base_surface_id": "",
+      "frame_intent": "Slide 式路线图：左侧目录栏 + 右侧章节卡片，强调目录是讲解路线。",
+      "screen_purpose": "把「目录是讲解路线」表达成可讨论、可编辑的草图",
+      "primary_ui_regions": [
+        "顶部栏",
+        "侧边导航",
+        "内容卡片",
+        "数据区"
+      ],
+      "key_copy": [
+        "开场",
+        "生成能力",
+        "宣讲解决方案",
+        "本地修订方案",
+        "讲解路线",
+        "按章节宣讲"
+      ],
+      "state_data": [],
+      "linked_steps": [],
+      "annotation_refs": [],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "component_baseline": [
+        "topbar",
+        "navigationortoolbar",
+        "contentpanel",
+        "sidenavortoolbar",
+        "contentcards",
+        "tableorformregion"
+      ],
+      "semantic_frame_spec": {
+        "platform": "web",
+        "surface_kind": "page",
+        "frame_intent": "呈现「目录是讲解路线」这一真实产品界面/状态，便于围绕 PRD 证据讨论。",
+        "primary_ui_regions": [
+          "顶部栏",
+          "侧边导航",
+          "内容卡片",
+          "数据区"
+        ],
+        "key_copy": [
+          "开场",
+          "生成能力",
+          "宣讲解决方案",
+          "本地修订方案",
+          "讲解路线",
+          "按章节宣讲"
+        ],
+        "state_data": [],
+        "component_baseline": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "source_evidence": [
+          "3.2 目录是讲解路线",
+          "3. 宣讲解决方案",
+          "呈现形式",
+          "Slide 式路线图",
+          "可以用左侧目录栏示意 + 右侧路线卡片"
+        ],
+        "design_hints": {
+          "platform_hint": "web",
+          "navigation_terms": [],
+          "reference_count": 0,
+          "component_baseline": [
+            "topbar",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ]
+        },
+        "storyboard_brief": {
+          "status": "authored_from_prd",
+          "screen_role": "目录是讲解路线",
+          "surface_archetype": "presentation_route_map",
+          "layout_regions": [
+            "顶部栏",
+            "侧边导航",
+            "内容卡片",
+            "数据区"
+          ],
+          "component_inventory": [
+            "topbar",
+            "navigationortoolbar",
+            "contentpanel",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ],
+          "visible_copy": [
+            "开场",
+            "生成能力",
+            "宣讲解决方案",
+            "本地修订方案",
+            "讲解路线",
+            "按章节宣讲"
+          ],
+          "data_examples": [],
+          "state_variants": [],
+          "interaction_jumps": [],
+          "annotations": [
+            "目录不是网站导航，而是讲解路线。",
+            "多个独立原型界面不会散掉，使用者可以按章节讲。"
+          ],
+          "design_refs": [],
+          "must_not_draw": [
+            "HTML screen 源码",
+            "revision note 卡片",
+            "iframe",
+            "TODO",
+            "集合页"
+          ],
+          "source_evidence": [
+            "开场",
+            "生成能力",
+            "宣讲解决方案",
+            "本地修订方案"
+          ]
+        }
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "目录是讲解路线",
+        "surface_archetype": "presentation_route_map",
+        "layout_regions": [
+          "顶部栏",
+          "侧边导航",
+          "内容卡片",
+          "数据区"
+        ],
+        "component_inventory": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "开场",
+          "生成能力",
+          "宣讲解决方案",
+          "本地修订方案",
+          "讲解路线",
+          "按章节宣讲"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "目录不是网站导航，而是讲解路线。",
+          "多个独立原型界面不会散掉，使用者可以按章节讲。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "开场",
+          "生成能力",
+          "宣讲解决方案",
+          "本地修订方案"
+        ]
+      },
+      "storyboard_brief_status": "authored_from_prd",
+      "screen_role": "目录是讲解路线",
+      "surface_archetype": "presentation_route_map",
+      "is_showcase_sample": false,
+      "board_id": "board-3-宣讲解决方案-482e4077",
+      "board_file": "prototype-excalidraw/boards/board-3-宣讲解决方案-482e4077.excalidraw",
+      "frame_id": "cc6e0d08-frame",
+      "frame_name": "2 · 目录是讲解路线",
+      "frame_order": 2
+    },
+    {
+      "id": "step-宣讲解决方案-prd-viewer-是需求依据-d430107e",
+      "title": "PRD Viewer 是需求依据",
+      "group_id": "group-宣讲解决方案-e3b9787a",
+      "kind": "prototype_step",
+      "platform": "web",
+      "prd_sections": [
+        "3. 宣讲解决方案",
+        "3.3 PRD Viewer 是需求依据"
+      ],
+      "scene_type": "web_wireframe",
+      "scene_type_reason": "「PRD Viewer 是需求依据」按 PRD 呈现形式：简单位置指示图。",
+      "source_evidence": [
+        "PRD Viewer 承载长说明",
+        "原型 screen 承载可见界面",
+        "二者并排解释生成原因"
+      ],
+      "business_entities": [
+        "PRD",
+        "Viewer",
+        "是需求依据"
+      ],
+      "interaction_goal": "PRD Viewer 是宣讲方案的一部分，不是附属文件。",
+      "states_or_rules": [
+        "PRD Viewer 承载长说明、规则、背景和验收标准",
+        "标注只写短句，例如：长说明归位：规则、背景和验收标准不要塞进 screen"
+      ],
+      "state": "planned",
+      "rendered": false,
+      "notes": "Prototype content lives in the Excalidraw scene.",
+      "screen_kind": "mobile",
+      "surface_id": "surface-3-宣讲解决方案-3-3-prd-viewer-是需求依据-fff07a69",
+      "surface_kind": "page",
+      "state_id": "",
+      "base_surface_id": "",
+      "frame_intent": "左右并排：原型区 + PRD Viewer，并用原生标注说明长说明归位。",
+      "screen_purpose": "把「PRD Viewer 是需求依据」表达成可讨论、可编辑的草图",
+      "primary_ui_regions": [
+        "状态栏",
+        "导航栏",
+        "内容区",
+        "底部操作"
+      ],
+      "key_copy": [
+        "PRD Viewer",
+        "原型 screen",
+        "需求依据",
+        "长说明归位",
+        "规则与验收标准"
+      ],
+      "state_data": [
+        "PRD Viewer 承载长说明、规则、背景和验收标准",
+        "标注只写短句，例如：长说明归位：规则、背景和验收标准不要塞进 screen"
+      ],
+      "linked_steps": [],
+      "annotation_refs": [],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "component_baseline": [
+        "statusbar",
+        "navigationbar",
+        "screenbody",
+        "topbar",
+        "sidenavortoolbar",
+        "contentcards",
+        "tableorformregion"
+      ],
+      "semantic_frame_spec": {
+        "platform": "mobile",
+        "surface_kind": "page",
+        "frame_intent": "呈现「PRD Viewer 是需求依据」这一真实产品界面/状态，便于围绕 PRD 证据讨论。",
+        "primary_ui_regions": [
+          "状态栏",
+          "导航栏",
+          "内容区",
+          "底部操作"
+        ],
+        "key_copy": [
+          "PRD Viewer",
+          "原型 screen",
+          "需求依据",
+          "长说明归位",
+          "规则与验收标准"
+        ],
+        "state_data": [
+          "PRD Viewer 承载长说明、规则、背景和验收标准",
+          "标注只写短句，例如：长说明归位：规则、背景和验收标准不要塞进 screen"
+        ],
+        "component_baseline": [
+          "statusbar",
+          "navigationbar",
+          "screenbody",
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "source_evidence": [
+          "3.3 PRD Viewer 是需求依据",
+          "3. 宣讲解决方案",
+          "呈现形式",
+          "简单位置指示图",
+          "左侧原型区域，右侧 PRD Viewer 区域，用线条或高亮说明二者关系"
+        ],
+        "design_hints": {
+          "platform_hint": "web",
+          "navigation_terms": [],
+          "reference_count": 0,
+          "component_baseline": [
+            "topbar",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ]
+        },
+        "storyboard_brief": {
+          "status": "authored_from_prd",
+          "screen_role": "PRD Viewer 是需求依据",
+          "surface_archetype": "prd_viewer_split",
+          "layout_regions": [
+            "状态栏",
+            "导航栏",
+            "内容区",
+            "底部操作"
+          ],
+          "component_inventory": [
+            "statusbar",
+            "navigationbar",
+            "screenbody",
+            "topbar",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ],
+          "visible_copy": [
+            "PRD Viewer",
+            "原型 screen",
+            "需求依据",
+            "长说明归位",
+            "规则与验收标准"
+          ],
+          "data_examples": [],
+          "state_variants": [],
+          "interaction_jumps": [],
+          "annotations": [
+            "不把长说明塞进手机屏或业务界面。",
+            "PRD Viewer 是宣讲方案的一部分，不是附属文件。"
+          ],
+          "design_refs": [],
+          "must_not_draw": [
+            "HTML screen 源码",
+            "revision note 卡片",
+            "iframe",
+            "TODO",
+            "集合页"
+          ],
+          "source_evidence": [
+            "PRD Viewer 承载长说明",
+            "原型 screen 承载可见界面",
+            "二者并排解释生成原因"
+          ]
+        }
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "PRD Viewer 是需求依据",
+        "surface_archetype": "prd_viewer_split",
+        "layout_regions": [
+          "状态栏",
+          "导航栏",
+          "内容区",
+          "底部操作"
+        ],
+        "component_inventory": [
+          "statusbar",
+          "navigationbar",
+          "screenbody",
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "PRD Viewer",
+          "原型 screen",
+          "需求依据",
+          "长说明归位",
+          "规则与验收标准"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "不把长说明塞进手机屏或业务界面。",
+          "PRD Viewer 是宣讲方案的一部分，不是附属文件。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "PRD Viewer 承载长说明",
+          "原型 screen 承载可见界面",
+          "二者并排解释生成原因"
+        ]
+      },
+      "storyboard_brief_status": "authored_from_prd",
+      "screen_role": "PRD Viewer 是需求依据",
+      "surface_archetype": "prd_viewer_split",
+      "is_showcase_sample": false,
+      "board_id": "board-3-宣讲解决方案-482e4077",
+      "board_file": "prototype-excalidraw/boards/board-3-宣讲解决方案-482e4077.excalidraw",
+      "frame_id": "ff9824ee-frame",
+      "frame_name": "3 · PRD Viewer 是需求依据",
+      "frame_order": 3
+    },
+    {
+      "id": "step-宣讲解决方案-标注与-spotlight-是讲解辅助-ede97056",
+      "title": "标注与 Spotlight 是讲解辅助",
+      "group_id": "group-宣讲解决方案-e3b9787a",
+      "kind": "prototype_step",
+      "platform": "web",
+      "prd_sections": [
+        "3. 宣讲解决方案",
+        "3.4 标注与 Spotlight 是讲解辅助"
+      ],
+      "scene_type": "web_wireframe",
+      "scene_type_reason": "「标注与 Spotlight 是讲解辅助」按 PRD 呈现形式：一张 slide 上画出界面区域、标注区域、Spotlight 放大区域。",
+      "source_evidence": [
+        "Annotation：短规则与待确认点",
+        "Spotlight：放大查看细节",
+        "标注不是装饰"
+      ],
+      "business_entities": [
+        "标注与",
+        "Spotlight",
+        "是讲解辅助"
+      ],
+      "interaction_goal": "Showcase 必须真实使用标注与 Spotlight 概念。",
+      "states_or_rules": [
+        "Annotation：短规则、风险、待确认点"
+      ],
+      "state": "planned",
+      "rendered": false,
+      "notes": "Prototype content lives in the Excalidraw scene.",
+      "screen_kind": "modal",
+      "surface_id": "surface-3-宣讲解决方案-3-4-标注与-spotlight-是讲解辅助-fb5b0bdf",
+      "surface_kind": "modal",
+      "state_id": "",
+      "base_surface_id": "",
+      "frame_intent": "位置示意图：界面区、标注区、Spotlight 放大区，并含一条原生标注。",
+      "screen_purpose": "把「标注与 Spotlight 是讲解辅助」表达成可讨论、可编辑的草图",
+      "primary_ui_regions": [
+        "遮罩层",
+        "弹窗标题",
+        "说明文案",
+        "取消/确认操作"
+      ],
+      "key_copy": [
+        "Annotation",
+        "Spotlight",
+        "演讲光标",
+        "讲解辅助",
+        "聚焦细节"
+      ],
+      "state_data": [
+        "Annotation：短规则、风险、待确认点"
+      ],
+      "linked_steps": [],
+      "annotation_refs": [],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "component_baseline": [
+        "topbar",
+        "navigationortoolbar",
+        "contentpanel",
+        "sidenavortoolbar",
+        "contentcards",
+        "tableorformregion"
+      ],
+      "semantic_frame_spec": {
+        "platform": "web",
+        "surface_kind": "modal",
+        "frame_intent": "呈现「标注与 Spotlight 是讲解辅助」这一真实产品界面/状态，便于围绕 PRD 证据讨论。",
+        "primary_ui_regions": [
+          "遮罩层",
+          "弹窗标题",
+          "说明文案",
+          "取消/确认操作"
+        ],
+        "key_copy": [
+          "Annotation",
+          "Spotlight",
+          "演讲光标",
+          "讲解辅助",
+          "聚焦细节"
+        ],
+        "state_data": [
+          "Annotation：短规则、风险、待确认点"
+        ],
+        "component_baseline": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "source_evidence": [
+          "3.4 标注与 Spotlight 是讲解辅助",
+          "3. 宣讲解决方案",
+          "呈现形式",
+          "一张 slide 上画出界面区域、标注区域、Spotlight 放大区域",
+          "必须真实使用一条原生"
+        ],
+        "design_hints": {
+          "platform_hint": "web",
+          "navigation_terms": [],
+          "reference_count": 0,
+          "component_baseline": [
+            "topbar",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ]
+        },
+        "storyboard_brief": {
+          "status": "authored_from_prd",
+          "screen_role": "标注与 Spotlight 是讲解辅助",
+          "surface_archetype": "annotation_spotlight_map",
+          "layout_regions": [
+            "遮罩层",
+            "弹窗标题",
+            "说明文案",
+            "取消/确认操作"
+          ],
+          "component_inventory": [
+            "topbar",
+            "navigationortoolbar",
+            "contentpanel",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ],
+          "visible_copy": [
+            "Annotation",
+            "Spotlight",
+            "演讲光标",
+            "讲解辅助",
+            "聚焦细节"
+          ],
+          "data_examples": [],
+          "state_variants": [],
+          "interaction_jumps": [],
+          "annotations": [
+            "标注不是装饰，是讲解辅助。",
+            "Showcase 不能只介绍标注而不使用标注。",
+            "Spotlight 适合讲细节，不改变原型内容本身。"
+          ],
+          "design_refs": [],
+          "must_not_draw": [
+            "HTML screen 源码",
+            "revision note 卡片",
+            "iframe",
+            "TODO",
+            "集合页"
+          ],
+          "source_evidence": [
+            "Annotation：短规则与待确认点",
+            "Spotlight：放大查看细节",
+            "标注不是装饰"
+          ]
+        }
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "标注与 Spotlight 是讲解辅助",
+        "surface_archetype": "annotation_spotlight_map",
+        "layout_regions": [
+          "遮罩层",
+          "弹窗标题",
+          "说明文案",
+          "取消/确认操作"
+        ],
+        "component_inventory": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "Annotation",
+          "Spotlight",
+          "演讲光标",
+          "讲解辅助",
+          "聚焦细节"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "标注不是装饰，是讲解辅助。",
+          "Showcase 不能只介绍标注而不使用标注。",
+          "Spotlight 适合讲细节，不改变原型内容本身。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "Annotation：短规则与待确认点",
+          "Spotlight：放大查看细节",
+          "标注不是装饰"
+        ]
+      },
+      "storyboard_brief_status": "authored_from_prd",
+      "screen_role": "标注与 Spotlight 是讲解辅助",
+      "surface_archetype": "annotation_spotlight_map",
+      "is_showcase_sample": false,
+      "board_id": "board-3-宣讲解决方案-482e4077",
+      "board_file": "prototype-excalidraw/boards/board-3-宣讲解决方案-482e4077.excalidraw",
+      "frame_id": "b3179fa0-frame",
+      "frame_name": "4 · 标注与 Spotlight 是讲解辅助",
+      "frame_order": 4
+    },
+    {
+      "id": "step-本地修订方案-面板直接编辑草图-ec8a0505",
+      "title": "面板直接编辑草图",
+      "group_id": "group-本地修订方案-a2ac212e",
+      "kind": "prototype_step",
+      "platform": "web",
+      "prd_sections": [
+        "4. 本地修订方案",
+        "4.1 面板直接编辑草图"
+      ],
+      "scene_type": "flow",
+      "scene_type_reason": "「面板直接编辑草图」按 PRD 呈现形式：左侧说明块 + 右侧 preview 壳与 Excalidraw 编辑面板示意。",
+      "source_evidence": [
+        "点击宣讲台「编辑」",
+        "选中草图卡片",
+        "面板内直接修改",
+        "保存写回 board"
+      ],
+      "business_entities": [
+        "面板直接编辑草图"
+      ],
+      "interaction_goal": "草图可直接在 preview 面板里编辑，保存后即时生效。",
+      "states_or_rules": [],
+      "state": "planned",
+      "rendered": false,
+      "notes": "Prototype content lives in the Excalidraw scene.",
+      "screen_kind": "flow_note",
+      "surface_id": "surface-4-本地修订方案-4-1-面板直接编辑草图-5852ce15",
+      "surface_kind": "page",
+      "state_id": "",
+      "base_surface_id": "",
+      "frame_intent": "左侧说明 + 右侧 preview 壳与 Excalidraw 编辑面板示意。",
+      "screen_purpose": "把「面板直接编辑草图」表达成可讨论、可编辑的草图",
+      "primary_ui_regions": [
+        "规则标题",
+        "关键条件",
+        "结果状态",
+        "关联界面"
+      ],
+      "key_copy": [
+        "编辑",
+        "Excalidraw 面板",
+        "保存",
+        "草图画板",
+        "本地 preview 验收",
+        "提交给主管"
+      ],
+      "state_data": [],
+      "linked_steps": [],
+      "annotation_refs": [],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "component_baseline": [
+        "topbar",
+        "navigationortoolbar",
+        "contentpanel",
+        "sidenavortoolbar",
+        "contentcards",
+        "tableorformregion"
+      ],
+      "semantic_frame_spec": {
+        "platform": "web",
+        "surface_kind": "page",
+        "frame_intent": "呈现「面板直接编辑草图」这一真实产品界面/状态，便于围绕 PRD 证据讨论。",
+        "primary_ui_regions": [
+          "规则标题",
+          "关键条件",
+          "结果状态",
+          "关联界面"
+        ],
+        "key_copy": [
+          "编辑",
+          "Excalidraw 面板",
+          "保存",
+          "草图画板",
+          "本地 preview 验收",
+          "提交给主管"
+        ],
+        "state_data": [],
+        "component_baseline": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "source_evidence": [
+          "4.1 面板直接编辑草图",
+          "4. 本地修订方案",
+          "呈现形式",
+          "左侧说明块 + 右侧 preview 壳与 Excalidraw 编辑面板示意",
+          "核心内容"
+        ],
+        "design_hints": {
+          "platform_hint": "web",
+          "navigation_terms": [],
+          "reference_count": 0,
+          "component_baseline": [
+            "topbar",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ]
+        },
+        "storyboard_brief": {
+          "status": "authored_from_prd",
+          "screen_role": "面板直接编辑草图",
+          "surface_archetype": "sketch_panel_edit",
+          "layout_regions": [
+            "规则标题",
+            "关键条件",
+            "结果状态",
+            "关联界面"
+          ],
+          "component_inventory": [
+            "topbar",
+            "navigationortoolbar",
+            "contentpanel",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ],
+          "visible_copy": [
+            "编辑",
+            "Excalidraw 面板",
+            "保存",
+            "草图画板",
+            "本地 preview 验收",
+            "提交给主管"
+          ],
+          "data_examples": [],
+          "state_variants": [],
+          "interaction_jumps": [],
+          "annotations": [
+            "草图可直接在 preview 面板里编辑，不必打开外部 Excalidraw 文件。",
+            "编辑发生在本地 preview，保存后即时生效。",
+            "适合文字微调与形状位置调整；大规模结构重做仍可通过 AI 下一轮生成。"
+          ],
+          "design_refs": [],
+          "must_not_draw": [
+            "HTML screen 源码",
+            "revision note 卡片",
+            "iframe",
+            "TODO",
+            "集合页"
+          ],
+          "source_evidence": [
+            "点击宣讲台「编辑」",
+            "选中草图卡片",
+            "面板内直接修改",
+            "保存写回 board"
+          ]
+        }
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "面板直接编辑草图",
+        "surface_archetype": "sketch_panel_edit",
+        "layout_regions": [
+          "规则标题",
+          "关键条件",
+          "结果状态",
+          "关联界面"
+        ],
+        "component_inventory": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "编辑",
+          "Excalidraw 面板",
+          "保存",
+          "草图画板",
+          "本地 preview 验收",
+          "提交给主管"
+        ],
+        "data_examples": [],
+        "state_variants": [],
+        "interaction_jumps": [],
+        "annotations": [
+          "草图可直接在 preview 面板里编辑，不必打开外部 Excalidraw 文件。",
+          "编辑发生在本地 preview，保存后即时生效。",
+          "适合文字微调与形状位置调整；大规模结构重做仍可通过 AI 下一轮生成。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "点击宣讲台「编辑」",
+          "选中草图卡片",
+          "面板内直接修改",
+          "保存写回 board"
+        ]
+      },
+      "storyboard_brief_status": "authored_from_prd",
+      "screen_role": "面板直接编辑草图",
+      "surface_archetype": "sketch_panel_edit",
+      "is_showcase_sample": false,
+      "board_id": "board-4-本地修订方案-f70fe16d",
+      "board_file": "prototype-excalidraw/boards/board-4-本地修订方案-f70fe16d.excalidraw",
+      "frame_id": "5c5fb911-frame",
+      "frame_name": "1 · 面板直接编辑草图",
+      "frame_order": 1
+    },
+    {
+      "id": "step-本地修订方案-质量检查概念-569c620c",
+      "title": "质量检查概念",
+      "group_id": "group-本地修订方案-a2ac212e",
+      "kind": "prototype_step",
+      "platform": "web",
+      "prd_sections": [
+        "4. 本地修订方案",
+        "4.2 质量检查概念"
+      ],
+      "scene_type": "state_matrix",
+      "scene_type_reason": "「质量检查概念」按 PRD 呈现形式：简洁检查报告 slide。",
+      "source_evidence": [
+        "内容包完整",
+        "计划一致",
+        "PRD 可读取",
+        "目录可导航",
+        "标注安全",
+        "本地可验收"
+      ],
+      "business_entities": [
+        "质量检查概念"
+      ],
+      "interaction_goal": "ProtoPilot 生成物有基本交付检查闭环。",
+      "states_or_rules": [],
+      "state": "planned",
+      "rendered": false,
+      "notes": "Prototype content lives in the Excalidraw scene.",
+      "screen_kind": "web",
+      "surface_id": "surface-4-本地修订方案-4-2-质量检查概念-bfd07c53",
+      "surface_kind": "page",
+      "state_id": "",
+      "base_surface_id": "",
+      "frame_intent": "简洁检查报告 slide：六项交付检查概念，不堆命令细节。",
+      "screen_purpose": "把「质量检查概念」表达成可讨论、可编辑的草图",
+      "primary_ui_regions": [
+        "顶部栏",
+        "侧边导航",
+        "内容卡片",
+        "数据区"
+      ],
+      "key_copy": [
+        "内容包完整",
+        "计划一致",
+        "PRD 可读取",
+        "目录可导航",
+        "标注安全",
+        "本地可验收"
+      ],
+      "state_data": [],
+      "linked_steps": [],
+      "annotation_refs": [],
+      "design_hints": {
+        "platform_hint": "web",
+        "navigation_terms": [],
+        "reference_count": 0,
+        "component_baseline": [
+          "topbar",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ]
+      },
+      "component_baseline": [
+        "topbar",
+        "navigationortoolbar",
+        "contentpanel",
+        "sidenavortoolbar",
+        "contentcards",
+        "tableorformregion"
+      ],
+      "semantic_frame_spec": {
+        "platform": "web",
+        "surface_kind": "page",
+        "frame_intent": "呈现「质量检查概念」这一真实产品界面/状态，便于围绕 PRD 证据讨论。",
+        "primary_ui_regions": [
+          "顶部栏",
+          "侧边导航",
+          "内容卡片",
+          "数据区"
+        ],
+        "key_copy": [
+          "内容包完整",
+          "计划一致",
+          "PRD 可读取",
+          "目录可导航",
+          "标注安全",
+          "本地可验收"
+        ],
+        "state_data": [],
+        "component_baseline": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "source_evidence": [
+          "4.2 质量检查概念",
+          "4. 本地修订方案",
+          "呈现形式",
+          "简洁检查报告 slide",
+          "只让大家建立概念，不需要堆命令细节"
+        ],
+        "design_hints": {
+          "platform_hint": "web",
+          "navigation_terms": [],
+          "reference_count": 0,
+          "component_baseline": [
+            "topbar",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ]
+        },
+        "storyboard_brief": {
+          "status": "authored_from_prd",
+          "screen_role": "质量检查概念",
+          "surface_archetype": "quality_check_report",
+          "layout_regions": [
+            "顶部栏",
+            "侧边导航",
+            "内容卡片",
+            "数据区"
+          ],
+          "component_inventory": [
+            "topbar",
+            "navigationortoolbar",
+            "contentpanel",
+            "sidenavortoolbar",
+            "contentcards",
+            "tableorformregion"
+          ],
+          "visible_copy": [
+            "内容包完整",
+            "计划一致",
+            "PRD 可读取",
+            "目录可导航",
+            "标注安全",
+            "本地可验收"
+          ],
+          "data_examples": [],
+          "state_variants": [
+            "内容包完整。",
+            "计划和页面一致。",
+            "PRD 可读取。",
+            "目录可导航。",
+            "标注位置安全。",
+            "预览可打开。"
+          ],
+          "interaction_jumps": [],
+          "annotations": [
+            "ProtoPilot 生成物不是“画完就算”。",
+            "它有基本的交付检查闭环。"
+          ],
+          "design_refs": [],
+          "must_not_draw": [
+            "HTML screen 源码",
+            "revision note 卡片",
+            "iframe",
+            "TODO",
+            "集合页"
+          ],
+          "source_evidence": [
+            "内容包完整",
+            "计划一致",
+            "PRD 可读取",
+            "目录可导航",
+            "标注安全",
+            "本地可验收"
+          ]
+        }
+      },
+      "storyboard_brief": {
+        "status": "authored_from_prd",
+        "screen_role": "质量检查概念",
+        "surface_archetype": "quality_check_report",
+        "layout_regions": [
+          "顶部栏",
+          "侧边导航",
+          "内容卡片",
+          "数据区"
+        ],
+        "component_inventory": [
+          "topbar",
+          "navigationortoolbar",
+          "contentpanel",
+          "sidenavortoolbar",
+          "contentcards",
+          "tableorformregion"
+        ],
+        "visible_copy": [
+          "内容包完整",
+          "计划一致",
+          "PRD 可读取",
+          "目录可导航",
+          "标注安全",
+          "本地可验收"
+        ],
+        "data_examples": [],
+        "state_variants": [
+          "内容包完整。",
+          "计划和页面一致。",
+          "PRD 可读取。",
+          "目录可导航。",
+          "标注位置安全。",
+          "预览可打开。"
+        ],
+        "interaction_jumps": [],
+        "annotations": [
+          "ProtoPilot 生成物不是“画完就算”。",
+          "它有基本的交付检查闭环。"
+        ],
+        "design_refs": [],
+        "must_not_draw": [
+          "HTML screen 源码",
+          "revision note 卡片",
+          "iframe",
+          "TODO",
+          "集合页"
+        ],
+        "source_evidence": [
+          "内容包完整",
+          "计划一致",
+          "PRD 可读取",
+          "目录可导航",
+          "标注安全",
+          "本地可验收"
+        ]
+      },
+      "storyboard_brief_status": "authored_from_prd",
+      "screen_role": "质量检查概念",
+      "surface_archetype": "quality_check_report",
+      "is_showcase_sample": false,
+      "board_id": "board-4-本地修订方案-f70fe16d",
+      "board_file": "prototype-excalidraw/boards/board-4-本地修订方案-f70fe16d.excalidraw",
+      "frame_id": "0f309191-frame",
+      "frame_name": "2 · 质量检查概念",
+      "frame_order": 2
+    }
+  ],
+  "coverage": {
+    "all_prd_sections": [
+      "0. 设计原则",
+      "0.1 页面结构规则",
+      "0.2 Skill 原生能力约束",
+      "1. 开场",
+      "1. 开场 / 1.1 Hero 首屏",
+      "2. 生成能力",
+      "2. 生成能力 / 2.1 音乐播放 App（参考网易云音乐）",
+      "2. 生成能力 / 2.2 小红书风格内容 App（参考小红书首页）",
+      "2. 生成能力 / 2.3 短视频 App（参考抖音）",
+      "2. 生成能力 / 2.4 微信风格聊天 App（参考微信聊天列表）",
+      "2. 生成能力 / 2.5 SaaS 工作台",
+      "2. 生成能力 / 2.6 科技官网首页",
+      "2. 生成能力 / 2.7 Mac App 原型",
+      "2. 生成能力 / 2.8 Windows App 原型",
+      "3. 宣讲解决方案",
+      "3. 宣讲解决方案 / 3.1 原型交付包是什么",
+      "3. 宣讲解决方案 / 3.2 目录是讲解路线",
+      "3. 宣讲解决方案 / 3.3 PRD Viewer 是需求依据",
+      "3. 宣讲解决方案 / 3.4 标注与 Spotlight 是讲解辅助",
+      "4. 本地修订方案",
+      "4. 本地修订方案 / 4.1 面板直接编辑草图",
+      "4. 本地修订方案 / 4.2 质量检查概念",
+      "5. 推荐页面清单",
+      "6. 生成注意事项"
+    ],
+    "planned_prd_sections": [
+      "1. 开场",
+      "1.1 Hero 首屏",
+      "2. 生成能力",
+      "2.1 音乐播放 App（参考网易云音乐）",
+      "2. 生成能力",
+      "2.2 小红书风格内容 App（参考小红书首页）",
+      "2. 生成能力",
+      "2.3 短视频 App（参考抖音）",
+      "2. 生成能力",
+      "2.4 微信风格聊天 App（参考微信聊天列表）",
+      "2. 生成能力",
+      "2.5 SaaS 工作台",
+      "2. 生成能力",
+      "2.6 科技官网首页",
+      "2. 生成能力",
+      "2.7 Mac App 原型",
+      "2. 生成能力",
+      "2.8 Windows App 原型",
+      "3. 宣讲解决方案",
+      "3.1 原型交付包是什么",
+      "3. 宣讲解决方案",
+      "3.2 目录是讲解路线",
+      "3. 宣讲解决方案",
+      "3.3 PRD Viewer 是需求依据",
+      "3. 宣讲解决方案",
+      "3.4 标注与 Spotlight 是讲解辅助",
+      "4. 本地修订方案",
+      "4.1 面板直接编辑草图",
+      "4. 本地修订方案",
+      "4.2 质量检查概念"
+    ],
+    "covered_prd_sections": [],
+    "disposition": [
+      {
+        "prd_section": "0. 设计原则",
+        "section_path": [
+          "0. 设计原则"
+        ],
+        "group_title": "",
+        "disposition": "prd_viewer",
+        "reason": "grouping, checklist, or generation notes stay in PRD Viewer",
+        "decision_source": "auto_section_disposition_v2"
+      },
+      {
+        "prd_section": "0.1 页面结构规则",
+        "section_path": [
+          "0.1 页面结构规则"
+        ],
+        "group_title": "",
+        "disposition": "prd_viewer",
+        "reason": "grouping, checklist, or generation notes stay in PRD Viewer",
+        "decision_source": "auto_section_disposition_v2"
+      },
+      {
+        "prd_section": "0.2 Skill 原生能力约束",
+        "section_path": [
+          "0.2 Skill 原生能力约束"
+        ],
+        "group_title": "",
+        "disposition": "prd_viewer",
+        "reason": "grouping, checklist, or generation notes stay in PRD Viewer",
+        "decision_source": "auto_section_disposition_v2"
+      },
+      {
+        "prd_section": "1. 开场",
+        "section_path": [
+          "1. 开场"
+        ],
+        "group_title": "",
+        "disposition": "prd_viewer",
+        "reason": "grouping, checklist, or generation notes stay in PRD Viewer",
+        "decision_source": "auto_section_disposition_v2"
+      },
+      {
+        "prd_section": "2. 生成能力",
+        "section_path": [
+          "2. 生成能力"
+        ],
+        "group_title": "",
+        "disposition": "prd_viewer",
+        "reason": "grouping, checklist, or generation notes stay in PRD Viewer",
+        "decision_source": "auto_section_disposition_v2"
+      },
+      {
+        "prd_section": "3. 宣讲解决方案",
+        "section_path": [
+          "3. 宣讲解决方案"
+        ],
+        "group_title": "",
+        "disposition": "prd_viewer",
+        "reason": "grouping, checklist, or generation notes stay in PRD Viewer",
+        "decision_source": "auto_section_disposition_v2"
+      },
+      {
+        "prd_section": "4. 本地修订方案",
+        "section_path": [
+          "4. 本地修订方案"
+        ],
+        "group_title": "",
+        "disposition": "prd_viewer",
+        "reason": "grouping, checklist, or generation notes stay in PRD Viewer",
+        "decision_source": "auto_section_disposition_v2"
+      },
+      {
+        "prd_section": "5. 推荐页面清单",
+        "section_path": [
+          "5. 推荐页面清单"
+        ],
+        "group_title": "",
+        "disposition": "prd_viewer",
+        "reason": "grouping, checklist, or generation notes stay in PRD Viewer",
+        "decision_source": "auto_section_disposition_v2"
+      },
+      {
+        "prd_section": "6. 生成注意事项",
+        "section_path": [
+          "6. 生成注意事项"
+        ],
+        "group_title": "",
+        "disposition": "prd_viewer",
+        "reason": "grouping, checklist, or generation notes stay in PRD Viewer",
+        "decision_source": "auto_section_disposition_v2"
+      }
+    ],
+    "omitted": [],
+    "notes": "Sketch storyboard generated from 草图风格预览 manual sections."
+  },
+  "validation": {
+    "last_scene_check_ok": null,
+    "failures": [],
+    "warnings": []
+  },
+  "revision_history": []
+}

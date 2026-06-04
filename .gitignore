@@ -1,0 +1,21 @@
+# Local workspace files
+/AGENTS.md
+/.foundation/
+
+# Python and script caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

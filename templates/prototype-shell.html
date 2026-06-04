@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="./prototype-base.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js"></script>
+</head>
+<body>
+  <!--
+  Finn ProtoPilot HTML generated prototype
+  Source PRD: {{prd_viewer_src}}
+  Design context: {{design_context}}
+  Purpose: PRD walkthrough, not production UI
+  -->
+
+  <div class="proto-chrome-corner-tl-hit" aria-hidden="true">
+    <div class="proto-float-corner-tl" role="toolbar" aria-label="作者工具">
+      <button type="button" class="proto-float-btn" id="float-edit-btn" onclick="toggleEditMode()" aria-pressed="false" title="改文字"><i data-lucide="pencil" class="button-icon"></i><span>改文字</span></button>
+      <button type="button" class="proto-float-btn" id="float-revision-btn" onclick="toggleRevisionMode()" aria-pressed="false" title="大改"><i data-lucide="mouse-pointer-click" class="button-icon"></i><span>大改</span></button>
+    </div>
+  </div>
+
+  <div class="proto-float-corner-tr" id="proto-main-toolbar" role="toolbar" aria-label="文档对照">
+    <button type="button" class="proto-float-btn" id="float-prd-btn" onclick="togglePrdViewer()" aria-pressed="false" title="进入 PRD 演讲模式">
+      <i data-lucide="file-text" class="button-icon"></i><span>PRD</span>
+    </button>
+    <button type="button" class="proto-float-btn proto-float-btn--symbol is-active" id="annotation-toggle" onclick="toggleAnnotations()" aria-pressed="true" aria-label="显示或隐藏标注" title="标注：已显示（高亮）；点此隐藏标注">
+      <i data-lucide="sticky-note" class="button-icon"></i>
+    </button>
+    <button type="button" class="proto-float-btn proto-float-btn--symbol" id="presentation-laser-toggle" onclick="togglePresentationLaser()" aria-pressed="false" aria-label="启用或关闭演讲光标" title="演讲光标：已关闭（点按开启高光与拖尾）">
+      <i data-lucide="sparkles" class="button-icon"></i>
+    </button>
+  </div>
+
+  <div class="proto-float-corner-tr proto-edit-toolbar hidden" id="proto-edit-toolbar" role="toolbar" aria-label="改文字">
+    <button type="button" class="proto-float-btn" onclick="resetEditSession()" title="重置本次文字修改" aria-label="重置本次文字修改"><i data-lucide="rotate-ccw" class="button-icon"></i><span>重置</span></button>
+    <button type="button" class="proto-float-btn" id="proto-edit-save-btn" onclick="saveTextEdits()" title="保存文字修改" aria-label="保存文字修改"><i data-lucide="save" class="button-icon"></i><span>保存</span></button>
+    <button type="button" class="proto-float-btn" onclick="toggleEditMode(false)" title="退出改文字" aria-label="退出改文字"><i data-lucide="log-out" class="button-icon"></i><span>退出</span></button>
+  </div>
+
+  <nav class="proto-nav-dock" id="proto-nav-dock" aria-label="场景目录">
+    <div class="proto-nav-shell">
+      <button type="button" class="proto-nav-trigger" id="proto-nav-trigger" aria-expanded="false" aria-label="展开场景目录"><i data-lucide="list"></i></button>
+      <div class="proto-nav-sheet">
+        <div class="proto-nav-scroll" id="proto-nav-scroll" role="navigation"></div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="proto-prd-proto-rail-wrap" id="proto-prd-proto-rail-wrap" aria-hidden="true">
+    <div class="proto-presenter-bottom-rail" role="toolbar" aria-label="预览区操作">
+      <button type="button" class="proto-float-btn proto-float-btn--symbol" id="annotation-toggle-prd" onclick="toggleAnnotations()" aria-pressed="true" aria-label="显示或隐藏标注" title="标注：已显示（高亮）；点此隐藏标注">
+        <i data-lucide="sticky-note" class="button-icon"></i>
+      </button>
+      <button type="button" class="proto-float-btn proto-float-btn--symbol" id="presentation-laser-toggle-prd" onclick="togglePresentationLaser()" aria-pressed="false" aria-label="启用或关闭演讲光标" title="演讲光标：已关闭（点按开启高光与拖尾）">
+        <i data-lucide="sparkles" class="button-icon"></i>
+      </button>
+      <button type="button" class="proto-float-btn proto-float-btn--symbol" id="proto-preview-expand-btn" onclick="toggleProtoStepSpotlight(true)" title="全屏放大当前界面" aria-label="全屏放大当前界面">
+        <i data-lucide="maximize-2" class="button-icon"></i>
+      </button>
+    </div>
+  </div>
+
+  <main class="proto-page">
+    <header class="proto-header proto-header--minimal">
+      <h1>{{title}}</h1>
+    </header>
+
+    <aside class="proto-prd-drawer" id="prd-drawer" aria-label="PRD 演讲模式">
+      <div class="proto-prd-backdrop" onclick="togglePrdViewer(false)"></div>
+      <section class="proto-prd-panel">
+        <div class="proto-prd-panel-header">
+          <div class="proto-prd-panel-title"><i data-lucide="file-text" class="button-icon"></i><span>PRD</span></div>
+          <div class="proto-prd-panel-header-actions">
+            <div class="proto-prd-font-stepper" role="group" aria-label="正文显示字号">
+              <button type="button" class="proto-prd-panel-icon-btn" id="prd-font-down" onclick="adjustPrdViewerFont(-1)" title="减小字号" aria-label="减小 PRD 字号"><i data-lucide="minus"></i></button>
+              <span class="proto-prd-font-stepper-readout" aria-live="polite"><span id="prd-font-step-label">100%</span></span>
+              <button type="button" class="proto-prd-panel-icon-btn" id="prd-font-up" onclick="adjustPrdViewerFont(1)" title="增大字号" aria-label="增大 PRD 字号"><i data-lucide="plus"></i></button>
+            </div>
+            <button type="button" class="proto-prd-panel-icon-btn" onclick="togglePrdViewer(false)" aria-label="退出 PRD 演讲模式" title="退出"><i data-lucide="log-out"></i></button>
+          </div>
+        </div>
+        <div class="proto-prd-viewer" data-prd-src="{{prd_viewer_src}}">
+          <div class="proto-prd-status" id="prd-viewer-status" role="status">正在加载 PRD...</div>
+          <p class="proto-prd-source-note hidden" id="prd-viewer-source-note"></p>
+          <div class="proto-prd-markdown typora-preview hidden" id="prd-markdown-output" aria-live="polite"></div>
+          <section class="proto-prd-fallback hidden" id="prd-viewer-fallback" aria-live="polite">
+            <h3>PRD 暂时没有加载出来</h3>
+            <p id="prd-viewer-fallback-message">当前绑定的 PRD 路径是：<code>{{prd_viewer_src}}</code></p>
+            <ul>
+              <li>请确认正在通过本地 HTTP 打开，而不是直接打开 file:// 文件。</li>
+              <li>请确认 PRD 文件与 index.html 的相对路径正确。</li>
+              <li>如果 Marked CDN 或浏览器本地读取被拦截，可以临时手动选择同目录 Markdown 文件。</li>
+            </ul>
+            <div class="proto-prd-fallback-actions">
+              <button type="button" class="secondary-btn" onclick="choosePrdMarkdownFile()"><i data-lucide="folder-open" class="button-icon"></i>选择同目录 PRD 文件</button>
+            </div>
+          </section>
+          <input class="proto-prd-file-input" id="prd-file-input" type="file" accept=".md,.markdown,text/markdown,text/plain">
+        </div>
+      </section>
+    </aside>
+
+    <section class="proto-action-panel proto-revision-panel hidden" id="revision-panel" aria-label="大改模式面板">
+      <div class="proto-action-panel-header proto-revision-panel-header">
+        <h3>大改</h3>
+        <div class="proto-action-panel-header-actions">
+          <button class="proto-action-icon-btn" onclick="clearRevisionNotes()" type="button" title="清空" aria-label="清空大改备注"><i data-lucide="rotate-ccw" class="button-icon"></i></button>
+          <button class="proto-action-icon-btn" onclick="toggleRevisionMode(false)" type="button" title="退出" aria-label="退出大改"><i data-lucide="log-out" class="button-icon"></i></button>
+        </div>
+      </div>
+      <div class="proto-action-panel-body proto-revision-panel-body">
+        <div class="proto-panel-intro">
+          <p>用于结构、布局、规则、状态分支等较大调整。先点选原型中的目标区域，再写备注并复制给 AI。</p>
+        </div>
+        <div class="proto-revision-actions">
+          <button class="secondary-btn" onclick="copyRevisionNotes()" type="button"><i data-lucide="copy" class="button-icon"></i>复制给 AI</button>
+        </div>
+        <div class="proto-revision-list" id="revision-list"></div>
+      </div>
+    </section>
+
+    <section class="proto-revision-popover hidden" id="revision-popover" aria-label="大改备注编辑器">
+      <div class="proto-revision-target" id="revision-target">当前未选择元素</div>
+      <textarea class="proto-revision-input" id="revision-note" placeholder="备注"></textarea>
+      <div class="proto-revision-actions">
+        <button class="primary-btn" onclick="saveRevisionNote()" type="button">添加</button>
+        <button class="secondary-btn" onclick="closeRevisionPopover()" type="button">取消</button>
+      </div>
+    </section>
+
+    <section class="proto-action-panel proto-edit-panel hidden" id="edit-panel" aria-label="改文字模式面板">
+      <div class="proto-action-panel-header proto-edit-panel-header">
+        <h3>改文字</h3>
+        <div class="proto-action-panel-header-actions">
+          <button class="proto-action-icon-btn" onclick="resetEditSession()" type="button" title="重置" aria-label="重置本次文字修改"><i data-lucide="rotate-ccw" class="button-icon"></i></button>
+          <button class="proto-action-icon-btn" onclick="toggleEditMode(false)" type="button" title="退出" aria-label="退出改文字"><i data-lucide="log-out" class="button-icon"></i></button>
+        </div>
+      </div>
+      <div class="proto-action-panel-body proto-edit-panel-body">
+        <div class="proto-panel-intro">
+          <p>用于快速修订标题、按钮、标签、列表、消息、空态和提示文案。结构删除或布局调整请走大改备注。</p>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      Shell layout: journey business canvas lives inside main.proto-page.
+      #proto-spotlight-mount is outside main and also carries proto-generated-area.
+      PRD mode CSS must stay scoped to main.proto-page .proto-generated-area.
+    -->
+    <div class="proto-generated-area" id="proto-generated-area">
+<!-- PROTO_GENERATED_AREA_START -->
+{{generated_area}}
+<!-- PROTO_GENERATED_AREA_END -->
+    </div>
+
+    <div class="toast toast-fixed hidden" id="toast" role="status"></div>
+  </main>
+
+  <div id="proto-step-spotlight" class="proto-step-spotlight hidden" role="dialog" aria-modal="true" aria-label="单界面放大预览">
+    <div class="proto-step-spotlight-scrim" onclick="toggleProtoStepSpotlight(false)"></div>
+    <div class="proto-step-spotlight-foreground">
+      <div class="proto-step-spotlight-stage" id="proto-spotlight-stage">
+        <div class="proto-step-spotlight-mount proto-generated-area" id="proto-spotlight-mount"></div>
+      </div>
+      <div class="proto-spotlight-rail-wrap">
+        <div class="proto-presenter-bottom-rail" role="toolbar" aria-label="放大预览操作">
+          <button type="button" class="proto-float-btn proto-float-btn--symbol" id="annotation-toggle-spotlight" onclick="toggleAnnotations()" aria-pressed="true" aria-label="显示或隐藏标注" title="标注：已显示（高亮）；点此隐藏标注">
+            <i data-lucide="sticky-note" class="button-icon"></i>
+          </button>
+          <button type="button" class="proto-float-btn proto-float-btn--symbol" id="presentation-laser-toggle-spotlight" onclick="togglePresentationLaser()" aria-pressed="false" aria-label="启用或关闭演讲光标" title="演讲光标：已关闭（点按开启高光与拖尾）">
+            <i data-lucide="sparkles" class="button-icon"></i>
+          </button>
+          <button type="button" class="proto-float-btn proto-float-btn--symbol" id="proto-spotlight-shrink-btn" onclick="toggleProtoStepSpotlight(false)" title="缩小" aria-label="缩小回到演讲预览">
+            <i data-lucide="minimize-2" class="button-icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./prototype-shell.js"></script>
+</body>
+</html>

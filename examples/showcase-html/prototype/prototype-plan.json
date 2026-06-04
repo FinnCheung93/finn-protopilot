@@ -1,0 +1,466 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-05-22T06:04:28Z",
+  "updated_at": "2026-05-22T09:12:12Z",
+  "generation_mode": "content_package",
+  "source": {
+    "prd_path": "../proto-pilot-manual.md",
+    "demand_dir": "F:\\Skills\\©Finn\\finn-protopilot\\examples\\showcase-html",
+    "prototype_dir": "F:\\Skills\\©Finn\\finn-protopilot\\examples\\showcase-html\\prototype",
+    "design_context": "examples/showcase-html"
+  },
+  "preflight": {
+    "recommended_action": "generate_from_prd",
+    "reference_status": "not_provided",
+    "reference_prompt_policy": "continue_by_default",
+    "original_screen_status": "not_applicable",
+    "original_screen_prompt_policy": "ask_only_when_blocking",
+    "demand_reference_prompt_required": false,
+    "demand_reference_prompt_handled": true,
+    "existing_screen_prompt_recommended": false,
+    "existing_screen_prompt_handled": true,
+    "legacy_candidates": [],
+    "reference_images_found": false,
+    "reference_usage_required": false
+  },
+  "groups": [
+    {
+      "id": "group-opening",
+      "title": "group-opening",
+      "description": "Showcase content package validation group.",
+      "step_ids": [
+        "step-hero-a001"
+      ]
+    },
+    {
+      "id": "group-gen-cap",
+      "title": "group-gen-cap",
+      "description": "Showcase content package validation group.",
+      "step_ids": [
+        "step-music-a002",
+        "step-xhs-a003",
+        "step-douyin-a004",
+        "step-wechat-a005",
+        "step-saas-a006",
+        "step-website-a007",
+        "step-mac-a008",
+        "step-win-a009"
+      ]
+    },
+    {
+      "id": "group-presentation",
+      "title": "group-presentation",
+      "description": "Showcase content package validation group.",
+      "step_ids": [
+        "step-deliver-b001",
+        "step-nav-b002",
+        "step-prdviewer-b003",
+        "step-annotate-b004"
+      ]
+    },
+    {
+      "id": "group-local-rev",
+      "title": "group-local-rev",
+      "description": "Showcase content package validation group.",
+      "step_ids": [
+        "step-edit-text-c001",
+        "step-ai-note-c002",
+        "step-quality-c003"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "step-hero-a001",
+      "title": "Hero 首屏",
+      "group_id": "group-opening",
+      "platform": "Web",
+      "prd_sections": [
+        "1.1 Hero 首屏"
+      ],
+      "render_as": "screen",
+      "screen_kind": "showcase",
+      "eligibility_reason": "Showcase demo screen per content spec",
+      "state": "rendered",
+      "rendered": true,
+      "is_showcase_sample": true,
+      "notes": "Showcase validation step."
+    },
+    {
+      "id": "step-music-a002",
+      "title": "音乐播放 App",
+      "group_id": "group-gen-cap",
+      "platform": "Mobile App",
+      "prd_sections": [
+        "2.1 音乐播放 App（参考网易云音乐）"
+      ],
+      "render_as": "screen",
+      "screen_kind": "showcase",
+      "eligibility_reason": "Showcase demo screen per content spec",
+      "state": "rendered",
+      "rendered": true,
+      "is_showcase_sample": true,
+      "notes": "Showcase validation step."
+    },
+    {
+      "id": "step-xhs-a003",
+      "title": "小红书风格内容 App",
+      "group_id": "group-gen-cap",
+      "platform": "Mobile App",
+      "prd_sections": [
+        "2.2 小红书风格内容 App（参考小红书首页）"
+      ],
+      "render_as": "screen",
+      "screen_kind": "showcase",
+      "eligibility_reason": "Showcase demo screen per content spec",
+      "state": "rendered",
+      "rendered": true,
+      "is_showcase_sample": true,
+      "notes": "Showcase validation step."
+    },
+    {
+      "id": "step-douyin-a004",
+      "title": "短视频 App",
+      "group_id": "group-gen-cap",
+      "platform": "Mobile App",
+      "prd_sections": [
+        "2.3 短视频 App（参考抖音）"
+      ],
+      "render_as": "screen",
+      "screen_kind": "showcase",
+      "eligibility_reason": "Showcase demo screen per content spec",
+      "state": "rendered",
+      "rendered": true,
+      "is_showcase_sample": true,
+      "notes": "Showcase validation step."
+    },
+    {
+      "id": "step-wechat-a005",
+      "title": "微信风格聊天 App",
+      "group_id": "group-gen-cap",
+      "platform": "Mobile App",
+      "prd_sections": [
+        "2.4 微信风格聊天 App（参考微信聊天列表）"
+      ],
+      "render_as": "screen",
+      "screen_kind": "showcase",
+      "eligibility_reason": "Showcase demo screen per content spec",
+      "state": "rendered",
+      "rendered": true,
+      "is_showcase_sample": true,
+      "notes": "Showcase validation step."
+    },
+    {
+      "id": "step-saas-a006",
+      "title": "SaaS 工作台",
+      "group_id": "group-gen-cap",
+      "platform": "Web",
+      "prd_sections": [
+        "2.5 SaaS 工作台"
+      ],
+      "render_as": "screen",
+      "screen_kind": "showcase",
+      "eligibility_reason": "Showcase demo screen per content spec",
+      "state": "rendered",
+      "rendered": true,
+      "is_showcase_sample": true,
+      "notes": "Showcase validation step."
+    },
+    {
+      "id": "step-website-a007",
+      "title": "科技官网首页",
+      "group_id": "group-gen-cap",
+      "platform": "Web",
+      "prd_sections": [
+        "2.6 科技官网首页"
+      ],
+      "render_as": "screen",
+      "screen_kind": "showcase",
+      "eligibility_reason": "Showcase demo screen per content spec",
+      "state": "rendered",
+      "rendered": true,
+      "is_showcase_sample": true,
+      "notes": "Showcase validation step."
+    },
+    {
+      "id": "step-mac-a008",
+      "title": "Mac App 原型",
+      "group_id": "group-gen-cap",
+      "platform": "Desktop",
+      "prd_sections": [
+        "2.7 Mac App 原型"
+      ],
+      "render_as": "screen",
+      "screen_kind": "showcase",
+      "eligibility_reason": "Showcase demo screen per content spec",
+      "state": "rendered",
+      "rendered": true,
+      "is_showcase_sample": true,
+      "notes": "Showcase validation step."
+    },
+    {
+      "id": "step-win-a009",
+      "title": "Windows App 原型",
+      "group_id": "group-gen-cap",
+      "platform": "Desktop",
+      "prd_sections": [
+        "2.8 Windows App 原型"
+      ],
+      "render_as": "screen",
+      "screen_kind": "showcase",
+      "eligibility_reason": "Showcase demo screen per content spec",
+      "state": "rendered",
+      "rendered": true,
+      "is_showcase_sample": true,
+      "notes": "Showcase validation step."
+    },
+    {
+      "id": "step-deliver-b001",
+      "title": "原型交付包是什么",
+      "group_id": "group-presentation",
+      "platform": "Web",
+      "prd_sections": [
+        "3.1 原型交付包是什么"
+      ],
+      "render_as": "screen",
+      "screen_kind": "showcase",
+      "eligibility_reason": "Showcase demo screen per content spec",
+      "state": "rendered",
+      "rendered": true,
+      "is_showcase_sample": true,
+      "notes": "Showcase validation step."
+    },
+    {
+      "id": "step-nav-b002",
+      "title": "目录是讲解路线",
+      "group_id": "group-presentation",
+      "platform": "Web",
+      "prd_sections": [
+        "3.2 目录是讲解路线"
+      ],
+      "render_as": "screen",
+      "screen_kind": "showcase",
+      "eligibility_reason": "Showcase demo screen per content spec",
+      "state": "rendered",
+      "rendered": true,
+      "is_showcase_sample": true,
+      "notes": "Showcase validation step."
+    },
+    {
+      "id": "step-prdviewer-b003",
+      "title": "PRD Viewer 是需求依据",
+      "group_id": "group-presentation",
+      "platform": "Web",
+      "prd_sections": [
+        "3.3 PRD Viewer 是需求依据"
+      ],
+      "render_as": "screen",
+      "screen_kind": "showcase",
+      "eligibility_reason": "Showcase demo screen per content spec",
+      "state": "rendered",
+      "rendered": true,
+      "is_showcase_sample": true,
+      "notes": "Showcase validation step."
+    },
+    {
+      "id": "step-annotate-b004",
+      "title": "标注与 Spotlight 是讲解辅助",
+      "group_id": "group-presentation",
+      "platform": "Web",
+      "prd_sections": [
+        "3.4 标注与 Spotlight 是讲解辅助"
+      ],
+      "render_as": "screen",
+      "screen_kind": "showcase",
+      "eligibility_reason": "Showcase demo screen per content spec",
+      "state": "rendered",
+      "rendered": true,
+      "is_showcase_sample": true,
+      "notes": "Showcase validation step."
+    },
+    {
+      "id": "step-edit-text-c001",
+      "title": "本地改文字",
+      "group_id": "group-local-rev",
+      "platform": "Web",
+      "prd_sections": [
+        "4.1 本地改文字"
+      ],
+      "render_as": "screen",
+      "screen_kind": "showcase",
+      "eligibility_reason": "Showcase demo screen per content spec",
+      "state": "rendered",
+      "rendered": true,
+      "is_showcase_sample": true,
+      "notes": "Showcase validation step."
+    },
+    {
+      "id": "step-ai-note-c002",
+      "title": "大改备注给 AI",
+      "group_id": "group-local-rev",
+      "platform": "Web",
+      "prd_sections": [
+        "4.2 大改备注给 AI"
+      ],
+      "render_as": "screen",
+      "screen_kind": "showcase",
+      "eligibility_reason": "Showcase demo screen per content spec",
+      "state": "rendered",
+      "rendered": true,
+      "is_showcase_sample": true,
+      "notes": "Showcase validation step."
+    },
+    {
+      "id": "step-quality-c003",
+      "title": "质量检查概念",
+      "group_id": "group-local-rev",
+      "platform": "Web",
+      "prd_sections": [
+        "4.3 质量检查概念"
+      ],
+      "render_as": "screen",
+      "screen_kind": "showcase",
+      "eligibility_reason": "Showcase demo screen per content spec",
+      "state": "rendered",
+      "rendered": true,
+      "is_showcase_sample": true,
+      "notes": "Showcase validation step."
+    }
+  ],
+  "coverage": {
+    "covered_prd_sections": [
+      "1.1 Hero 首屏",
+      "2.1 音乐播放 App（参考网易云音乐）",
+      "2.2 小红书风格内容 App（参考小红书首页）",
+      "2.3 短视频 App（参考抖音）",
+      "2.4 微信风格聊天 App（参考微信聊天列表）",
+      "2.5 SaaS 工作台",
+      "2.6 科技官网首页",
+      "2.7 Mac App 原型",
+      "2.8 Windows App 原型",
+      "3.1 原型交付包是什么",
+      "3.2 目录是讲解路线",
+      "3.3 PRD Viewer 是需求依据",
+      "3.4 标注与 Spotlight 是讲解辅助",
+      "4.1 本地改文字",
+      "4.2 大改备注给 AI",
+      "4.3 质量检查概念"
+    ],
+    "planned_prd_sections": [
+      "Hero 首屏",
+      "音乐播放 App",
+      "小红书风格内容 App",
+      "短视频 App",
+      "微信风格聊天 App",
+      "SaaS 工作台",
+      "科技官网首页",
+      "Mac App 原型",
+      "Windows App 原型",
+      "原型交付包是什么",
+      "目录是讲解路线",
+      "PRD Viewer 是需求依据",
+      "标注与 Spotlight 是讲解辅助",
+      "本地改文字",
+      "大改备注给 AI",
+      "质量检查概念"
+    ],
+    "all_prd_sections": [
+      "Hero 首屏",
+      "音乐播放 App",
+      "小红书风格内容 App",
+      "短视频 App",
+      "微信风格聊天 App",
+      "SaaS 工作台",
+      "科技官网首页",
+      "Mac App 原型",
+      "Windows App 原型",
+      "原型交付包是什么",
+      "目录是讲解路线",
+      "PRD Viewer 是需求依据",
+      "标注与 Spotlight 是讲解辅助",
+      "本地改文字",
+      "大改备注给 AI",
+      "质量检查概念",
+      "PRD section disposition sample"
+    ],
+    "disposition": [
+      {
+        "prd_section": "PRD section disposition sample",
+        "disposition": "annotation",
+        "reason": "Showcase explanatory material is demonstrated as annotation/PRD Viewer content, not a phone screen.",
+        "decision_source": "showcase_fixture"
+      }
+    ],
+    "omitted": [],
+    "notes": "Showcase plan exists so final-check can exercise the full content package delivery check."
+  },
+  "references_available": [],
+  "references_used": [],
+  "validation": {
+    "last_strict_ok": true,
+    "failures": [],
+    "warnings": []
+  },
+  "revision_history": [
+    {
+      "at": "2026-05-22T06:05:37Z",
+      "action": "content_package_built",
+      "summary": "Built generated-area-fragment.html from prototype-content manifest and screen files."
+    },
+    {
+      "at": "2026-05-22T06:05:48Z",
+      "action": "content_package_built",
+      "summary": "Built generated-area-fragment.html from prototype-content manifest and screen files."
+    },
+    {
+      "at": "2026-05-22T06:13:43Z",
+      "action": "content_package_built",
+      "summary": "Built generated-area-fragment.html from prototype-content manifest and screen files."
+    },
+    {
+      "at": "2026-05-22T06:15:51Z",
+      "action": "content_package_built",
+      "summary": "Built generated-area-fragment.html from prototype-content manifest and screen files."
+    },
+    {
+      "at": "2026-05-22T06:17:54Z",
+      "action": "content_package_built",
+      "summary": "Built generated-area-fragment.html from prototype-content manifest and screen files."
+    },
+    {
+      "at": "2026-05-22T06:21:14Z",
+      "action": "content_package_built",
+      "summary": "Built generated-area-fragment.html from prototype-content manifest and screen files."
+    },
+    {
+      "at": "2026-05-22T06:23:41Z",
+      "action": "content_package_built",
+      "summary": "Built generated-area-fragment.html from prototype-content manifest and screen files."
+    },
+    {
+      "at": "2026-05-22T06:33:05Z",
+      "action": "content_package_built",
+      "summary": "Built generated-area-fragment.html from prototype-content manifest and screen files."
+    },
+    {
+      "at": "2026-05-22T06:34:09Z",
+      "action": "content_package_built",
+      "summary": "Built generated-area-fragment.html from prototype-content manifest and screen files."
+    },
+    {
+      "at": "2026-05-22T06:34:15Z",
+      "action": "content_package_built",
+      "summary": "Built generated-area-fragment.html from prototype-content manifest and screen files."
+    },
+    {
+      "at": "2026-05-22T06:34:29Z",
+      "action": "content_package_built",
+      "summary": "Built generated-area-fragment.html from prototype-content manifest and screen files."
+    },
+    {
+      "at": "2026-05-22T09:12:12Z",
+      "action": "content_package_built",
+      "summary": "Built generated-area-fragment.html from prototype-content manifest and screen files."
+    }
+  ]
+}
