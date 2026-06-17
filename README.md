@@ -29,7 +29,7 @@ PM 原型助手用于把 PRD / Spec 转成可走查的产品原型。
 
 | 顺序 | Skill | 作用 |
 |---|---|---|
-| 1 | [AI Coding 地基](https://github.com/FinnCheung93/aicoding-foundation) | 项目开工前，初始化原则、状态、日志和协作治理 |
+| 1 | [Agentic 地基](https://github.com/FinnCheung93/agentic-foundation) | 项目开工前，初始化原则、状态、日志和协作治理 |
 | 2 | [PM PRD 助手](https://github.com/FinnCheung93/pm-prd-copilot) | 澄清、撰写、修订和审查开发可落地的 PRD |
 | 3 | [AI Coding 规范文档](https://github.com/FinnCheung93/aicoding-specpilot) | 基于 PRD 生成更适合 AI Coding 读取的规格文档 |
 | 4 | [PM 原型助手](https://github.com/FinnCheung93/finn-protopilot) | 基于 PRD / Spec 生成产品走查原型和演示材料 |
