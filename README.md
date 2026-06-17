@@ -9,12 +9,7 @@
 
 <br>
 
-<p>
-  <img src="https://img.shields.io/badge/Codex-Skill-2563eb?style=flat" />
-  <img src="https://img.shields.io/badge/Version-v1.0.0-14b8a6?style=flat" />
-  <img src="https://img.shields.io/badge/Language-中文-f59e0b?style=flat" />
-  <img src="https://img.shields.io/badge/Series-PM%20Workflow-7c3aed?style=flat" />
-</p>
+<p><sub><code>Codex Skill</code> · <code>Version v1.0.0</code> · <code>Language 中文</code> · <code>Series PM Workflow</code></sub></p>
 
 </div>
 
